@@ -5,4 +5,9 @@
 
 ** running threads in background
 - detached threads --> daemon threads, ownership passed to C++ runtime
+- detach breaks association of thread with std::thread object and ensures `terminate()` will not be called when `std::thread` destroyed`
 - you can only detach thread for which `joinable()` returns true
+
+*** when to detach thread
+- background tasks like monitoring filessystem, clearing out unused cache, optmizing data structures etc
+

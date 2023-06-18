@@ -1,2 +1,8 @@
 * Ch2 - managing threads
 ** Using RAII to wait for a thread to complete
+- copy ctor and copy assignment deleted to ensure that copies cannot be created which might outlive the scope of the thread it is joining.
+- if you don't need for thread to finish, you can detach it
+
+** running threads in background
+- detached threads --> daemon threads, ownership passed to C++ runtime
+- you can only detach thread for which `joinable()` returns true

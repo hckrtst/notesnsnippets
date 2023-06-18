@@ -39,6 +39,7 @@ int main() {
     int local_state = 1;
     fn runner(local_state);
     thread t1(runner);
+    // without this guard we will see an abort / UB
     thread_guard g(t1);
     return 0;    
 }

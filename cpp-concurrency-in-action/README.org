@@ -1,0 +1,2 @@
+* Ch2 - managing threads
+** Using RAII to wait for a thread to complete

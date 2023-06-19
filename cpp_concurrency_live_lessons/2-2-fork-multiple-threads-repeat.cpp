@@ -14,7 +14,9 @@ void repeat(string str, int n) {
 }
 
 int main() {
+    // if you don't pass in params correctly for repeat you will see a compile error
     thread t(repeat, "hello", 2);
     cout << "hello from, main\n";
+    t.join();
 }
 

@@ -5,7 +5,7 @@
 
 using std::vector, std::cout, std::endl, std::thread;
 
-int main() {
+vector<thread> spawn() {
     vector<thread> threads;
     for (int i=0; i <16; ++i) {
         threads.emplace_back([&]
@@ -15,6 +15,11 @@ int main() {
                 }
                 );
     }
+    return threads;
+}
+
+int main() {
+    auto threads = spawn();
     cout << "hello from, main\n";
     for (auto &t : threads)
         t.join();

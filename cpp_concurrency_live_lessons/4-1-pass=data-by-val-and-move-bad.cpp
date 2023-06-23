@@ -23,10 +23,13 @@ int main() {
     std::future<void> fut = std::async([](std::unique_ptr<Counter> p) {
             ++(p->n);
             }, std::move(upC));
+
+    std::cout << "after thread spawned before wait: pcount has " << pCount->n << std::endl; /// ---> oops! thsi may be 10 or 11, depending on chance
+    
     fut.wait();
     // so far no errors because no one else is modifying/reading it in main thread
     // but...
     // say someone adds line below
-    std::cout << "after thread spawned: pcount has " << pCount->n << std::endl; /// ---> oops! no telling what value this will print!!!!!
+    std::cout << "after wait: pcount has " << pCount->n << std::endl; /// ---> oops! no telling what value this will print!!!!!
 }
 

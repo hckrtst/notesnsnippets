@@ -14,6 +14,8 @@ using std::future, std::cout, std::endl, std::vector, std::string;
 class FileMonitor {
     public:
         void push_back(string file) {
+            // always have a named variable for the lock_guard otherwise it is constructed
+            // and destroyed right away!!! this will defeat the purpose of this call
             std::lock_guard<std::mutex> lck(_mtx);
             // explicity move to avoid a copy into vector
             _allFiles.push_back(std::move(file));

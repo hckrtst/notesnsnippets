@@ -15,7 +15,8 @@ class FileMonitor {
     public:
         void push_back(string file) {
             std::lock_guard<std::mutex> lck(_mtx);
-            _allFiles.push_back(file);
+            // explicity move to avoid a copy into vector
+            _allFiles.push_back(std::move(file));
         }
         void print() {
             std::lock_guard<std::mutex> lck(_mtx);

@@ -29,6 +29,7 @@ vector<string> listDirsConcurrent(vector<fs::path> const & paths) {
     vector<string> allFiles;
     for (auto & fut: futs) {
         auto files = fut.get();
+        // we still need for the future complete before we can do the next step
         std::move(files.begin(), files.end(), back_inserter(allFiles));
     }
     return allFiles;

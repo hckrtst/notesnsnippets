@@ -54,6 +54,7 @@ class Bank
     }
 
     void transfer(int from, int to, int sum) {
+        // this operation is not atomic even though each separate call to balance() and deposit() use lock guard!!!
         if (_accts[from].balance() >= sum) {
             _accts[from].deposit(-sum); // take money from one acct
             _accts[to].deposit(sum); // add to the other acct

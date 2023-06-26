@@ -7,6 +7,7 @@
 #include <memory>
 #include <filesystem>
 #include <sstream>
+#include <assert.h>
 
 namespace fs = std::filesystem;
 using std::future, std::cout, std::endl, std::vector, std::string;
@@ -30,6 +31,31 @@ class Account {
     }
 };
 
+future<void> depositor(Account &acct, int sum) {
+    return std::async([&](int sum) {
+            acct.deposit(sum);
+            },
+            sum);
+}
+
+future<void> balancer(Account const & acct) {
+    return std::async([&](){
+            cout << "Balance: " << acct.balance() << endl;
+            });
+}
+
 int main() {
+    Account acct;
+    vector<future<void>> futures;
+    futures.emplace_back(depositor(acct, 10));
+    futures.emplace_back(depositor(acct, 10));
+    futures.emplace_back(depositor(acct, -10));
+    futures.emplace_back(depositor(acct, 20));
+    for (auto& fut : futures) {
+        fut.wait();
+    }
+
+    assert(acct.balance() == 30);
+
 }
 

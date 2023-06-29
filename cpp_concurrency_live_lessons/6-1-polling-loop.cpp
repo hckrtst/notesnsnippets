@@ -1,0 +1,77 @@
+#include <thread>
+#include <iostream>
+#include <vector>
+#include <chrono>
+#include <string>
+#include <future>
+#include <memory>
+#include <filesystem>
+#include <sstream>
+
+namespace fs = std::filesystem;
+using std::future, std::cout, std::endl, std::vector, std::string;
+
+class FileMonitor {
+    public:
+        void push_back(string file) {
+            // always have a named variable for the lock_guard otherwise it is constructed
+            // and destroyed right away!!! this will defeat the purpose of this call
+            std::lock_guard<std::mutex> lck(_mtx);
+            // explicity move to avoid a copy into vector
+            _allFiles.push_back(std::move(file));
+        }
+        bool hasData() const {
+            std::lock_guard<std::mutex> lck(_mtx);
+            return !_allFiles.empty();
+        }
+
+        string pop_back() {
+            std::lock_guard<std::mutex> lck(_mtx);
+            string name = std::move(_allFiles.back());
+            _allFiles.pop_back();
+            return name;
+        }
+        private:
+        vector<string> _allFiles;
+        mutable std::mutex _mtx;
+};
+
+void listDir(string path, FileMonitor & fileSink) {
+    for (fs::directory_iterator it(path); it != fs::directory_iterator(); ++it) {
+        if (fs::is_regular_file(it->status())) {
+            fileSink.push_back(it->path().filename());
+        }    
+    }
+}
+
+void listDirs(vector<fs::path> paths, FileMonitor & fileSink) {
+    vector<future<void>> futures;
+
+    for (auto &path: paths) {
+        cout << path << endl;
+        futures.emplace_back(std::async(listDir, path, std::ref(fileSink)));
+    }
+
+    for(;;) {
+        if (fileSink.hasData()) {
+            string name = fileSink.pop_back();
+            cout << "File : " << name << endl;
+        }
+    }
+    for (auto& fut : futures) {
+        fut.wait();
+    }
+}
+
+int main() {
+    vector<fs::path> paths;
+    for (fs::directory_iterator it("/home/tintin/workspace"); it != fs::directory_iterator(); ++it) {
+        if (fs::is_directory(it->status())) {
+            paths.push_back(it->path());
+        }
+    }
+
+    FileMonitor fileSink;
+    listDirs(paths, fileSink);
+}
+

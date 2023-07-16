@@ -38,7 +38,7 @@ function showResult() {
             break            
         case "scissors":
             if (user_choice === 'paper') result = iwin_txt
-            else if (user_choice === 'rock') result = iwin_txt
+            else if (user_choice === 'rock') result = uwin_txt
             break 
         default:
             if (user_choice === 'scissors') result = uwin_txt

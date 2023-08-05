@@ -60,9 +60,10 @@ cmp 4,9 -> 9 wins
 
 ```
 
-We can use this to get the max value in O(n) time and O(1) space!
-
 But how do we get the second-largest value?
 
 That value lost to the largest value in one of the rounds. Not necessarily the last round...see why?
+
+### Complexity
+
 

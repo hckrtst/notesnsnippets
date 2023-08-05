@@ -42,10 +42,20 @@ def mutable_two(A):
 
 ## Tournament algorithm
 
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+```
+Given [3,1,4,1,5,9,2,6]
+round 1
+compare 3,1 -> 3 wins
+compare 4,1 -> 4 wins
+cmp 5,9 -> 9 wins
+cmp 2,6 -> 6 wins
+
+round2
+cmp 3,4 -> 4 wins
+cmp 9,6 -> 9 wins
+
+round3
+cmp 4,9 -> 9 wins
+
+
 ```

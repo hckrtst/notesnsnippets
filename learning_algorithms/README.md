@@ -62,8 +62,13 @@ cmp 4,9 -> 9 wins
 
 But how do we get the second-largest value?
 
+
 That value lost to the largest value in one of the rounds. Not necessarily the last round...see why?
 
 ### Complexity
+Terrible performance...do not use. F!ck what a waste of time....
+
+
+
 
 

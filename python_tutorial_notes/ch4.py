@@ -39,4 +39,17 @@ for num in range(2, 15):
     if num % 2 == 0:
         print(f'{num} is even')
         continue
-    print(f'{num} is odd')    
+    print(f'{num} is odd')
+
+# functions
+#
+
+def fib(n):
+    fib_nums = []
+    a, b = 0, 1
+    while(a < n):
+        fib_nums.append(a)
+        a, b = b, a+b
+    return fib_nums
+N = 2000
+print(f'fib({N}) = ', fib(N))

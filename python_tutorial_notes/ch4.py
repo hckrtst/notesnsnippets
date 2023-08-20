@@ -126,5 +126,35 @@ list.insert(0, 2.456)
 print(4, list)
 list.pop()
 print(5, list)
-list.pop(1)
+list.pop(1) # pop from an index
 print(6, list)
+list.remove([2,4,5]) # remove specific element
+print(7, list)
+list.insert(1, 100)
+list.insert(4, 100)
+print(8, list)
+list.remove(100) # removes first 100
+print(9, list)
+try:
+    list.remove(1000)
+except ValueError:
+    print(10, '1000 not found')
+list.append(100)
+list.append(100)
+print(11, f"100 appears {list.count(100)} times" )
+list.sort()
+print(12, f"sorted list looks like this:", list)
+
+list.append('harry potter')
+
+list.insert(0, 1090000)
+list.insert(1, -555)
+
+print("before sorting: ", list)
+try:
+    list.sort()
+except:
+    print(13, "now the list cannot be sorted because we cannot compare diff data types")
+    print(14, "but list is partially sorted! ", list)
+
+

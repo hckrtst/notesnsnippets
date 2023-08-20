@@ -113,3 +113,18 @@ cheese_shop("Limburger", "It's very runny, sir.",
 # with names or you want to prevent users relying on the position of the argument being passed.
 
 #     For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
+
+# working with lists
+list = []
+list.append(2)
+print(1, list)
+list.append([2,4,5])
+print(2, list)
+list.extend([7, 8, 9])
+print(3, list)
+list.insert(0, 2.456)
+print(4, list)
+list.pop()
+print(5, list)
+list.pop(1)
+print(6, list)

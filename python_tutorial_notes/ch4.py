@@ -189,3 +189,15 @@ squares = [x**2 for x in range(10)] # more concise than the other 2 options
 # mylist comprehensions can have conditions as well as loops
 # NOTE: the smallest list below dictates the tuples created
 print(16, [(x, y) for x in [1,2,3] for y in [4,5] if x != y])
+
+# flatten a list using list comp
+vec = [[1,2,3], [5,6,7], [7,8,9]]
+
+step = 16
+def say(*args):
+    global step
+    step += 1
+    print(step, *args)
+
+say(vec)
+say([elem for mylist in vec for elem in mylist])

@@ -227,3 +227,14 @@ tel = {'jack': 4098, 'sape': 4139}
 
 say(tel.keys())
 say(tel.values())
+
+# dict comprehensions
+d = {x: x**3 for x in range(10)}
+say(f"dict = {d}")
+
+# zip can help traverese multiple collections simultaneously
+cities = ['Toronto', 'New York', 'Mumbai']
+countries = ['Canada', 'United States', 'India']
+
+for city,country in zip(cities, countries):
+    print(f"{city} is in {country}")

@@ -210,3 +210,15 @@ say(tup)
 x, y, *points = 1, 5, 4, 5, 6, 7, 8
 
 say(f"x = {x}, y = {y}, points = {points}")
+
+# set is an unordered collection - NOTE ---> unordered
+aset = set('thisissomethingsimple')
+say(f"set has elems: {aset}")
+setA = set('abcdef')
+setB = set('defghijk')
+say(f"setA = {setA} and setB = {setB}")
+say(f"in A but not in B = {setA - setB}")
+say(f"A union B = {setA | setB}")
+say(f"A intersection B = {setA & setB}")
+say(f"letters in A or B but not in both i.e. XOR = {setA ^ setB}")
+

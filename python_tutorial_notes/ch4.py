@@ -53,3 +53,35 @@ def fib(n):
     return fib_nums
 N = 2000
 print(f'fib({N}) = ', fib(N))
+
+# default parmater behavior
+
+def func1(val, L=[]):
+    L.append(val)
+    print(L)
+
+func1(3)
+func1(4.5)
+func1('kitty')
+# the temporary will continue to be used for each subsequent call
+
+# Here, X is a primitive so it is not shared across calls 
+def accumulate(n, X=1):
+    X *= n
+    print(f"accumumated {X}")
+
+accumulate(3)
+accumulate(4)
+accumulate(10)
+    
+
+# to not share list across calls set default to None
+def func2(val, L=None):
+    if not L:
+        L = []
+    L.append(val)
+    print(L)
+
+func2(3)
+func2(4.5)
+func2('kitty')    

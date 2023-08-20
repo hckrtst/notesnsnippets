@@ -75,7 +75,7 @@ accumulate(4)
 accumulate(10)
     
 
-# to not share list across calls set default to None
+# to not share mylist across calls set default to None
 def func2(val, L=None):
     if not L:
         L = []
@@ -114,55 +114,55 @@ cheese_shop("Limburger", "It's very runny, sir.",
 
 #     For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
 
-# working with lists
-list = []
-list.append(2)
-print(1, list)
-list.append([2,4,5])
-print(2, list)
-list.extend([7, 8, 9])
-print(3, list)
-list.insert(0, 2.456)
-print(4, list)
-list.pop()
-print(5, list)
-list.pop(1) # pop from an index
-print(6, list)
-list.remove([2,4,5]) # remove specific element
-print(7, list)
-list.insert(1, 100)
-list.insert(4, 100)
-print(8, list)
-list.remove(100) # removes first 100
-print(9, list)
+# working with mylists
+mylist = []
+mylist.append(2)
+print(1, mylist)
+mylist.append([2,4,5])
+print(2, mylist)
+mylist.extend([7, 8, 9])
+print(3, mylist)
+mylist.insert(0, 2.456)
+print(4, mylist)
+mylist.pop()
+print(5, mylist)
+mylist.pop(1) # pop from an index
+print(6, mylist)
+mylist.remove([2,4,5]) # remove specific element
+print(7, mylist)
+mylist.insert(1, 100)
+mylist.insert(4, 100)
+print(8, mylist)
+mylist.remove(100) # removes first 100
+print(9, mylist)
 try:
-    list.remove(1000)
+    mylist.remove(1000)
 except ValueError:
     print(10, '1000 not found')
-list.append(100)
-list.append(100)
-print(11, f"100 appears {list.count(100)} times" )
-list.sort()
-print(12, f"sorted list looks like this:", list)
+mylist.append(100)
+mylist.append(100)
+print(11, f"100 appears {mylist.count(100)} times" )
+mylist.sort()
+print(12, f"sorted mylist looks like this:", mylist)
 
-list.append('harry potter')
+mylist.append('harry potter')
 
-list.insert(0, 1090000)
-list.insert(1, -555)
+mylist.insert(0, 1090000)
+mylist.insert(1, -555)
 
-print("before sorting: ", list)
+print("before sorting: ", mylist)
 try:
-    list.sort()
+    mylist.sort()
 except:
-    print(13, "now the list cannot be sorted because we cannot compare diff data types")
-    print(14, "but list is partially sorted! ", list)
+    print(13, "now the mylist cannot be sorted because we cannot compare diff data types")
+    print(14, "but mylist is partially sorted! ", mylist)
 
-# Using lists as stacks is efficient
+# Using mylists as stacks is efficient
 stack = [1,2,5]
 stack.append(8)
 stack.pop()
 
-# Using lists as queues is not efficient as poppoing elements from front requires
+# Using mylists as queues is not efficient as poppoing elements from front requires
 # moving all the other elements
 # Use deque for this
 
@@ -171,7 +171,7 @@ queue = deque(['horus', 'porus', 'zorus'])
 print("before pop: queue is ", queue)
 print(15, f"Pop from queue, returns {queue.popleft()}, now the queue has {queue}")
 
-# list comprehensions
+# mylist comprehensions
 squares = []
 
 # lets see three ways of doing this
@@ -179,8 +179,13 @@ squares = []
 for x in range(10):
     squares.append(x)
 
+
 # 2.
 squares = list(map(lambda x: x**2, range(10)))
 
 # 3
 squares = [x**2 for x in range(10)] # more concise than the other 2 options
+
+# mylist comprehensions can have conditions as well as loops
+# NOTE: the smallest list below dictates the tuples created
+print(16, [(x, y) for x in [1,2,3] for y in [4,5] if x != y])

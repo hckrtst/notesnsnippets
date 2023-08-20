@@ -222,3 +222,8 @@ say(f"A union B = {setA | setB}")
 say(f"A intersection B = {setA & setB}")
 say(f"letters in A or B but not in both i.e. XOR = {setA ^ setB}")
 
+# dictionaries
+tel = {'jack': 4098, 'sape': 4139}
+
+say(tel.keys())
+say(tel.values())

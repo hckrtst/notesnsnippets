@@ -238,3 +238,9 @@ countries = ['Canada', 'United States', 'India']
 
 for city,country in zip(cities, countries):
     print(f"{city} is in {country}")
+
+# comparisons can be chained
+B = 8
+C = 100
+
+print(f"Condition C > 10 >= B is {C > 10 >= B} ")

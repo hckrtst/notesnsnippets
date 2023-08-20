@@ -85,3 +85,19 @@ def func2(val, L=None):
 func2(3)
 func2(4.5)
 func2('kitty')    
+
+# optional variable and keyword arguments
+def cheese_shop(kind, *args, **kwargs):
+    print("-- Do you have any ", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in args:
+        print(arg)
+    print("-"*40)
+    for kw in kwargs:
+        print(kw, ":", kwargs[kw])
+
+cheese_shop("Limburger", "It's very runny, sir.",
+           "It's really very, VERY runny, sir.",
+           shopkeeper="Michael Palin",
+           client="John Cleese",
+           sketch="Cheese Shop Sketch")

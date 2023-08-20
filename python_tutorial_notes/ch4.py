@@ -201,3 +201,12 @@ def say(*args):
 
 say(vec)
 say([elem for mylist in vec for elem in mylist])
+
+# tuple packing
+tup = 1, 2, 3, 'hurricane'
+
+say(tup)
+
+x, y, *points = 1, 5, 4, 5, 6, 7, 8
+
+say(f"x = {x}, y = {y}, points = {points}")

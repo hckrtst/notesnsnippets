@@ -157,4 +157,30 @@ except:
     print(13, "now the list cannot be sorted because we cannot compare diff data types")
     print(14, "but list is partially sorted! ", list)
 
+# Using lists as stacks is efficient
+stack = [1,2,5]
+stack.append(8)
+stack.pop()
 
+# Using lists as queues is not efficient as poppoing elements from front requires
+# moving all the other elements
+# Use deque for this
+
+from collections import deque
+queue = deque(['horus', 'porus', 'zorus'])
+print("before pop: queue is ", queue)
+print(15, f"Pop from queue, returns {queue.popleft()}, now the queue has {queue}")
+
+# list comprehensions
+squares = []
+
+# lets see three ways of doing this
+# 1.
+for x in range(10):
+    squares.append(x)
+
+# 2.
+squares = list(map(lambda x: x**2, range(10)))
+
+# 3
+squares = [x**2 for x in range(10)] # more concise than the other 2 options

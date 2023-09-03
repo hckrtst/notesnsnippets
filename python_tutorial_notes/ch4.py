@@ -65,7 +65,7 @@ func1(4.5)
 func1('kitty')
 # the temporary will continue to be used for each subsequent call
 
-# Here, X is a primitive so it is not shared across calls 
+# Here, X is a primitive so it is not shared across calls
 def accumulate(n, X=1):
     X *= n
     print(f"accumumated {X}")
@@ -73,7 +73,7 @@ def accumulate(n, X=1):
 accumulate(3)
 accumulate(4)
 accumulate(10)
-    
+
 
 # to not share mylist across calls set default to None
 def func2(val, L=None):
@@ -84,7 +84,7 @@ def func2(val, L=None):
 
 func2(3)
 func2(4.5)
-func2('kitty')    
+func2('kitty')
 
 # optional variable and keyword arguments
 def cheese_shop(kind, *args, **kwargs):
@@ -106,10 +106,10 @@ cheese_shop("Limburger", "It's very runny, sir.",
 # As guidance:
 
 #     Use positional-only if you want the name of the parameters to not be available to the user.
-#     This is useful when parameter names have no real meaning, if you want to enforce the order of 
+#     This is useful when parameter names have no real meaning, if you want to enforce the order of
 #     the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords.
 
-#     Use keyword-only when names have meaning and the function definition is more understandable by being explicit 
+#     Use keyword-only when names have meaning and the function definition is more understandable by being explicit
 # with names or you want to prevent users relying on the position of the argument being passed.
 
 #     For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
@@ -244,3 +244,17 @@ B = 8
 C = 100
 
 print(f"Condition C > 10 >= B is {C > 10 >= B} ")
+
+# match
+def print_city(zipcode):
+    match zipcode:
+        case 92101|92111|92121:
+            return "San Diego"
+        case 90210:
+            return "Beverly Hills"
+        case _:
+            return "unknown"
+
+
+say(f"The zipcode 92121 is in {print_city(92121)}")
+

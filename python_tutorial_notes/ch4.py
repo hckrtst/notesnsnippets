@@ -258,3 +258,23 @@ def print_city(zipcode):
 
 say(f"The zipcode 92121 is in {print_city(92121)}")
 
+# you can also match partially as follows
+def print_point(point):
+    match point:
+        case (0,0):
+            print("origin")
+        case (0,y):
+            print(f"Along y axis at y = {y}")
+        case _:
+            print(f"at {point[0]},{point[1]}")
+
+print_point((0,199))
+print_point((120,199))
+
+# Side note: https://peps.python.org/pep-0636/ is super informative and entertaining as well
+# this goes into details of the proposal for the matching mechanism
+
+# TODO add some examples from PEP
+
+
+

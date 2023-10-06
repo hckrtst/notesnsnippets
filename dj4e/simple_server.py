@@ -7,12 +7,10 @@ def createServer():
 
   try:
     server_sock.bind(('localhost', 9000))
-    server_sock.listen(5)
-    hits = 0
+    server_sock.listen(5)    
     while 1:
       client_sock, address = server_sock.accept()
-      rd = client_sock.recv(5000).decode()
-      hits += 1
+      rd = client_sock.recv(5000).decode()      
       pieces = rd.split('\n')
       if len(pieces) > 0: print(pieces[0])
       data = "HTTP/1.1 200 OK\r\n"

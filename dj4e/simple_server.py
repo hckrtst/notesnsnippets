@@ -7,8 +7,8 @@ def createServer():
     server_sock.bind(('localhost', 9000))
     server_sock.listen(5)
     while 1:
-      time.sleep(4)
-      print('waiting...')
+      client_sock, address = server_sock.accept()
+      print(f'accepted from {client_sock}')
   except KeyboardInterrupt:
     print('interrupt detected...')
   

@@ -1,0 +1,8 @@
+#CREATE DATABASE test2;
+USE test2;
+
+CREATE TABLE bands(
+    name VARCHAR(255) NOT NULL
+
+);
+

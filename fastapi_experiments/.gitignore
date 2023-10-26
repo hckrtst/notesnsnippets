@@ -1,0 +1,6 @@
+lib*/
+bin/
+*.pyc
+share/
+lib64
+

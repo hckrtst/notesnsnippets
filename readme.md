@@ -87,6 +87,14 @@ Use the language you're most comfortable with.
 ### 7. Verification
 
 Check the runtimes and make sure they agree with your earlier assessment. Walk through the code with examples you came up with.
+Even if you have the option of testing the code, walk through them manually first. This step will help to catch any bugs you
+may have in the code.
+
+### Finally
+
+Once this is done, walk through the code again and explain it. Consider it a code review session where you want to make sure the
+reviewer is satisfied and will be ready to approve your code. Answer any questions they have.
+
 
 
 

@@ -65,7 +65,7 @@ after you have something.
 
 ### 4. Optimize
 
-A good chunk of time will be spent on this step. **Optimize before you write code**. But, if the interviewer wants you to code the brute-force first then go ahead and do that before this step.
+A good chunk of time will be spent on this step. **Optimize before you write code**. But, if the interviewer wants you to code the brute-force first then go ahead and do that before this step. Make sure you state the time and space complexities clearly.
 
 ### 5. Walk through your algorithm
 
@@ -75,6 +75,18 @@ If not then walk through it more carefully before committing. Because backing ou
 
 Make sure you know what the data structures are, how they change. If there are indices involved then make sure you know how they
 are updated using examples.
+
+### 6. Code
+
+Use the language you're most comfortable with.
+
+> My additional tips: make sure you are familiar with all the commonly used standard lib features,
+> data structures and gotchas. While perfect syntax is not a hard requirement, fumbling around
+> with syntax can be a huge distraction and may end being a negative
+
+### 7. Verification
+
+Check the runtimes and make sure they agree with your earlier assessment. Walk through the code with examples you came up with.
 
 
 

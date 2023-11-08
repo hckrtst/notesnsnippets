@@ -32,7 +32,16 @@ O(2^a + a^2) --> O(2^a)
 
 ## Seven steps to problem solving
 
-1. Listen 
+1. Listen carefully to the problem - listen to clues. For example,
+
+> Given two arrays that are sorted and distinct, find the number of elements in common
+
+So the fact that they are "sorted" and "distinct" are useful clues. If your solution does not exploit this feature then
+it's likely not optimal for this usecase.
+
+
+
+
 
 
 

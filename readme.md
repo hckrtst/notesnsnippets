@@ -65,7 +65,11 @@ after you have something.
 
 ### 4. Optimize
 
-A good chunk of time will be spent on this step. **Optimize before you write code**.
+A good chunk of time will be spent on this step. **Optimize before you write code**. But, if the interviewer wants you to code the brute-force first then go ahead and do that before this step.
+
+### 5. Walk through your algorithm
+
+Before you start coding, walk through the algorithm with your interviewer. **Don't jump into coding with just a basic idea**!!!😥 
 
 
 

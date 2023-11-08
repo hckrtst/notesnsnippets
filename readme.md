@@ -69,7 +69,14 @@ A good chunk of time will be spent on this step. **Optimize before you write cod
 
 ### 5. Walk through your algorithm
 
-Before you start coding, walk through the algorithm with your interviewer. **Don't jump into coding with just a basic idea**!!!😥 
+Before you start coding, walk through the algorithm with your interviewer. **Don't jump into coding with just a basic idea**!!!😥
+Even if you're interviewer agrees you can start coding, think! Do you have a good idea of the algorithm?
+If not then walk through it more carefully before committing. Because backing out half-way may not be the best look.
+
+Make sure you know what the data structures are, how they change. If there are indices involved then make sure you know how they
+are updated using examples.
+
+
 
 
 

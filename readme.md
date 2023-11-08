@@ -32,7 +32,7 @@ O(2^a + a^2) --> O(2^a)
 
 ## Seven steps to problem solving
 
-1. ### Listen carefully to the problem - listen to clues. 
+### 1. Listen carefully to the problem - listen to clues. 
 
 For example,
 
@@ -42,7 +42,7 @@ So the fact that they are "sorted" and "distinct" are useful clues. If your solu
 it's likely not optimal for this usecase. The brute-force approach will probably not use this information, but keep it visible and
 consider it for the optimal approach which you will code.
 
-2. ### Draw an example
+### 2. Draw an example
 
 Use inputs and outputs to further understand the behavior. 
 

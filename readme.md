@@ -56,6 +56,16 @@ Here is one possibility
 But the problem is that this is a special case and you need to think of more general cases. The arrays may be different lengths
 or not have any common elements, have negtive numbers etc.
 
+### 3. Brute force
+
+It will be slow and obvious and that is fine. But it will help you think about a starting point. Don't code this one unless asked,
+but use it to explore the next step of making it optimal byt identifying the time and space complexities so you know where
+you need to focus to devise a solution you can code. The brute force method may not be correct, but figure out how to correct it
+after you have something.
+
+### 4. Optimize
+
+A good chunk of time will be spent on this step. **Optimize before you write code**.
 
 
 

@@ -94,6 +94,54 @@ may have in the code.
 
 Once this is done, walk through the code again and explain it. Consider it a code review session where you want to make sure the
 reviewer is satisfied and will be ready to approve your code. Answer any questions they have.
+This shows attention to details and that you care about code quality.
+
+
+## Example
+
+For the given problem, let's see the bruteforce approach
+
+```
+a1 = [1,3,6,10,18]
+a2 = [4,6]
+res = [6]
+
+
+a1 = [-10, -8, 0, 3, 5]
+a2 = [0, 3, 5]
+res = [0,3,5]
+
+output is an array
+
+
+```
+nested for loop
+iterate each element
+i 0
+j 0 1 2 ...
+i 1
+j 0 1 2....
+
+brute force would be time: O(n1*n2) where array 1 is n1 and array 2 is n2
+space: O(1) since no recursion or extra mem allocations
+
+We know the arrays are sorted and has no dups
+
+Ok so if we used a hash set to store the elements of one array we can do O(1) lookups for that array.
+But that incurs the penalty of extra memory.
+
+Since the array is sorted, they probably want to you to try a binary search to cut the look up time down from linear to
+logarithmic.
+
+
+
+
+## Optimizing with BUD
+
+BUD = Bottlenecks, Unnecessary work, Duplicated work
+
+
+
 
 
 

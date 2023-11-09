@@ -1,3 +1,12 @@
+# CPP topic reviews
+
+## Arrays
+
+* `std::array` closer to standard C array
+  * stored in object
+  * does not decay to pointer like standard C array when passed to function since the descriptor includes size info
+  
+
 # Algorithms
 
 ## Edit distance

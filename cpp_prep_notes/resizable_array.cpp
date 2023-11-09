@@ -50,6 +50,7 @@ class Resizable_int_array {
   // remove element from a pos
   // clear
   // push_back
+  // We make sure to resize if running out of space
   // pop_back
   // get size
   // print

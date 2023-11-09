@@ -201,7 +201,26 @@ You cannot do better than O(n) where n is size of array since you must access ev
 * Show your thought process
   * ask questions
     * is the data sorted? is the tree balanced? can I modify the array...etc
-   
+
+* propose an initial solution but also think about its issues
+  * use examples to show your thought process
+  * But don't use code to describe your thought process
+
+* be honest about mistakes
+* tell interviewer if you've seen the question before
+* be positive and keep trying, don't give up when things get hard
+* start of interview is a good time to ask questions, but you can also ask questions down the road
+
+* Big part of comms is listening. Listen to your interviewer well.
+* Take the suggestions offered, they are trying to point something out to you
+
+* IMPORTANT: if you hear an interviewer make the same point more than once, it's a BIG hint you missed something important
+* if interviewer leads you down a path, make sure you follow through and continue one, they are nudging you in the right direction
+* DOn't get flustered, some problems are hard. It's ok to make mistakes and struggle.
+  * the goal is see how you handle the problem solving
+* The code doesn't need to be perfect the first time around...BUT GO BACK AND MAKE IT BETTER (style, bug fixes, efficiency, etc)
+
+
 
 
 

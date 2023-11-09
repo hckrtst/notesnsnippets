@@ -165,6 +165,28 @@ You cannot do better than O(n) where n is size of array since you must access ev
 * ignore things that don't show good signals but check with your interviewer first
   * So pretend you have a max/min function or such uitility and focus on the parts of the impl that matters. Fill those in the interviewer wants you to.
 
+## verifications
+
+* original example is not a good testcase, it can be large and time consuming to run through
+* This is not about doing test cases yet, it's just a conceptual verification
+* Look for hotspots in your code where it might be easy to make errors
+  * array access
+  * recursion
+  * pointer dereferencing
+  * example: say you have a function `x = process(a,b)`.
+    This is not too hot for errors (except missing to check return value.s)
+    But if you have `x = process(left, right + left/2 + 1)`. This is a minefield! You have math operations, moving indices,
+    parameters when calling recursion, base case of recursion etc.
+* This process should be fast, like a spot-check and not exhaustive. That can be time consuming and may send the wrong signal (maybe he is not confident...?)
+* Use smaller test cases and edge cases (null, empty etc.)
+* Use bigger testcases if you have more time
+* common mistake is to just re-verify the algorithm instead of actually testing the code
+  * actually test your code, take values and plug them in and run through the scenario using these inputs on the actual code
+    like a debugger would
+  * but don't just blindly walk through the code...think about whether the values you are seeing are the right values
+* If you find a bug, look for the right fix, not just a quick sloppy fix. Understand the root cause and don't just put a bandage on
+
+
 
 
 

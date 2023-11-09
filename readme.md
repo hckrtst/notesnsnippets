@@ -162,8 +162,8 @@ You cannot do better than O(n) where n is size of array since you must access ev
 
 * Don't write loose code, write small functions
 * When filling in the func impls, try a priority-based breadth first approach, work on the most useful functions first and then fill in the rest ( you need to maximize your signals to the interviewer)
-
-
+* ignore things that don't show good signals but check with your interviewer first
+  * So pretend you have a max/min function or such uitility and focus on the parts of the impl that matters. Fill those in the interviewer wants you to.
 
 
 

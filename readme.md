@@ -156,6 +156,14 @@ Example
 
 You cannot do better than O(n) where n is size of array since you must access every element at least once
 
+## Optimizing wth DIY
+
+## Tips for coding
+
+* Don't write loose code, write small functions
+* When filling in the func impls, try a priority-based breadth first approach, work on the most useful functions first and then fill in the rest ( you need to maximize your signals to the interviewer)
+
+
 
 
 

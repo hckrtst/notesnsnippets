@@ -185,7 +185,19 @@ You cannot do better than O(n) where n is size of array since you must access ev
     like a debugger would
   * but don't just blindly walk through the code...think about whether the values you are seeing are the right values
 * If you find a bug, look for the right fix, not just a quick sloppy fix. Understand the root cause and don't just put a bandage on
+* When all is done, go through the code one more time and see what other improvements can be done.
+* The goal is not just to have a working solution. It's about finding people who value the quality of their work and are willing to solve hard problems. Show that you are that person.
 
+## communications
+
+* Drive the conversation
+  * Don't make your interviewer ask you to improve algorithm, code etc.
+  * Be the one to look for improvements (self-driving)
+
+* Show your thought process
+  * ask questions
+    * is the data sorted? is the tree balanced? can I modify the array...etc
+   
 
 
 

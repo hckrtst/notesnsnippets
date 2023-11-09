@@ -141,6 +141,22 @@ logarithmic.
 BUD = Bottlenecks, Unnecessary work, Duplicated work
 
 
+## Optimizing with space and time
+
+* hash tables, pre-computation, tries
+* think about doing some upfront work such as sorting, storing data in table etc.
+
+## best conceivable runtime
+
+Given the nature of the problem, what is the runtime that you cannot beat
+
+Example
+
+> given an array, find all pairs that sum to median value
+
+You cannot do better than O(n) where n is size of array since you must access every element at least once
+
+
 
 
 

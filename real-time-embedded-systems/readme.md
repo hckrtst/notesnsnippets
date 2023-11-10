@@ -49,7 +49,7 @@ Embedded Systems (ES)
 whether name declarations in diff scopes refer to the same defn. applies to vars and funcs.
 
 * no linkage - declared in block scope/struct/class. can only be referenced within scope. Func params and local vars normally have no linkage.
+* internal linkage - name defined in file/namespace scope. can be used within translation unit. outside of the translation unit same name refers to different 
 
-
-
+![Alt text](image-1.png)
 

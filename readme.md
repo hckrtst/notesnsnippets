@@ -1,3 +1,8 @@
+# Architectural
+
+## pub sub
+tbd
+
 # CPP topic reviews
 
 ## Arrays
@@ -5,7 +10,13 @@
 * `std::array` closer to standard C array
   * stored in object
   * does not decay to pointer like standard C array when passed to function since the descriptor includes size info
-  
+
+## General best practice
+
+* Use signed instead of unsigned in most cases
+see https://www.learncpp.com/cpp-tutorial/unsigned-integers-and-why-to-avoid-them/
+
+
 
 # Algorithms
 
@@ -166,6 +177,7 @@ Example
 You cannot do better than O(n) where n is size of array since you must access every element at least once
 
 ## Optimizing wth DIY
+tbd
 
 ## Tips for coding
 

@@ -33,7 +33,15 @@ Embedded Systems (ES)
 ## scope regions
 
 * filename/namespace scope - gloabl/file scope when declared in namespace declaration
-* 
+* func scope
+* func prototype scope
+* block scope
+* class scope
+
+## storage duration
+
+* static - size and addr determined at compile time. Lifetime is for duration of process. Var declared at file/namespace scope.
+* automatic - local var at block scope. stored in run-time stack frame of block. Removed when exiting block.
 
 
 

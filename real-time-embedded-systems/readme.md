@@ -53,3 +53,12 @@ whether name declarations in diff scopes refer to the same defn. applies to vars
 
 ![Alt text](image-1.png)
 
+## code  transformation process
+
+![Alt text](image-2.jpg)
+
+* object file contains symbol table
+
+
+read more at https://flint.cs.yale.edu/cs422/doc/ELF_Format.pdf
+

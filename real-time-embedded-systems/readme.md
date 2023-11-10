@@ -10,5 +10,31 @@ Embedded Systems (ES)
 
 ![Alt text](image.png)
 
+# hardware arch
+
+* abstraction of the machine which contains microprocessors, memory, peripherals (clocks, controllers, actuators, sensors etc)
+* Some common design factors
+  * processing power - how fast of a cpu needed? power consumption limits? MIPS per MW
+  * mem reqs - what type of RAM, NVM. how much on eval board, how much on target system
+  * peripherals - what needed? SOC has many built-in.
+    * need debugging iface - serial port
+    * perf more imp than cost
+  * realibility - how much failure can we tolerate
+  * upgrade - how can field upgrades be done
+
+# SW design
+
+* how do diff func modules interact and synchronize
+* how many tasks? how to prioritize them? how to document design and timing constraints?
+* schdulability analysis - how to schedule tasks
+
+# system programming concepts
+
+## scope regions
+
+* filename/namespace scope - gloabl/file scope when declared in namespace declaration
+* 
+
+
 
 

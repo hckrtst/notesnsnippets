@@ -42,6 +42,13 @@ Embedded Systems (ES)
 
 * static - size and addr determined at compile time. Lifetime is for duration of process. Var declared at file/namespace scope.
 * automatic - local var at block scope. stored in run-time stack frame of block. Removed when exiting block.
+* dynamic - allocation via malloc/new. slower. user has to free/delete to avoid leaks.
+
+## linkage
+
+whether name declarations in diff scopes refer to the same defn. applies to vars and funcs.
+
+* no linkage - declared in block scope/struct/class. can only be referenced within scope. Func params and local vars normally have no linkage.
 
 
 

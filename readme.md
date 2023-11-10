@@ -241,6 +241,14 @@ tbd
   * the goal is see how you handle the problem solving
 * The code doesn't need to be perfect the first time around...BUT GO BACK AND MAKE IT BETTER (style, bug fixes, efficiency, etc)
 
+## Tips by topics
+
+### stack
+* LIFO (mention this with stack and explain)
+* can be useful when doing a reverse
+* YOu can implement a linked list as a stack
+
+
 
 
 

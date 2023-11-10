@@ -58,7 +58,18 @@ whether name declarations in diff scopes refer to the same defn. applies to vars
 ![Alt text](image-2.jpg)
 
 * object file contains symbol table
-
+* you can use `readelf`, `nm`, `objdump` commands
 
 read more at https://flint.cs.yale.edu/cs422/doc/ELF_Format.pdf
 
+## linker
+
+* a complete prog consists of multiple object files each of which cross-reference the defns of data or funcs in other object files
+* process of combining several object files into a single object file is called static linkage
+* link has two major jobs:
+  * symbol resolution
+  * symbol relocation
+
+
+Using this example
+![Alt text](<Screenshot 2023-11-10 at 18-00-43 Chapter 2 Cross-Platform Development.jpg>)

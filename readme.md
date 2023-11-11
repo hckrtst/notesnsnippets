@@ -48,7 +48,9 @@
 	numbering=true
 	autoSave=true
 	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->##  1. <a name='Architectural'></a>Architectural
+<!-- /vscode-markdown-toc -->
+
+##  1. <a name='Architectural'></a>Architectural
 
 ###  1.1. <a name='pubsub'></a>pub sub
 tbd

@@ -258,7 +258,23 @@ tbd
   * some tips about arrays
     * `at()` can be used with `std::array` and `std::vector` which also does bounds checking and throws exception if out of bounds. this can be useful for public apis. while exceptions are a zero const abstraction (i.e. you don't pay for what you use) it may not be suitable for all use cases and sometimes we need to disable exception handling (esp for real-time systems).
     * `std::array` is stored in object and is fixed while `std::vector` is dynamic
-    *  
+
+  ### making array
+  
+  ```cpp
+  #include <array>
+  #include <iostream>
+  using namespace std;
+
+  int main() {
+      array<int,10> arr1{0};
+      for (auto e: arr1) {
+          cout << e << endl;
+      }
+      return 0;
+  }
+  ```
+
 
 
 ### stack

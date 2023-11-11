@@ -362,6 +362,31 @@ tbd
 * front(), back(), data() to directly access backing data
 * std::partition can be applied to array and vector for partitioning in place and getting iterator to the second partition.
 
+#### vector
+* compared to deque, list and forward_list a vector is efficient at accessing elements and efficient for adding/remove from tail. amortized O(1) since resizes can occur periodically.
+
+example
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    std::vector<int> v1;
+    cout << "theoretical max " << v1.max_size() << endl;
+    std::vector<int> nums {1, 3, 5, 7};
+    std::cout << "nums contains " << nums.size() << " elements.\n"; // 4
+    cout << "current capacity " << nums.capacity() << endl; // 4
+    nums.push_back(1);
+    cout << "current capacity " << nums.capacity() << endl; // 8 since we double capacity
+    std::vector<char> v2;
+    cout << "current capacity of v2 " << v2.capacity() << endl; // 0
+    v2.reserve(10);
+    cout << "after reserve: current capacity of v2 " << v2.capacity() << endl; // 10
+}
+```
 
 ####  12.10.2. <a name='deque'></a>deque
 
@@ -372,6 +397,10 @@ tbd
 * can be useful when doing a reverse
 * YOu can implement a linked list as a stack
 
+#### strings
+
+* slicing strings
+tbd
 
 
 

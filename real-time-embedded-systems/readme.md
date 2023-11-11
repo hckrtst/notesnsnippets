@@ -84,10 +84,23 @@ to distinguish vars. local var is tagged by func to which it belongs and a globa
   created from executable file on `spawn` or `exec` calls. each process put in its own addr space/vm.
   * shared object file. holds code and data suitable for further linking. can be combined with other relocatable and so to create 
   another obj file. some so are dynamically linkable, loaded at runtime and shared by many processes.
-   
+
 ## dynamic linker
 
+* program loader can load executables and run them
+  * standalone executable can contain copy of each lib routine needed
+  * but this costs memory
+* another type of program can have only references to lib routines
+  * requires the shared libs exist on target
+  * and needs a dynamic linker - a program interpretor more powerful than a regular program loader
+  * a dyn linker, take control and will load whole program to form initial process image, then
+  resolve symbols dynamically loading and binding external shared libs to form a complete process image,
+  and finally transfer control to process. this is called dynamic linking.
+  * adv is that each process need not maintain copy of libs and upgrades to lib can be available to all processes
+  * but the processes have a dependency and version diffs may issues if a process cannot handle a specific lib version
 
 ## elf format
 
 ![Alt text](image-2.png)
+
+* elf object has several headers as seen

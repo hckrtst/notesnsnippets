@@ -103,4 +103,4 @@ to distinguish vars. local var is tagged by func to which it belongs and a globa
 
 ![Alt text](image-2.png)
 
-* elf object has several headers as seen
+* elf object has several headers. ELF header is like a roadmap. see details at https://en.wikipedia.org/wiki/Executable_and_Linkable_Format

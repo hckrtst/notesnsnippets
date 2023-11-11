@@ -17,6 +17,11 @@ tbd
 see https://www.learncpp.com/cpp-tutorial/unsigned-integers-and-why-to-avoid-them/
 
 
+# Debugging
+
+tbd
+
+see https://eli.thegreenplace.net/tag/debuggers
 
 # Algorithms
 

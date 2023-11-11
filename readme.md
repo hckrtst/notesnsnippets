@@ -24,6 +24,8 @@ tbd
 # C traps and pitfalls
 tbd
 
+# Algorithms
+tbd
 # CPP topic reviews
 
 ## Arrays

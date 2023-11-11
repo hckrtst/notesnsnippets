@@ -348,8 +348,11 @@ tbd
   * some tips about arrays
     * `at()` can be used with `std::array` and `std::vector` which also does bounds checking and throws exception if out of bounds. this can be useful for public apis. while exceptions are a zero const abstraction (i.e. you don't pay for what you use) it may not be suitable for all use cases and sometimes we need to disable exception handling (esp for real-time systems).
     * `std::array` is stored in object and is fixed while `std::vector` is dynamic
-
+    * beware of boundary conditions (off by one  errors)
+    * use `matrix[row][col]` as opposed to `matrix[y][x]` since that is more intuitive
   ##### making array
+    * test empty, 1/2 element arrays carefully
+
   
   ```cpp
   #include <array>
@@ -378,6 +381,9 @@ example
 ```cpp
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include <numeric>
+
 using namespace std;
 
 int main()
@@ -396,10 +402,14 @@ int main()
     cout << "nums front is " << nums.front() << endl; // 1 - same as *nums.begin()
     cout << "nums back is " << nums.back() <<endl; // 7
     cout << "middle value is " << *(nums.begin() + nums.size()/2) << endl; // 5
+    // --- iterations
+    std::for_each(nums.begin(), nums.end(), [](int e) { cout << e << ", "; });
+    cout << endl;
+    for (auto e: nums) { cout << e << ", "; }
+    cout << endl;
+    cout << "sum of nums " << std::accumulate(nums.begin(), nums.end(), 0) << endl;
 }
 ```
-
-
 
 ####  12.10.3. <a name='deque'></a>deque
 

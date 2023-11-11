@@ -66,10 +66,16 @@ read more at https://flint.cs.yale.edu/cs422/doc/ELF_Format.pdf
 
 * a complete prog consists of multiple object files each of which cross-reference the defns of data or funcs in other object files
 * process of combining several object files into a single object file is called static linkage
-* link has two major jobs:
+* linker has two major jobs:
   * symbol resolution
   * symbol relocation
 
 
 Using this example
 ![Alt text](<Screenshot 2023-11-10 at 18-00-43 Chapter 2 Cross-Platform Development.jpg>)
+
+* both one.c and two.c define sb. Both of these are independent and represent two different values. compiler uses namespace
+to distinguish vars. local var is tagged by func to which it belongs and a global by filename.
+
+
+

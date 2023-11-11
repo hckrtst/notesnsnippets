@@ -255,7 +255,10 @@ tbd
   * when adding new element exceeds current capacity we grow the existing array
   * but if we double the capacity when we need more space then O(n) work done every 1/n times. so this is O(1) amortized time (on average), so append is still considered O(1) time
   * see [resizable_array.cpp](./cpp_prep_notes/resizable_array.cpp)
-
+  * some tips about arrays
+    * `at()` can be used with `std::array` and `std::vector` which also does bounds checking and throws exception if out of bounds. this can be useful for public apis. while exceptions are a zero const abstraction (i.e. you don't pay for what you use) it may not be suitable for all use cases and sometimes we need to disable exception handling (esp for real-time systems).
+    * `std::array` is stored in object and is fixed while `std::vector` is dynamic
+    *  
 
 
 ### stack

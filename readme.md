@@ -3,6 +3,15 @@
 ## pub sub
 tbd
 
+# Database
+tbd
+
+# CI/CD topics
+tbd
+
+# Infra tools (terraform etc)
+tbd
+
 # CPP topic reviews
 
 ## Arrays

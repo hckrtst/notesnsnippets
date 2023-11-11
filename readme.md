@@ -98,6 +98,9 @@ tbd
   * stored in object
   * does not decay to pointer like standard C array when passed to function since the descriptor includes size info
 
+* THis course is excellent https://courses.mshah.io/courses/take/cpp-programming-language/texts/43118039-c-video-series-introduction-modern-cpp-series
+
+
 ###  9.2. <a name='Generalbestpractice'></a>General best practice
 
 * Use signed instead of unsigned in most cases

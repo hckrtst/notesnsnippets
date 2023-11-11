@@ -390,6 +390,9 @@ int main()
     cout << "current capacity of v2 " << v2.capacity() << endl; // 0
     v2.reserve(10);
     cout << "after reserve: current capacity of v2 " << v2.capacity() << endl; // 10
+    cout << "nums front is " << nums.front() << endl; // 1 - same as *nums.begin()
+    cout << "nums back is " << nums.back() <<endl; // 7
+    cout << "middle value is " << *(nums.begin() + nums.size()/2) << endl; // 5
 }
 ```
 

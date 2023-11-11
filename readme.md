@@ -350,6 +350,10 @@ tbd
     * `std::array` is stored in object and is fixed while `std::vector` is dynamic
     * beware of boundary conditions (off by one  errors)
     * use `matrix[row][col]` as opposed to `matrix[y][x]` since that is more intuitive
+    * be comfortable with index math
+      * example: if we want to do multiple rotations to an array. we can do copying of elements or we can wrap the array in a class
+      which updates the indexes internally using an index map... (see https://leetcode.com/problems/rotate-array/)
+    * be aware of whether you need to preserve the array or need a copy   
   ##### making array
     * test empty, 1/2 element arrays carefully
 

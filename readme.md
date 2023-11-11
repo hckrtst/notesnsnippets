@@ -370,6 +370,9 @@ tbd
 ####  12.10.2. <a name='vector'></a>vector
 * compared to deque, list and forward_list a vector is efficient at accessing elements and efficient for adding/remove from tail. amortized O(1) since resizes can occur periodically.
 
+* vector end() is past the last element
+![](https://upload.cppreference.com/mwiki/images/1/1b/range-begin-end.svg)
+
 example
 
 ```cpp
@@ -395,6 +398,8 @@ int main()
     cout << "middle value is " << *(nums.begin() + nums.size()/2) << endl; // 5
 }
 ```
+
+
 
 ####  12.10.3. <a name='deque'></a>deque
 

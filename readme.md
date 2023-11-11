@@ -1,83 +1,133 @@
-## Architectural
+<!-- vscode-markdown-toc -->
+* 1. [Architectural](#Architectural)
+	* 1.1. [pub sub](#pubsub)
+* 2. [Database](#Database)
+* 3. [CI/CD topics](#CICDtopics)
+* 4. [Infra tools (terraform etc)](#Infratoolsterraformetc)
+* 5. [Communications](#Communications)
+	* 5.1. [Cellular topics](#Cellulartopics)
+		* 5.1.1. [Protcols](#Protcols)
+	* 5.2. [TCP/IP review](#TCPIPreview)
+* 6. [C traps and pitfalls](#Ctrapsandpitfalls)
+* 7. [Algorithms](#Algorithms)
+* 8. [CPP Libraries](#CPPLibraries)
+	* 8.1. [Boost](#Boost)
+	* 8.2. [pybind11](#pybind11)
+* 9. [CPP topic reviews](#CPPtopicreviews)
+	* 9.1. [Arrays](#Arrays)
+	* 9.2. [General best practice](#Generalbestpractice)
+* 10. [Debugging](#Debugging)
+* 11. [Algorithms](#Algorithms-1)
+	* 11.1. [Edit distance](#Editdistance)
+		* 11.1.1. [resources](#resources)
+	* 11.2. [Compression and encoding](#Compressionandencoding)
+		* 11.2.1. [resources](#resources-1)
+* 12. [Gayle's tips](#Gaylestips)
+	* 12.1. [Seven steps to problem solving](#Sevenstepstoproblemsolving)
+		* 12.1.1. [1. Listen carefully to the problem - listen to clues.](#Listencarefullytotheproblem-listentoclues.)
+		* 12.1.2. [2. Draw an example](#Drawanexample)
+		* 12.1.3. [3. Brute force](#Bruteforce)
+		* 12.1.4. [4. Optimize](#Optimize)
+		* 12.1.5. [5. Walk through your algorithm](#Walkthroughyouralgorithm)
+		* 12.1.6. [6. Code](#Code)
+		* 12.1.7. [7. Verification](#Verification)
+		* 12.1.8. [Finally](#Finally)
+	* 12.2. [Example](#Example)
+	* 12.3. [Optimizing with BUD](#OptimizingwithBUD)
+	* 12.4. [Optimizing with space and time](#Optimizingwithspaceandtime)
+	* 12.5. [best conceivable runtime](#bestconceivableruntime)
+	* 12.6. [Optimizing wth DIY](#OptimizingwthDIY)
+	* 12.7. [Tips for coding](#Tipsforcoding)
+	* 12.8. [verifications](#verifications)
+	* 12.9. [communications](#communications)
+	* 12.10. [Tips by topics](#Tipsbytopics)
+		* 12.10.1. [arrays](#arrays)
+		* 12.10.2. [stack](#stack)
 
-### pub sub
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->##  1. <a name='Architectural'></a>Architectural
+
+###  1.1. <a name='pubsub'></a>pub sub
 tbd
 
-## Database
+##  2. <a name='Database'></a>Database
 tbd
 
-## CI/CD topics
+##  3. <a name='CICDtopics'></a>CI/CD topics
 tbd
 
-## Infra tools (terraform etc)
+##  4. <a name='Infratoolsterraformetc'></a>Infra tools (terraform etc)
 tbd
 
-## Communications
-### Cellular topics
+##  5. <a name='Communications'></a>Communications
+###  5.1. <a name='Cellulartopics'></a>Cellular topics
 tbd
 
-#### Protcols
+####  5.1.1. <a name='Protcols'></a>Protcols
 
-### TCP/IP review
+###  5.2. <a name='TCPIPreview'></a>TCP/IP review
 tbd
 
-## C traps and pitfalls
+##  6. <a name='Ctrapsandpitfalls'></a>C traps and pitfalls
 tbd
 
-## Algorithms
+##  7. <a name='Algorithms'></a>Algorithms
 tbd
 
-## CPP Libraries
+##  8. <a name='CPPLibraries'></a>CPP Libraries
 
-### Boost
+###  8.1. <a name='Boost'></a>Boost
 tbd
 
-### pybind11
+###  8.2. <a name='pybind11'></a>pybind11
 tbd
 
-## CPP topic reviews
+##  9. <a name='CPPtopicreviews'></a>CPP topic reviews
 
-### Arrays
+###  9.1. <a name='Arrays'></a>Arrays
 
 * `std::array` closer to standard C array
   * stored in object
   * does not decay to pointer like standard C array when passed to function since the descriptor includes size info
 
-### General best practice
+###  9.2. <a name='Generalbestpractice'></a>General best practice
 
 * Use signed instead of unsigned in most cases
 see https://www.learncpp.com/cpp-tutorial/unsigned-integers-and-why-to-avoid-them/
 
 
-## Debugging
+##  10. <a name='Debugging'></a>Debugging
 
 tbd
 
 see https://eli.thegreenplace.net/tag/debuggers
 
-## Algorithms
+##  11. <a name='Algorithms-1'></a>Algorithms
 
-### Edit distance
+###  11.1. <a name='Editdistance'></a>Edit distance
 
 * TODO prefix edit distance algo important for fuzzy search
 
 * TODO A related topic is q-gram index
 
-#### resources
+####  11.1.1. <a name='resources'></a>resources
 
 * [YT: Information retrieval course](https://youtu.be/I39Rhegg8Xg?list=PLfgMNKpBVg4V8GtMB7eUrTyvITri8WF7i&t=1856)
 * https://github.com/Martinsos/edlib
 
 
 
-### Compression and encoding
+###  11.2. <a name='Compressionandencoding'></a>Compression and encoding
 
-#### resources
+####  11.2.1. <a name='resources-1'></a>resources
 
 * [Google dev videos: compressor head](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)
 * [Information retrieval course - compression lecture](https://www.youtube.com/playlist?list=PLfgMNKpBVg4V8GtMB7eUrTyvITri8WF7i)
 
-## Gayle's tips
+##  12. <a name='Gaylestips'></a>Gayle's tips
 
 1. Make sure you identify the terms when evaluating big O, not just using a generic n term.
 2. only keep the non-constant dominant terms (as long as they are for the same quantity)
@@ -87,9 +137,9 @@ O(d + n^2) -> O(d + n^2)
 O(2^a + a^2) --> O(2^a)
 ```
 
-### Seven steps to problem solving
+###  12.1. <a name='Sevenstepstoproblemsolving'></a>Seven steps to problem solving
 
-#### 1. Listen carefully to the problem - listen to clues. 
+####  12.1.1. <a name='Listencarefullytotheproblem-listentoclues.'></a>1. Listen carefully to the problem - listen to clues. 
 
 For example,
 
@@ -99,7 +149,7 @@ So the fact that they are "sorted" and "distinct" are useful clues. If your solu
 it's likely not optimal for this usecase. The brute-force approach will probably not use this information, but keep it visible and
 consider it for the optimal approach which you will code.
 
-#### 2. Draw an example
+####  12.1.2. <a name='Drawanexample'></a>2. Draw an example
 
 Use inputs and outputs to further understand the behavior. 
 
@@ -113,18 +163,18 @@ Here is one possibility
 But the problem is that this is a special case and you need to think of more general cases. The arrays may be different lengths
 or not have any common elements, have negtive numbers etc.
 
-#### 3. Brute force
+####  12.1.3. <a name='Bruteforce'></a>3. Brute force
 
 It will be slow and obvious and that is fine. But it will help you think about a starting point. Don't code this one unless asked,
 but use it to explore the next step of making it optimal byt identifying the time and space complexities so you know where
 you need to focus to devise a solution you can code. The brute force method may not be correct, but figure out how to correct it
 after you have something.
 
-#### 4. Optimize
+####  12.1.4. <a name='Optimize'></a>4. Optimize
 
 A good chunk of time will be spent on this step. **Optimize before you write code**. But, if the interviewer wants you to code the brute-force first then go ahead and do that before this step. Make sure you state the time and space complexities clearly.
 
-#### 5. Walk through your algorithm
+####  12.1.5. <a name='Walkthroughyouralgorithm'></a>5. Walk through your algorithm
 
 Before you start coding, walk through the algorithm with your interviewer. **Don't jump into coding with just a basic idea**!!!😥
 Even if you're interviewer agrees you can start coding, think! Do you have a good idea of the algorithm?
@@ -133,7 +183,7 @@ If not then walk through it more carefully before committing. Because backing ou
 Make sure you know what the data structures are, how they change. If there are indices involved then make sure you know how they
 are updated using examples.
 
-#### 6. Code
+####  12.1.6. <a name='Code'></a>6. Code
 
 Use the language you're most comfortable with.
 
@@ -141,20 +191,20 @@ Use the language you're most comfortable with.
 > data structures and gotchas. While perfect syntax is not a hard requirement, fumbling around
 > with syntax can be a huge distraction and may end being a negative
 
-#### 7. Verification
+####  12.1.7. <a name='Verification'></a>7. Verification
 
 Check the runtimes and make sure they agree with your earlier assessment. Walk through the code with examples you came up with.
 Even if you have the option of testing the code, walk through them manually first. This step will help to catch any bugs you
 may have in the code.
 
-#### Finally
+####  12.1.8. <a name='Finally'></a>Finally
 
 Once this is done, walk through the code again and explain it. Consider it a code review session where you want to make sure the
 reviewer is satisfied and will be ready to approve your code. Answer any questions they have.
 This shows attention to details and that you care about code quality.
 
 
-### Example
+###  12.2. <a name='Example'></a>Example
 
 For the given problem, let's see the bruteforce approach
 
@@ -193,17 +243,17 @@ logarithmic.
 
 
 
-### Optimizing with BUD
+###  12.3. <a name='OptimizingwithBUD'></a>Optimizing with BUD
 
 BUD = Bottlenecks, Unnecessary work, Duplicated work
 
 
-### Optimizing with space and time
+###  12.4. <a name='Optimizingwithspaceandtime'></a>Optimizing with space and time
 
 * hash tables, pre-computation, tries
 * think about doing some upfront work such as sorting, storing data in table etc.
 
-### best conceivable runtime
+###  12.5. <a name='bestconceivableruntime'></a>best conceivable runtime
 
 Given the nature of the problem, what is the runtime that you cannot beat
 
@@ -213,10 +263,10 @@ Example
 
 You cannot do better than O(n) where n is size of array since you must access every element at least once
 
-### Optimizing wth DIY
+###  12.6. <a name='OptimizingwthDIY'></a>Optimizing wth DIY
 tbd
 
-### Tips for coding
+###  12.7. <a name='Tipsforcoding'></a>Tips for coding
 
 * Don't write loose code, write small functions
 * When filling in the func impls, try a priority-based breadth first approach, work on the most useful functions first and then fill in the rest ( you need to maximize your signals to the interviewer)
@@ -227,7 +277,7 @@ tbd
 > The easier the code is for the interviewer to follow, the better. It alse reduces chances of errors.
 
 
-### verifications
+###  12.8. <a name='verifications'></a>verifications
 
 * original example is not a good testcase, it can be large and time consuming to run through
 * This is not about doing test cases yet, it's just a conceptual verification
@@ -250,7 +300,7 @@ tbd
 * When all is done, go through the code one more time and see what other improvements can be done.
 * The goal is not just to have a working solution. It's about finding people who value the quality of their work and are willing to solve hard problems. Show that you are that person.
 
-### communications
+###  12.9. <a name='communications'></a>communications
 
 * Drive the conversation
   * Don't make your interviewer ask you to improve algorithm, code etc.
@@ -278,9 +328,9 @@ tbd
   * the goal is see how you handle the problem solving
 * The code doesn't need to be perfect the first time around...BUT GO BACK AND MAKE IT BETTER (style, bug fixes, efficiency, etc)
 
-### Tips by topics
+###  12.10. <a name='Tipsbytopics'></a>Tips by topics
 
-#### arrays
+####  12.10.1. <a name='arrays'></a>arrays
 * typically arrays fixed size
 * dynamically resizable arrays allows you to add more data
   * internally this maintains a fixed size array
@@ -309,7 +359,7 @@ tbd
 * front(), back(), data() to directly access backing data
 
 
-#### stack
+####  12.10.2. <a name='stack'></a>stack
 * LIFO (mention this with stack and explain)
 * can be useful when doing a reverse
 * YOu can implement a linked list as a stack

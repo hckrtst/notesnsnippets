@@ -26,6 +26,16 @@ tbd
 
 # Algorithms
 tbd
+
+# CPP Libraries
+
+## Boost
+tbd
+
+## pybind11
+tbd
+
+
 # CPP topic reviews
 
 ## Arrays

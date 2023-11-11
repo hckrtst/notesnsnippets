@@ -35,7 +35,6 @@ tbd
 ## pybind11
 tbd
 
-
 # CPP topic reviews
 
 ## Arrays

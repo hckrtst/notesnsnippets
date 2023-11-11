@@ -248,6 +248,16 @@ tbd
 
 ## Tips by topics
 
+### arrays
+* typically arrays fixed size
+* dynamically resizable arrays allows you to add more data
+  * internally this maintains a fixed size array
+  * when adding new element exceeds current capacity we grow the existing array
+  * but if we double the capacity when we need more space then O(n) work done every 1/n times. so this is O(1) amortized time (on average), so append is still considered O(1) time
+  * see [resizable_array.cpp](./cpp_prep_notes/resizable_array.cpp)
+
+
+
 ### stack
 * LIFO (mention this with stack and explain)
 * can be useful when doing a reverse

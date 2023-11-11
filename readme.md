@@ -12,6 +12,18 @@ tbd
 # Infra tools (terraform etc)
 tbd
 
+# Communications
+## Cellular topics
+tbd
+
+### Protcols
+
+## TCP/IP review
+tbd
+
+# C traps and pitfalls
+tbd
+
 # CPP topic reviews
 
 ## Arrays
@@ -283,7 +295,7 @@ tbd
       return 0;
   }
   ```
-
+* front(), back(), data() to directly access backing data
 
 
 ### stack

@@ -42,7 +42,8 @@
 	* 12.9. [communications](#communications)
 	* 12.10. [Tips by topics](#Tipsbytopics)
 		* 12.10.1. [arrays](#arrays)
-		* 12.10.2. [stack](#stack)
+		* 12.10.2. [deque](#deque)
+		* 12.10.3. [stack](#stack)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -359,9 +360,14 @@ tbd
   }
   ```
 * front(), back(), data() to directly access backing data
+* std::partition can be applied to array and vector for partitioning in place and getting iterator to the second partition.
 
 
-####  12.10.2. <a name='stack'></a>stack
+####  12.10.2. <a name='deque'></a>deque
+
+* efficient add and remove from both ends of a queue
+
+####  12.10.3. <a name='stack'></a>stack
 * LIFO (mention this with stack and explain)
 * can be useful when doing a reverse
 * YOu can implement a linked list as a stack

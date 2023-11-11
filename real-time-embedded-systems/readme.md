@@ -67,8 +67,9 @@ read more at https://flint.cs.yale.edu/cs422/doc/ELF_Format.pdf
 * a complete prog consists of multiple object files each of which cross-reference the defns of data or funcs in other object files
 * process of combining several object files into a single object file is called static linkage
 * linker has two major jobs:
-  * symbol resolution
-  * symbol relocation
+  * symbol resolution - analyze each object file and dtermine where symbols with external linkage defined. two vars with same name
+  can be fined in diff scopes. (see example below with `sb`)
+  * symbol relocation - final object contains all symbols from input src and static libs. as linker merges object files from src and adds lib refs, the symbol offsets changed. via relocation table modifies binary code of final obj file so each symol reflects the actual addr assigned to symbol.
 
 
 Using this example
@@ -77,5 +78,16 @@ Using this example
 * both one.c and two.c define sb. Both of these are independent and represent two different values. compiler uses namespace
 to distinguish vars. local var is tagged by func to which it belongs and a global by filename.
 
+* linker generates 3 kinds of obj files
+  * relocatable file. holds code and data for linking with other obj files to create exec or so.
+  * executable file. holds code and data for exec. in OS basic unit called process. process image dynamically
+  created from executable file on `spawn` or `exec` calls. each process put in its own addr space/vm.
+  * shared object file. holds code and data suitable for further linking. can be combined with other relocatable and so to create 
+  another obj file. some so are dynamically linkable, loaded at runtime and shared by many processes.
+   
+## dynamic linker
 
 
+## elf format
+
+![Alt text](image-2.png)

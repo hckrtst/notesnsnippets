@@ -1,5 +1,7 @@
 <!-- vscode-markdown-toc -->
 * 1. [Intro](#Intro)
+* 2. [circuit switching vs packet switching](#circuitswitchingvspacketswitching)
+* 3. [message tx methods](#messagetxmethods)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -11,13 +13,20 @@
 * protocols have header and trailer (happens to frames)
 * this is metadata that is needed to transport data
 
-## circuit switching vs packet switching
+##  2. <a name='circuitswitchingvspacketswitching'></a>circuit switching vs packet switching
 * instead of fixed and dedicated paths (like in circuit switching), we break data into packets
 * packets can take different paths based on things like congestion, outages etc.
 
-## message tx methods
+##  3. <a name='messagetxmethods'></a>message tx methods
 
 1. unicast
-2. broadcast
+* point to point
+
+2. broadcast (not for IPv6 - instead uses multicast groups)
+* one entity sends packets to all receivers
+
 3. multicast
-4. anycast
+* one entity sends packets to a group (which some receivers joined)
+
+4. anycast (IPv6 only)
+* send datagram to nearest node

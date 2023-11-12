@@ -50,12 +50,17 @@
 	* 12.8. [verifications](#verifications)
 	* 12.9. [communications](#communications)
 	* 12.10. [Tips by topics](#Tipsbytopics)
-		* 12.10.1. [arrays](#arrays)
-		* 12.10.2. [vector](#vector)
-		* 12.10.3. [deque](#deque)
-		* 12.10.4. [stack](#stack)
-		* 12.10.5. [strings](#strings)
+		* 12.10.1. [string](#string)
+		* 12.10.2. [bitset](#bitset)
+		* 12.10.3. [arrays](#arrays)
+		* 12.10.4. [vector](#vector)
+		* 12.10.5. [deque](#deque)
+		* 12.10.6. [stack](#stack)
+		* 12.10.7. [strings](#strings)
 * 13. [real-time systems](#real-timesystems)
+* 14. [Coding interviews resources](#Codinginterviewsresources)
+* 15. [General behavioral questions](#Generalbehavioralquestions)
+* 16. [Systems design topics](#Systemsdesigntopics)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -379,11 +384,15 @@ tbd
 
 ###  12.10. <a name='Tipsbytopics'></a>Tips by topics
 
-#### bitset
+####  12.10.1. <a name='string'></a>string
+
+* 
+
+####  12.10.2. <a name='bitset'></a>bitset
 
 see [this link too](https://en.cppreference.com/w/cpp/utility/bitset)
 
-####  12.10.1. <a name='arrays'></a>arrays
+####  12.10.3. <a name='arrays'></a>arrays
 * typically arrays fixed size
 * dynamically resizable arrays allows you to add more data
   * internally this maintains a fixed size array
@@ -419,7 +428,7 @@ see [this link too](https://en.cppreference.com/w/cpp/utility/bitset)
 * front(), back(), data() to directly access backing data
 * std::partition can be applied to array and vector for partitioning in place and getting iterator to the second partition.
 
-####  12.10.2. <a name='vector'></a>vector
+####  12.10.4. <a name='vector'></a>vector
 * compared to deque, list and forward_list a vector is efficient at accessing elements and efficient for adding/remove from tail. amortized O(1) since resizes can occur periodically.
 * vectors use more space than static arrays because more memory allocated to handle future growth
 * extra memory can be returned back with `shrink_to_fit()`
@@ -466,16 +475,16 @@ int main()
 If size of bitset is known at compile time then use `std::bitset`.
 
 
-####  12.10.3. <a name='deque'></a>deque
+####  12.10.5. <a name='deque'></a>deque
 
 * efficient add and remove from both ends of a queue
 
-####  12.10.4. <a name='stack'></a>stack
+####  12.10.6. <a name='stack'></a>stack
 * LIFO (mention this with stack and explain)
 * can be useful when doing a reverse
 * YOu can implement a linked list as a stack
 
-####  12.10.5. <a name='strings'></a>strings
+####  12.10.7. <a name='strings'></a>strings
 
 * slicing strings
 tbd
@@ -483,13 +492,16 @@ tbd
 ##  13. <a name='real-timesystems'></a>real-time systems
 [](./real-time-embedded-systems/readme.md)
 
-## Coding interviews resources
+##  14. <a name='Codinginterviewsresources'></a>Coding interviews resources
 * https://leetcodethehardway.com/
 * https://neetcode.io
 
 
+##  15. <a name='Generalbehavioralquestions'></a>General behavioral questions
+tbd
 
-
+##  16. <a name='Systemsdesigntopics'></a>Systems design topics
+tbd
 
 
 

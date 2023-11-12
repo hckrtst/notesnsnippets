@@ -96,4 +96,9 @@ int main()
   for (auto& e: split(mytext, ' ')) {
     cout << e << endl;
   }
+
+  // convert chars to int
+  for (char c: L"ABCabc") {
+    cout << c << "---> " << static_cast<int>(c) << endl;
+  }
 }

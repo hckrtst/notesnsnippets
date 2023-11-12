@@ -494,6 +494,11 @@ If size of bitset is known at compile time then use `std::bitset`.
 
 see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
 
+* a reason NOT to use `stringstream`, see [this link](https://lemire.me/blog/2023/10/19/for-processing-strings-streams-in-c-can-be-slow/)
+
+* more useful links
+  * https://lemire.me/blog/2023/10/23/appending-to-an-stdstring-character-by-character-how-does-the-capacity-grow/
+  
 
 ##  13. <a name='real-timesystems'></a>real-time systems
 [real-time-embedded-systems/readme.md](./real-time-embedded-systems/readme.md)

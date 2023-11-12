@@ -379,6 +379,10 @@ tbd
 
 ###  12.10. <a name='Tipsbytopics'></a>Tips by topics
 
+#### bitset
+
+see [this link too](https://en.cppreference.com/w/cpp/utility/bitset)
+
 ####  12.10.1. <a name='arrays'></a>arrays
 * typically arrays fixed size
 * dynamically resizable arrays allows you to add more data
@@ -417,9 +421,12 @@ tbd
 
 ####  12.10.2. <a name='vector'></a>vector
 * compared to deque, list and forward_list a vector is efficient at accessing elements and efficient for adding/remove from tail. amortized O(1) since resizes can occur periodically.
+* vectors use more space than static arrays because more memory allocated to handle future growth
+* extra memory can be returned back with `shrink_to_fit()`
 
 * vector end() is past the last element
 ![](https://upload.cppreference.com/mwiki/images/1/1b/range-begin-end.svg)
+
 
 example
 
@@ -455,6 +462,9 @@ int main()
     cout << "sum of nums " << std::accumulate(nums.begin(), nums.end(), 0) << endl;
 }
 ```
+* vector<bool> is a specialized bitset. see [](./cpp_prep_notes/test_vector_bool.cpp)
+If size of bitset is known at compile time then use `std::bitset`.
+
 
 ####  12.10.3. <a name='deque'></a>deque
 
@@ -472,6 +482,10 @@ tbd
 
 ##  13. <a name='real-timesystems'></a>real-time systems
 [](./real-time-embedded-systems/readme.md)
+
+## Coding interviews resources
+* https://leetcodethehardway.com/
+* https://neetcode.io
 
 
 

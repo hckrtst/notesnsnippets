@@ -1,6 +1,8 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
+#include <vector>
+
 using namespace std;
 
 void print(int id, std::string::size_type n, std::string const& s)
@@ -11,6 +13,20 @@ void print(int id, std::string::size_type n, std::string const& s)
     else
         std::cout << "found @ n = " << n << ", substr(" << n << ") = "
                   << std::quoted(s.substr(n)) << '\n';
+}
+
+
+///
+// function to split a string on a delimiter and return a vector of tokens
+///
+vector<string> split(const string& src, const char delimiter) {
+  vector<string> res;
+  size_t head{0}, tail{0};
+  while ((tail = src.find(delimiter, head)) != string::npos) {
+    res.push_back(src.substr(head, tail - head));
+    head = tail + 1;  
+  }
+  return res;
 }
 
 int main()
@@ -77,4 +93,7 @@ int main()
 
   cout << f+4444 << endl;
 
+  for (auto& e: split(mytext, ' ')) {
+    cout << e << endl;
+  }
 }

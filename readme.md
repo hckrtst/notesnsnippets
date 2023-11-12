@@ -492,7 +492,7 @@ If size of bitset is known at compile time then use `std::bitset`.
 * strings can be hashed
 * `substr()` creates a new string. `string_view` from C++17 more efficient as it does not make a copy.
 
-see [cpp_prep_notes/test_string.cpp(./cpp_prep_notes/test_string.cpp)
+see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
 
 
 ##  13. <a name='real-timesystems'></a>real-time systems

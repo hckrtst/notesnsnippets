@@ -51,6 +51,14 @@ int main()
   n = phrase.rfind("be");
   print(3, n, phrase);
 
+  cout << "phrase starts with 'to'" << phrase.starts_with("to") << endl; // c++20 has starts_with and ends_with
+  // or you can do it the ol-fashioned way with substr
+  cout << "phrase starts with 'to'" << (phrase.find("to")  == 0) << endl; // c++20 has starts_with and ends_with
+  cout << "phrase ends with 'be'" << (phrase.rfind("be") == (phrase.length() - 2)) << endl;
+
+
+
+
 
 
 }

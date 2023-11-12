@@ -56,8 +56,9 @@ int main()
   cout << "phrase starts with 'to'" << (phrase.find("to")  == 0) << endl; // c++20 has starts_with and ends_with
   cout << "phrase ends with 'be'" << (phrase.rfind("be") == (phrase.length() - 2)) << endl;
 
-
-
+  auto name = "cppsaurus"s;
+  cout << name << " contains one of 'a', 'x' " << name.find_first_of("ax") << endl;
+  cout << name << " contains one of 'x' 'y " << name.find_first_of("xy") << endl; // npos is -1
 
 
 

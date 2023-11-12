@@ -132,7 +132,8 @@ see https://www.learncpp.com/cpp-tutorial/unsigned-integers-and-why-to-avoid-the
 
 ##  9. <a name='Debugging'></a>Debugging
 
-tbd
+* sometimes we need to disable exceptions for performance reasons. g++ turns throws into abort in that case.
+see [this link](https://stackoverflow.com/questions/7249378/disabling-c-exceptions-how-can-i-make-any-std-throw-immediately-terminate)
 
 see https://eli.thegreenplace.net/tag/debuggers
 

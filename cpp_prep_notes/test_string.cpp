@@ -1,7 +1,17 @@
-#include <array>
+#include <iomanip>
 #include <iostream>
 #include <string>
 using namespace std;
+
+void print(int id, std::string::size_type n, std::string const& s)
+{
+    std::cout << id << ") ";
+    if (std::string::npos == n)
+        std::cout << "not found! n == npos\n";
+    else
+        std::cout << "found @ n = " << n << ", substr(" << n << ") = "
+                  << std::quoted(s.substr(n)) << '\n';
+}
 
 int main()
 { 
@@ -25,10 +35,21 @@ int main()
   // length can be different from size in case of multi-bytes chars
   cout << "len of s5 = " << s6.length() << endl; // also 6
   cout << "len of s5 = " << s6.length() << endl; // 6
-  cout << (s5 == "ab\0\0cd") << endl;
+  cout << "s5 ==  " << quoted("ab\\0\\0cd"s) << " is " << (s5 == "ab\0\0cd") << endl; // string class implements == operator
 
   // finding in strings
+  string const phrase = "to be or not to be";
+  std::string::size_type n;
   
+  n = phrase.find("be");
+  print(1, n, phrase);
+
+  n= phrase.find("Be");
+  print(2, n, phrase);
+
+  cout << "using rfind\n";
+  n = phrase.rfind("be");
+  print(3, n, phrase);
 
 
 

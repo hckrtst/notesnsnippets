@@ -4,24 +4,33 @@
 * 2. [Database](#Database)
 * 3. [CI/CD topics](#CICDtopics)
 * 4. [Infra tools (terraform etc)](#Infratoolsterraformetc)
+	* 4.1. [strace](#strace)
+	* 4.2. [tcpdump](#tcpdump)
+	* 4.3. [gdb](#gdb)
 * 5. [Communications](#Communications)
 	* 5.1. [Cellular topics](#Cellulartopics)
 		* 5.1.1. [Protcols](#Protcols)
 	* 5.2. [TCP/IP review](#TCPIPreview)
 * 6. [C traps and pitfalls](#Ctrapsandpitfalls)
-* 7. [Algorithms](#Algorithms)
-* 8. [CPP Libraries](#CPPLibraries)
-	* 8.1. [Boost](#Boost)
-	* 8.2. [pybind11](#pybind11)
-* 9. [CPP topic reviews](#CPPtopicreviews)
-	* 9.1. [Arrays](#Arrays)
-	* 9.2. [General best practice](#Generalbestpractice)
-* 10. [Debugging](#Debugging)
-* 11. [Algorithms](#Algorithms-1)
-	* 11.1. [Edit distance](#Editdistance)
-		* 11.1.1. [resources](#resources)
-	* 11.2. [Compression and encoding](#Compressionandencoding)
-		* 11.2.1. [resources](#resources-1)
+* 7. [CPP Libraries](#CPPLibraries)
+	* 7.1. [Boost](#Boost)
+	* 7.2. [pybind11](#pybind11)
+* 8. [CPP topic reviews](#CPPtopicreviews)
+	* 8.1. [Arrays](#Arrays)
+	* 8.2. [General best practice](#Generalbestpractice)
+* 9. [Debugging](#Debugging)
+* 10. [Algorithms](#Algorithms)
+	* 10.1. [markov chains](#markovchains)
+	* 10.2. [Edit distance](#Editdistance)
+		* 10.2.1. [resources](#resources)
+	* 10.3. [Compression and encoding](#Compressionandencoding)
+		* 10.3.1. [resources](#resources-1)
+* 11. [Data structures](#Datastructures)
+	* 11.1. [ringer buffers](#ringerbuffers)
+	* 11.2. [hash tables](#hashtables)
+	* 11.3. [markov chains](#markovchains-1)
+	* 11.4. [huffman trees](#huffmantrees)
+	* 11.5. [tries](#tries)
 * 12. [Gayle's tips](#Gaylestips)
 	* 12.1. [Seven steps to problem solving](#Sevenstepstoproblemsolving)
 		* 12.1.1. [1. Listen carefully to the problem - listen to clues.](#Listencarefullytotheproblem-listentoclues.)
@@ -46,6 +55,7 @@
 		* 12.10.3. [deque](#deque)
 		* 12.10.4. [stack](#stack)
 		* 12.10.5. [strings](#strings)
+* 13. [real-time systems](#real-timesystems)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -67,6 +77,13 @@ tbd
 ##  4. <a name='Infratoolsterraformetc'></a>Infra tools (terraform etc)
 tbd
 
+###  4.1. <a name='strace'></a>strace
+
+###  4.2. <a name='tcpdump'></a>tcpdump
+
+###  4.3. <a name='gdb'></a>gdb
+
+
 ##  5. <a name='Communications'></a>Communications
 ###  5.1. <a name='Cellulartopics'></a>Cellular topics
 tbd
@@ -79,20 +96,18 @@ tbd
 ##  6. <a name='Ctrapsandpitfalls'></a>C traps and pitfalls
 tbd
 
-##  7. <a name='Algorithms'></a>Algorithms
+
+##  7. <a name='CPPLibraries'></a>CPP Libraries
+
+###  7.1. <a name='Boost'></a>Boost
 tbd
 
-##  8. <a name='CPPLibraries'></a>CPP Libraries
-
-###  8.1. <a name='Boost'></a>Boost
+###  7.2. <a name='pybind11'></a>pybind11
 tbd
 
-###  8.2. <a name='pybind11'></a>pybind11
-tbd
+##  8. <a name='CPPtopicreviews'></a>CPP topic reviews
 
-##  9. <a name='CPPtopicreviews'></a>CPP topic reviews
-
-###  9.1. <a name='Arrays'></a>Arrays
+###  8.1. <a name='Arrays'></a>Arrays
 
 * `std::array` closer to standard C array
   * stored in object
@@ -101,39 +116,62 @@ tbd
 * THis course is excellent https://courses.mshah.io/courses/take/cpp-programming-language/texts/43118039-c-video-series-introduction-modern-cpp-series
 
 
-###  9.2. <a name='Generalbestpractice'></a>General best practice
+###  8.2. <a name='Generalbestpractice'></a>General best practice
 
 * Use signed instead of unsigned in most cases
 see https://www.learncpp.com/cpp-tutorial/unsigned-integers-and-why-to-avoid-them/
 
 
-##  10. <a name='Debugging'></a>Debugging
+##  9. <a name='Debugging'></a>Debugging
 
 tbd
 
 see https://eli.thegreenplace.net/tag/debuggers
 
-##  11. <a name='Algorithms-1'></a>Algorithms
+##  10. <a name='Algorithms'></a>Algorithms
 
-###  11.1. <a name='Editdistance'></a>Edit distance
+###  10.1. <a name='markovchains'></a>markov chains
+
+###  10.2. <a name='Editdistance'></a>Edit distance
 
 * TODO prefix edit distance algo important for fuzzy search
 
 * TODO A related topic is q-gram index
 
-####  11.1.1. <a name='resources'></a>resources
+####  10.2.1. <a name='resources'></a>resources
 
 * [YT: Information retrieval course](https://youtu.be/I39Rhegg8Xg?list=PLfgMNKpBVg4V8GtMB7eUrTyvITri8WF7i&t=1856)
 * https://github.com/Martinsos/edlib
 
 
 
-###  11.2. <a name='Compressionandencoding'></a>Compression and encoding
+###  10.3. <a name='Compressionandencoding'></a>Compression and encoding
 
-####  11.2.1. <a name='resources-1'></a>resources
+####  10.3.1. <a name='resources-1'></a>resources
 
 * [Google dev videos: compressor head](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)
 * [Information retrieval course - compression lecture](https://www.youtube.com/playlist?list=PLfgMNKpBVg4V8GtMB7eUrTyvITri8WF7i)
+
+##  11. <a name='Datastructures'></a>Data structures
+
+###  11.1. <a name='ringerbuffers'></a>ringer buffers
+tbd
+* how to make them threadsafe
+* how to make them lock free
+
+###  11.2. <a name='hashtables'></a>hash tables
+tbd
+
+###  11.3. <a name='markovchains-1'></a>markov chains
+
+###  11.4. <a name='huffmantrees'></a>huffman trees
+
+###  11.5. <a name='tries'></a>tries
+
+
+* lock free?
+* threadsafe?
+
 
 ##  12. <a name='Gaylestips'></a>Gayle's tips
 
@@ -429,7 +467,8 @@ int main()
 * slicing strings
 tbd
 
-
+##  13. <a name='real-timesystems'></a>real-time systems
+[](./real-time-embedded-systems/readme.md)
 
 
 

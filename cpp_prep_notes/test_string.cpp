@@ -60,6 +60,21 @@ int main()
   cout << name << " contains one of 'a', 'x' " << name.find_first_of("ax") << endl;
   cout << name << " contains one of 'x' 'y " << name.find_first_of("xy") << endl; // npos is -1
 
+  // converting to lower case
+  string mytext = "HI THIS IS A TEST 123";
+  std::transform(mytext.begin(), mytext.end(), mytext.begin(), [](unsigned char c){ return std::tolower(c); });
 
+  cout << mytext << endl;
+  
+  mytext[0] = std::toupper(mytext[0]);
+
+  cout << mytext <<endl;
+
+  // converting string to int
+  string sn = "1245";
+  int i = stoi(sn);
+  float f = stof(sn);
+
+  cout << f+4444 << endl;
 
 }

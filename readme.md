@@ -490,6 +490,7 @@ If size of bitset is known at compile time then use `std::bitset`.
 * string is a template for basic_string<char>
 * since c++17 we also have a string view which gets us a read-only version
 * strings can be hashed
+* `substr()` creates a new string. `string_view` from C++17 more efficient as it does not make a copy.
 
 see [](./cpp_prep_notes/test_string.cpp)
 

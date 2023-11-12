@@ -99,7 +99,8 @@ tbd
 ####  5.1.1. <a name='Protcols'></a>Protcols
 
 ###  5.2. <a name='TCPIPreview'></a>TCP/IP review
-tbd
+
+see [TCP/IP notes](./tcp-ip/readme.md)
 
 ##  6. <a name='Ctrapsandpitfalls'></a>C traps and pitfalls
 tbd
@@ -498,7 +499,7 @@ see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
 
 * more useful links
   * https://lemire.me/blog/2023/10/23/appending-to-an-stdstring-character-by-character-how-does-the-capacity-grow/
-  
+
 
 ##  13. <a name='real-timesystems'></a>real-time systems
 [real-time-embedded-systems/readme.md](./real-time-embedded-systems/readme.md)

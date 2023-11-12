@@ -486,8 +486,12 @@ If size of bitset is known at compile time then use `std::bitset`.
 
 ####  12.10.7. <a name='strings'></a>strings
 
-* slicing strings
-tbd
+* string is a template for basic_string<char>
+* since c++17 we also have a string view which gets us a read-only version
+* strings can be hashed
+
+see [](./cpp_prep_notes/test_string.cpp)
+
 
 ##  13. <a name='real-timesystems'></a>real-time systems
 [](./real-time-embedded-systems/readme.md)

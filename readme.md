@@ -74,6 +74,9 @@ tbd
 ##  3. <a name='CICDtopics'></a>CI/CD topics
 tbd
 
+see this course https://www.freecodecamp.org/news/devops-with-gitlab-ci-course/
+
+
 ##  4. <a name='Infratoolsterraformetc'></a>Infra tools (terraform etc)
 tbd
 

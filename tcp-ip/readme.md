@@ -46,4 +46,10 @@
 see https://en.wikipedia.org/wiki/OSI_model
 
 * PDU - protocol data unit (the packaged data received from layers above or below)
+![](image.png)
 
+* L2/ethernet has a header and footer. the footer has a checksum in it. 
+
+## L4 (transport)
+
+![Alt text](image-1.png)

@@ -30,3 +30,15 @@
 
 4. anycast (IPv6 only)
 * send datagram to nearest node
+
+## Terms to understand
+* simplex - public one way comms 
+* half duplex - two way comms, but one party can talk at a time. a walkie-talkie. ham radio. wireless networks. ethernet hub.
+* full duplex - a conversation between two people.
+* intranet - internal network within networks
+* extranet - you connect your network to a customer/vendor. special use.
+* PAN: personal - bluetooth, LAN, WLAN, CAN (campus area nw), MAN (metropolitan area net), WAN (wide area net)
+
+## perf metrics
+
+

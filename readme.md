@@ -57,10 +57,12 @@
 		* 12.10.5. [deque](#deque)
 		* 12.10.6. [stack](#stack)
 		* 12.10.7. [strings](#strings)
+		* 12.10.8. [maps](#maps)
 * 13. [real-time systems](#real-timesystems)
 * 14. [Coding interviews resources](#Codinginterviewsresources)
 * 15. [General behavioral questions](#Generalbehavioralquestions)
 * 16. [Systems design topics](#Systemsdesigntopics)
+* 17. [Design patterns](#Designpatterns)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -500,6 +502,12 @@ see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
 * more useful links
   * https://lemire.me/blog/2023/10/23/appending-to-an-stdstring-character-by-character-how-does-the-capacity-grow/
 
+####  12.10.8. <a name='maps'></a>maps
+* maps show up when you have a lot of lookups, frequency counting,etc 
+* unordered_map usually a hash map
+  * collisions
+
+* see [computing a hash code for a string](https://youtu.be/jtMwp0FqEcg?si=1vrLrJIh6da5LQiu)
 
 ##  13. <a name='real-timesystems'></a>real-time systems
 [real-time-embedded-systems/readme.md](./real-time-embedded-systems/readme.md)
@@ -514,6 +522,10 @@ tbd
 
 ##  16. <a name='Systemsdesigntopics'></a>Systems design topics
 tbd
+
+##  17. <a name='Designpatterns'></a>Design patterns
+
+[notes](./design-patterns/readme.md)
 
 
 

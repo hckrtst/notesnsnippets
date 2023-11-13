@@ -53,3 +53,5 @@ see https://en.wikipedia.org/wiki/OSI_model
 ## L4 (transport)
 
 ![Alt text](image-1.png)
+
+* In V6, NDP takes care of the work ARP did in IPv4

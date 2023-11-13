@@ -594,6 +594,21 @@ tbd: example of using custom comparater
 
 
 ####  12.10.16. <a name='heaps'></a>heaps
+* heaps implemente with priority queues
+* when inserting, put new value in the next open spot and bubble up (depending on min-heap or max-heap)
+* same with deletion (i.e pop operation)
+* push/pop is then O(log n)
+* since heaps are a complete binary tree they can be represented with a simple array
+
+* here how you get left and right
+
+```
+left = 2*i + 1
+right = 2*i + 2
+```
+
+##### priority_queue
+
 
 ####  12.10.17. <a name='graphs'></a>graphs
 

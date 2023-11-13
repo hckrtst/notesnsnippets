@@ -548,6 +548,16 @@ tbd: example of using custom comparater
 
 ####  12.10.12. <a name='recursion'></a>recursion
 
+* be careful, it takes time and space complexity
+* runtime is O(num_branches_at_each_level ^ depth)
+* think about how to break down problem into subproblems
+* how to idenitify this can be recursive?
+  * choices at step
+  * need to generate permutations of something
+  * words with "superlatives": longest, shortest, biggest, all etc
+  * can you divide and conquer by splitting into parts? then it can be recursive
+  * TIP: tell your interviewer if you think its recursive. all recursive can be done iteratively. but should they be? 
+
 ####  12.10.13. <a name='stacks'></a>stacks
 
 ####  12.10.14. <a name='queues'></a>queues

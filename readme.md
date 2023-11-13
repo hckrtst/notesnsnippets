@@ -58,7 +58,17 @@
 		* 12.10.6. [stack](#stack)
 		* 12.10.7. [strings](#strings)
 		* 12.10.8. [maps](#maps)
-		* 12.10.9. [math](#math)
+		* 12.10.9. [sets](#sets)
+		* 12.10.10. [binary search](#binarysearch)
+		* 12.10.11. [sorting](#sorting)
+		* 12.10.12. [recursion](#recursion)
+		* 12.10.13. [stacks](#stacks)
+		* 12.10.14. [queues](#queues)
+		* 12.10.15. [trees](#trees)
+		* 12.10.16. [heaps](#heaps)
+		* 12.10.17. [graphs](#graphs)
+		* 12.10.18. [greedy algorithms](#greedyalgorithms)
+		* 12.10.19. [math](#math)
 * 13. [real-time systems](#real-timesystems)
 * 14. [Coding interviews resources](#Codinginterviewsresources)
 * 15. [General behavioral questions](#Generalbehavioralquestions)
@@ -510,7 +520,48 @@ see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
 
 * see [computing a hash code for a string](https://youtu.be/jtMwp0FqEcg?si=1vrLrJIh6da5LQiu)
 
-####  12.10.9. <a name='math'></a>math
+* sometimes a hashmap is an overkill and a simple array/bitset as a frequency table is sufficient
+
+####  12.10.9. <a name='sets'></a>sets
+
+####  12.10.10. <a name='binarysearch'></a>binary search
+* when you have ordered items and are looking for something
+* sometimes it may be less obvious...say when you are computing square root of an integer
+
+####  12.10.11. <a name='sorting'></a>sorting
+
+
+##### merge sort
+
+tbd
+
+##### quick sort
+
+radix sort
+
+bucket sort
+
+tbd
+
+tbd: example of using custom comparater
+
+
+####  12.10.12. <a name='recursion'></a>recursion
+
+####  12.10.13. <a name='stacks'></a>stacks
+
+####  12.10.14. <a name='queues'></a>queues
+
+####  12.10.15. <a name='trees'></a>trees
+
+####  12.10.16. <a name='heaps'></a>heaps
+
+####  12.10.17. <a name='graphs'></a>graphs
+
+####  12.10.18. <a name='greedyalgorithms'></a>greedy algorithms
+
+
+####  12.10.19. <a name='math'></a>math
 
 * modulo of negative number can be negative
 

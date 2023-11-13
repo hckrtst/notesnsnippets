@@ -58,6 +58,7 @@
 		* 12.10.6. [stack](#stack)
 		* 12.10.7. [strings](#strings)
 		* 12.10.8. [maps](#maps)
+		* 12.10.9. [math](#math)
 * 13. [real-time systems](#real-timesystems)
 * 14. [Coding interviews resources](#Codinginterviewsresources)
 * 15. [General behavioral questions](#Generalbehavioralquestions)
@@ -508,6 +509,15 @@ see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
   * collisions
 
 * see [computing a hash code for a string](https://youtu.be/jtMwp0FqEcg?si=1vrLrJIh6da5LQiu)
+
+####  12.10.9. <a name='math'></a>math
+
+* modulo of negative number can be negative
+
+```cpp
+    cout << "(-10 % 3) = " << (-10 % 3) << endl; // -1
+    cout << "(10 % -3) = " << (10 % -3) << endl; // 1
+```
 
 ##  13. <a name='real-timesystems'></a>real-time systems
 [real-time-embedded-systems/readme.md](./real-time-embedded-systems/readme.md)

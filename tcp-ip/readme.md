@@ -41,4 +41,9 @@
 
 ## perf metrics
 
+## OSI model
+
+see https://en.wikipedia.org/wiki/OSI_model
+
+* PDU - protocol data unit (the packaged data received from layers above or below)
 

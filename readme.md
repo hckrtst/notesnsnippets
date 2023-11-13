@@ -549,7 +549,9 @@ tbd: example of using custom comparater
 ####  12.10.12. <a name='recursion'></a>recursion
 
 * be careful, it takes time and space complexity
-* usually runtime is O(num_branches_at_each_level ^ depth), space complexity is O(depth)
+* depth of tree is 
+* usually runtime is O(num_branches_at_each_level ^ depth), space complexity is O(log N) => O(N) where N is num of nodes
+  * think of why it can be O(N)
 * think about how to break down problem into subproblems
 * how to idenitify this can be recursive?
   * choices at step
@@ -560,9 +562,17 @@ tbd: example of using custom comparater
     * sometimes its ok, binary search can be clean iteratively. But other times it become more complicated.
   * be aware of the penalty of recursion in time and space
   * draw out a call tree and then see how big the tree is
-
+* follow the idea of "trust and merge", split into parts and the subproblems take care of their parts and then you merge
+* think of "damage and repair" cases. sometimes you visit nodes and then need to unvisit them.
+* be careful with empty, 1/2 element cases
+* make sure base case is simple...a more complex base case may be indication of an incorrect solution
 
 ####  12.10.13. <a name='stacks'></a>stacks
+
+* FILO
+* C++ has a stack class which can be used
+* APIs are `push` `pop` `top` `size` `empty`
+
 
 ####  12.10.14. <a name='queues'></a>queues
 

@@ -189,6 +189,8 @@ tbd
 
 ###  11.4. <a name='huffmantrees'></a>huffman trees
 
+see https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Huffman.html
+
 ###  11.5. <a name='tries'></a>tries
 
 
@@ -572,11 +574,24 @@ tbd: example of using custom comparater
 * FILO
 * C++ has a stack class which can be used
 * APIs are `push` `pop` `top` `size` `empty`
-
+* identifying
+  * anything that can benefit from LIFO
+  * reversing steps, going backwards
 
 ####  12.10.14. <a name='queues'></a>queues
+* FIFO
+* 
 
 ####  12.10.15. <a name='trees'></a>trees
+* inorder, pre-order, post-oreder traversals
+* if balanced O(log N) for insert/find else it can be O(N) in worst case
+* tree balacing
+  * AVL trees
+  * red black trees
+
+##### tries
+* useful for such things as word search problem
+
 
 ####  12.10.16. <a name='heaps'></a>heaps
 

@@ -549,14 +549,18 @@ tbd: example of using custom comparater
 ####  12.10.12. <a name='recursion'></a>recursion
 
 * be careful, it takes time and space complexity
-* runtime is O(num_branches_at_each_level ^ depth)
+* usually runtime is O(num_branches_at_each_level ^ depth), space complexity is O(depth)
 * think about how to break down problem into subproblems
 * how to idenitify this can be recursive?
   * choices at step
   * need to generate permutations of something
   * words with "superlatives": longest, shortest, biggest, all etc
   * can you divide and conquer by splitting into parts? then it can be recursive
-  * TIP: tell your interviewer if you think its recursive. all recursive can be done iteratively. but should they be? 
+  * TIP: tell your interviewer if you think its recursive. all recursive can be done iteratively. but should they be?
+    * sometimes its ok, binary search can be clean iteratively. But other times it become more complicated.
+  * be aware of the penalty of recursion in time and space
+  * draw out a call tree and then see how big the tree is
+
 
 ####  12.10.13. <a name='stacks'></a>stacks
 

@@ -21,6 +21,7 @@
 * 13. [IPv4 packet](#IPv4packet)
 * 14. [IPv4 vs IPv6](#IPv4vsIPv6)
 * 15. [IPv6 addressing](#IPv6addressing)
+* 16. [ip address allocation](#ipaddressallocation)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -210,6 +211,8 @@ see https://en.wikipedia.org/wiki/Internet_Protocol_version_4#Packet_structure
 
 tbd - why we need it, advantages like smaller header, more address space etc.
 
+* IP sec is part of IPv6, no longer optional
+
 ##  15. <a name='IPv6addressing'></a>IPv6 addressing
 
 * Format is X:X: ... :X where each X is a hextet (16 bits)
@@ -231,7 +234,20 @@ tbd - why we need it, advantages like smaller header, more address space etc.
 * unicast addr uses 64 bits for net id and 64 bits for host id
   * net id can be assigned by admin or autoconfigured using SLAAC (which uses MAC address as part of the process of generating the full ip address)
   * gloabl unicast address of format `2000::/3`
- 
+
+##  16. <a name='ipaddressallocation'></a>ip address allocation
+
+* You can do it manually, using DHCPv6 (stateful) or SLAAC (stateless)
+* SLAAC uses neighbor discovery to find routers and then dynamically create ipv6 addr
+  * uses ICMPv6
+
+
+## ICMP
+
+* IP is unrealiable so ICMP is the feedback mechanism
+* resides between L4 and L3
+* many border routers and firewall will block icmp messages since they can sometimes be used for attacks
+* ping is a icmp request and reply application: verifies reachability, RTT, packet loss
 
 
 

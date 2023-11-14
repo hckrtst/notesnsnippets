@@ -76,3 +76,7 @@ see https://en.wikipedia.org/wiki/OSI_model
 * popular to carry datagrams over serial lines (DSL). stream of bits.
 * links established using LCP (link control protocol)
 * a family of NCP(network control protocols) establish network links after LCP sets up basic connection
+
+![PPP suite High level](image-2.png)
+
+![Alt text](image-3.png)

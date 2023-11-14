@@ -101,3 +101,14 @@ see https://en.wikipedia.org/wiki/OSI_model
 * optional and seldom used
 
 ###  8.4. <a name='PPPmultilinkprotocolMP'></a>PPP multilink protocol (MP)
+* sometimes you need more L1 connectiosn for higher bandwidth
+* optional
+
+## Extensible authentication protocol (EAP)
+* commonly used
+* 40 methods
+* used for wired and wireless nets
+* initial EAPOL protocol
+* transport level security, one-time passcode 
+
+![Alt text](image-4.png)

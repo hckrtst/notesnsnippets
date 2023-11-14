@@ -147,4 +147,31 @@ TBD - look into certificates X.509 etc
 * IP works with ehternet and wireless 802 family
 * tcp at L4 is a connection-oirented protocol, but IP is connection less. no reliable delivery.
 * formatting and packaging of upper layer sdu.
-* fragmentation and reassembly.
+* fragmentation and reassembly. if you are going from a network with larger MTU then you need to break up the packets.
+* routing and internet delivery
+  * help from ICMP, BGP et al
+
+### IPv4 addresses
+* possible ~ 4.3 billion address spae. most space is for unicast addressing. some more multicasting.
+  * public addresses
+  * private addresses rfc 1918
+* classes of addresses are A,B,C,D,E
+* dotted quad respresentation
+  * each quad is an octet (8 bits)
+```
+255.255.0.0 --> subnet mask
+1.2.3.4
+10.0.0.255/24 --> first 24bits are the network
+in this case 255 means directed broadcast so this datagram is sent to every host on the 10.0.0 network
+but most routers will not allow this kind of address since it can be used in exploits
+But you can use 255.255.255.255 for broadcast
+
+```
+
+This is the tradional way that addresses were classified
+![Alt text](image-6.png)
+
+FOr private addressing in LANs we have these
+![Alt text](image-7.png)
+
+With CIDR things get easier

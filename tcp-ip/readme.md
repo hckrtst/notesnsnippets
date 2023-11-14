@@ -216,8 +216,22 @@ tbd - why we need it, advantages like smaller header, more address space etc.
 * total 2^128 bits
 * ALso you can leave off leading bits when 0 such as `::01cd` or `::1cd`
 * unspecified address is `::`
+* types of addresses
+  1. unicast - used for one-to-one addressing between hosts
+  2. multicast - identifies group of interfaces. traffic sent to multiple dests at the same time. an interface can be part of many multicast groups.
+  3. anycast - ipv6 anycast addr is assigned to an interface on more than one node. routed to nearest iface that has this addr. used for something like group encrypt transport vpn.
+  4. no broadcast support. use multicasting.
 
+* ipv6 address has scope. which designates the region in which addr is valid. loop back addr has link-local scope, so it should only be used in directly attached network.
+* three scopes
+  1. link scope
+  2. site network scope
+  3. gloabal network scope
 
+* unicast addr uses 64 bits for net id and 64 bits for host id
+  * net id can be assigned by admin or autoconfigured using SLAAC (which uses MAC address as part of the process of generating the full ip address)
+  * gloabl unicast address of format `2000::/3`
+ 
 
 
 

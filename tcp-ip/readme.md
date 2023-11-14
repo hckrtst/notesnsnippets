@@ -17,6 +17,10 @@
 * 11. [IPv4](#IPv4)
 	* 11.1. [IPv4 addresses](#IPv4addresses)
 	* 11.2. [subnetting](#subnetting)
+* 12. [CIDR prefixing](#CIDRprefixing)
+* 13. [IPv4 packet](#IPv4packet)
+* 14. [IPv4 vs IPv6](#IPv4vsIPv6)
+* 15. [IPv6 addressing](#IPv6addressing)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -191,9 +195,24 @@ With CIDR things get easier -> classless
 * see https://www.packetcoders.io/a-beginners-guide-to-subnetting/
 https://stackoverflow.com/questions/54035601/calculate-subnet-bits-and-host-bits
 
-## CIDR prefixing
+##  12. <a name='CIDRprefixing'></a>CIDR prefixing
 
 * eliminates the prefefined partitioning of the net and host part of address
 
 ![Alt text](image-10.png)
+
+##  13. <a name='IPv4packet'></a>IPv4 packet
+
+see https://en.wikipedia.org/wiki/Internet_Protocol_version_4#Packet_structure
+
+
+##  14. <a name='IPv4vsIPv6'></a>IPv4 vs IPv6
+
+tbd - why we need it, advantages like smaller header, more address space etc.
+
+##  15. <a name='IPv6addressing'></a>IPv6 addressing
+
+
+
+
 

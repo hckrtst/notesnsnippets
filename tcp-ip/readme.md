@@ -13,6 +13,8 @@
 	* 8.4. [PPP multilink protocol (MP)](#PPPmultilinkprotocolMP)
 * 9. [Extensible authentication protocol (EAP)](#ExtensibleauthenticationprotocolEAP)
 * 10. [ARP](#ARP)
+	* 10.1. [MAC addresses](#MACaddresses)
+* 11. [IPv4](#IPv4)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -131,8 +133,18 @@ TBD - look into certificates X.509 etc
 
 ![Alt text](image-5.png)
 
-### MAC addresses
+###  10.1. <a name='MACaddresses'></a>MAC addresses
 * 48 bit
 * typically tied to a net interface card (NIC)
 * macc addr can be physical or it can be logical (i.e. for a virtual adapter on a virtual VM like you may use at a Cloud service provider)
 
+##  11. <a name='IPv4'></a>IPv4
+
+* core protocol of L3
+* main purpose is to provide datagram delivery
+* L3 devices: routers, multilayer switches, load balancers, firewall appliances
+
+* IP works with ehternet and wireless 802 family
+* tcp at L4 is a connection-oirented protocol, but IP is connection less. no reliable delivery.
+* formatting and packaging of upper layer sdu.
+* fragmentation and reassembly.

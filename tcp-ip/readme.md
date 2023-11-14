@@ -191,3 +191,9 @@ With CIDR things get easier -> classless
 * see https://www.packetcoders.io/a-beginners-guide-to-subnetting/
 https://stackoverflow.com/questions/54035601/calculate-subnet-bits-and-host-bits
 
+## CIDR prefixing
+
+* eliminates the prefefined partitioning of the net and host part of address
+
+![Alt text](image-10.png)
+

@@ -11,6 +11,8 @@
 	* 8.2. [PPP compression control protocol (CCP)](#PPPcompressioncontrolprotocolCCP)
 	* 8.3. [PPP encryption control protocol (ECP)](#PPPencryptioncontrolprotocolECP)
 	* 8.4. [PPP multilink protocol (MP)](#PPPmultilinkprotocolMP)
+* 9. [Extensible authentication protocol (EAP)](#ExtensibleauthenticationprotocolEAP)
+* 10. [ARP](#ARP)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -104,7 +106,7 @@ see https://en.wikipedia.org/wiki/OSI_model
 * sometimes you need more L1 connectiosn for higher bandwidth
 * optional
 
-## Extensible authentication protocol (EAP)
+##  9. <a name='ExtensibleauthenticationprotocolEAP'></a>Extensible authentication protocol (EAP)
 * commonly used
 * 40 methods
 * used for wired and wireless nets
@@ -112,3 +114,7 @@ see https://en.wikipedia.org/wiki/OSI_model
 * transport level security, one-time passcode 
 
 ![Alt text](image-4.png)
+
+TBD - look into certificates X.509 etc
+
+##  10. <a name='ARP'></a>ARP

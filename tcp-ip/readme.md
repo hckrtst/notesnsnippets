@@ -212,6 +212,11 @@ tbd - why we need it, advantages like smaller header, more address space etc.
 
 ##  15. <a name='IPv6addressing'></a>IPv6 addressing
 
+* Format is X:X: ... :X where each X is a hextet (16 bits)
+* total 2^128 bits
+* ALso you can leave off leading bits when 0 such as `::01cd` or `::1cd`
+* unspecified address is `::`
+
 
 
 

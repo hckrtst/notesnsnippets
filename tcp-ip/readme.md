@@ -7,6 +7,10 @@
 * 6. [OSI model](#OSImodel)
 * 7. [L4 (transport)](#L4transport)
 * 8. [PPP - point to point protocol](#PPP-pointtopointprotocol)
+	* 8.1. [PPP LQM and LQR](#PPPLQMandLQR)
+	* 8.2. [PPP compression control protocol (CCP)](#PPPcompressioncontrolprotocolCCP)
+	* 8.3. [PPP encryption control protocol (ECP)](#PPPencryptioncontrolprotocolECP)
+	* 8.4. [PPP multilink protocol (MP)](#PPPmultilinkprotocolMP)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -80,3 +84,20 @@ see https://en.wikipedia.org/wiki/OSI_model
 ![PPP suite High level](image-2.png)
 
 ![Alt text](image-3.png)
+
+###  8.1. <a name='PPPLQMandLQR'></a>PPP LQM and LQR
+* PPP and TCP have methods for error detection and corruption checking
+* Link Quality monitoring (LQM) let's devices analyze link quality
+* LQR (reporting) requests other device on link track stats report peridically (send me a link report from your end)
+  * ex: num frames sent/recvd per sec
+
+###  8.2. <a name='PPPcompressioncontrolprotocolCCP'></a>PPP compression control protocol (CCP)
+* optional way to cpmpress data
+* defines compression scheme to be used by hosts
+* separate algos for compression/decompression
+
+###  8.3. <a name='PPPencryptioncontrolprotocolECP'></a>PPP encryption control protocol (ECP)
+* typically IPSec or SSL/TLS
+* optional and seldom used
+
+###  8.4. <a name='PPPmultilinkprotocolMP'></a>PPP multilink protocol (MP)

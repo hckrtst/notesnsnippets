@@ -16,6 +16,7 @@
 	* 10.1. [MAC addresses](#MACaddresses)
 * 11. [IPv4](#IPv4)
 	* 11.1. [IPv4 addresses](#IPv4addresses)
+	* 11.2. [subnetting](#subnetting)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -153,6 +154,7 @@ TBD - look into certificates X.509 etc
   * help from ICMP, BGP et al
 
 ###  11.1. <a name='IPv4addresses'></a>IPv4 addresses
+
 * possible ~ 4.3 billion address spae. most space is for unicast addressing. some more multicasting.
   * public addresses
   * private addresses rfc 1918
@@ -169,10 +171,23 @@ But you can use 255.255.255.255 for broadcast
 
 ```
 
-This is the tradional way that addresses were classified
+This is the tradional "classful" way that addresses were classified
 ![Alt text](image-6.png)
 
 FOr private addressing in LANs we have these
 ![Alt text](image-7.png)
 
-With CIDR things get easier
+With CIDR things get easier -> classless 
+
+###  11.2. <a name='subnetting'></a>subnetting
+
+![Alt text](image-8.png)
+
+![Alt text](image-9.png)
+
+* subnet mask for v4 is 32 bits and 128 bits for v6
+* can be assigned manually or via DHCP
+
+* see https://www.packetcoders.io/a-beginners-guide-to-subnetting/
+https://stackoverflow.com/questions/54035601/calculate-subnet-bits-and-host-bits
+

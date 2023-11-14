@@ -15,6 +15,7 @@
 * 10. [ARP](#ARP)
 	* 10.1. [MAC addresses](#MACaddresses)
 * 11. [IPv4](#IPv4)
+	* 11.1. [IPv4 addresses](#IPv4addresses)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -151,7 +152,7 @@ TBD - look into certificates X.509 etc
 * routing and internet delivery
   * help from ICMP, BGP et al
 
-### IPv4 addresses
+###  11.1. <a name='IPv4addresses'></a>IPv4 addresses
 * possible ~ 4.3 billion address spae. most space is for unicast addressing. some more multicasting.
   * public addresses
   * private addresses rfc 1918

@@ -118,3 +118,21 @@ see https://en.wikipedia.org/wiki/OSI_model
 TBD - look into certificates X.509 etc
 
 ##  10. <a name='ARP'></a>ARP
+
+* we need a more humane way to identify servers instead of using addresses, hence the need for DNS
+* used for IPv4
+* maps IP addr to mac
+* types of message sent
+  * ARP request
+  * arp reply
+  * Rarp request
+  * RARP reply
+* resolved addresses usually cached for a little while (see ARP cache poisoning and why they need to be flushed periodically)
+
+![Alt text](image-5.png)
+
+### MAC addresses
+* 48 bit
+* typically tied to a net interface card (NIC)
+* macc addr can be physical or it can be logical (i.e. for a virtual adapter on a virtual VM like you may use at a Cloud service provider)
+

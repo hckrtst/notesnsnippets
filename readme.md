@@ -103,6 +103,39 @@ tbd
 * little end in -> LSB first. x86, ARM, RISC-V uses this.
 * big end in -> MSB first. Network order. data transmitted/received from MSB onwards.
 
+with C you can test with
+```C
+union {
+  uint8_t u8; uint16_t u16; uint32_t u32; uint64_t u64;
+} u = { .u64 = 0x4A };
+
+puts(u.u8 == u.u16 && u.u8 == u.u32 && u.u8 == u.u64 ? "true" : "false");
+
+```
+
+For little endian, data is stored as 00 00 00 4A so it will return true.
+
+Another way which should work with cpp is
+
+```cpp
+// from https://developer.ibm.com/articles/au-endianc/
+const int i = 1;
+#define is_bigendian() ( (∗(char∗)&i) == 0 )
+
+int main(void) {
+    int val;
+    char ∗ptr;
+    ptr = (char∗) &val;
+    val = 0x12345678;
+    if (is_bigendian()) {
+        printf(“%X.%X.%X.%X\n", u.c[0], u.c[1], u.c[2], u.c[3]);
+    } else {
+        printf(“%X.%X.%X.%X\n", u.c[3], u.c[2], u.c[1], u.c[0]);
+    }
+    exit(0);
+}
+
+```
 
 ##  3. <a name='Database'></a>Database
 tbd

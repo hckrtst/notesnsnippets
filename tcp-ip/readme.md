@@ -248,6 +248,7 @@ tbd - why we need it, advantages like smaller header, more address space etc.
 * resides between L4 and L3
 * many border routers and firewall will block icmp messages since they can sometimes be used for attacks
 * ping is a icmp request and reply application: verifies reachability, RTT, packet loss
-
+* traceroute another tool which uses echo request/reply
+  * helps find congestion and where packet dropped
 
 

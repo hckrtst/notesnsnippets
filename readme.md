@@ -74,6 +74,7 @@
 * 15. [General behavioral questions](#Generalbehavioralquestions)
 * 16. [Systems design topics](#Systemsdesigntopics)
 * 17. [Design patterns](#Designpatterns)
+* 18. [Concurrency](#Concurrency)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -191,6 +192,7 @@ Don't use modulo though, see the first link
 ###  11.2. <a name='hashtables'></a>hash tables
 
 * see [internals of hash tables](https://youtu.be/6D9mRll58Kg?si=AQMPV_q8mGib2Uyt)
+* [how java implements concurrent hashmap](https://youtu.be/_A0Wty5Aeis?si=K-KSiYD5uTAgoFv-)
 
 ###  11.3. <a name='markovchains-1'></a>markov chains
 
@@ -649,13 +651,17 @@ tbd
 
 [notes](./design-patterns/readme.md)
 
+##  18. <a name='Concurrency'></a>Concurrency
 
+### Deadlock
 
+* There are the following necessary and sufficient conditions for a deadlock
 
+1. mutual exclusion
+2. circular wait
+3. hold and wait
+4. no pre-emption
 
-
-
-
-
+* These are called Coffman conditions
 
 

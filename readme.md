@@ -100,8 +100,8 @@ tbd
 
 ![endian](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/32bit-Endianess.svg/600px-32bit-Endianess.svg.png)
 
-little end in -> LSB first. ARM uses this.
-big end in -> MSB first. Network order. x86 uses this.
+* little end in -> LSB first. x86, ARM, RISC-V uses this.
+* big end in -> MSB first. Network order. data transmitted/received from MSB onwards.
 
 
 ##  3. <a name='Database'></a>Database

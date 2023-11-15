@@ -75,6 +75,8 @@
 * 16. [Systems design topics](#Systemsdesigntopics)
 * 17. [Design patterns](#Designpatterns)
 * 18. [Concurrency](#Concurrency)
+	* 18.1. [Deadlock](#Deadlock)
+		* 18.1.1. [dining philosopher's problem](#diningphilosophersproblem)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -653,7 +655,7 @@ tbd
 
 ##  18. <a name='Concurrency'></a>Concurrency
 
-### Deadlock
+###  18.1. <a name='Deadlock'></a>Deadlock
 
 * There are the following necessary and sufficient conditions for a deadlock
 
@@ -666,4 +668,7 @@ tbd
 
 * These are called Coffman conditions
 
+####  18.1.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
+
+* see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
 

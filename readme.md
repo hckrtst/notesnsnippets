@@ -657,10 +657,12 @@ tbd
 
 * There are the following necessary and sufficient conditions for a deadlock
 
-1. mutual exclusion
-2. circular wait
-3. hold and wait
-4. no pre-emption
+
+
+1. mutual exclusion - resource cannot be shared.
+2. circular wait - cycle in [resource allocation graph](https://csresources.github.io/SystemProgrammingWiki/SystemProgramming/Deadlock,-Part-1:-Resource-Allocation-Graph/).
+3. hold and wait - a process acquires incomplete set of resources and then waits to get the rest.
+4. no pre-emption - once a process acquires a resource it will not voluntarily give it up and the OS will not take it away after some timeout.
 
 * These are called Coffman conditions
 

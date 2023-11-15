@@ -670,5 +670,7 @@ tbd
 
 ####  18.1.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
 
+### resources
 * see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
+* https://austingwalters.com/multithreading-producer-consumer-problem/
 

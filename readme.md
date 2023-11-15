@@ -78,9 +78,10 @@
 * 19. [OpenMP](#OpenMP)
 * 20. [semaphores](#semaphores)
 	* 20.1. [sempahores with multiple processes in Linux](#sempahoreswithmultipleprocessesinLinux)
-	* 20.2. [Deadlock](#Deadlock)
-		* 20.2.1. [dining philosopher's problem](#diningphilosophersproblem)
-	* 20.3. [resources](#resources-1)
+* 21. [monitors](#monitors)
+* 22. [Deadlock](#Deadlock)
+	* 22.1. [dining philosopher's problem](#diningphilosophersproblem)
+	* 22.2. [resources](#resources-1)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -677,7 +678,10 @@ tbd
 
 * see https://blog.superpat.com/semaphores-on-linux-sem_init-vs-sem_open
 
-###  20.2. <a name='Deadlock'></a>Deadlock
+##  21. <a name='monitors'></a>monitors
+
+* see [this implementation](https://stackoverflow.com/questions/12647217/making-a-c-class-a-monitor-in-the-concurrent-sense)
+##  22. <a name='Deadlock'></a>Deadlock
 
 * There are the following necessary and sufficient conditions for a deadlock
 
@@ -690,9 +694,9 @@ tbd
 
 * These are called Coffman conditions
 
-####  20.2.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
+###  22.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
 
-###  20.3. <a name='resources-1'></a>resources
+###  22.2. <a name='resources-1'></a>resources
 * see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
 * https://austingwalters.com/multithreading-producer-consumer-problem/
 * https://austingwalters.com/multithreading-dining-philosophers-problem/

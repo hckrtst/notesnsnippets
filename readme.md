@@ -76,9 +76,11 @@
 * 17. [Design patterns](#Designpatterns)
 * 18. [Concurrency](#Concurrency)
 * 19. [OpenMP](#OpenMP)
-	* 19.1. [Deadlock](#Deadlock)
-		* 19.1.1. [dining philosopher's problem](#diningphilosophersproblem)
-	* 19.2. [resources](#resources-1)
+* 20. [semaphores](#semaphores)
+	* 20.1. [sempahores with multiple processes in Linux](#sempahoreswithmultipleprocessesinLinux)
+	* 20.2. [Deadlock](#Deadlock)
+		* 20.2.1. [dining philosopher's problem](#diningphilosophersproblem)
+	* 20.3. [resources](#resources-1)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -660,7 +662,22 @@ tbd
 ##  19. <a name='OpenMP'></a>OpenMP
 tbd 
 
-###  19.1. <a name='Deadlock'></a>Deadlock
+##  20. <a name='semaphores'></a>semaphores
+
+* a semaphore is a counter
+* a mutex is a special case of a semaphore which indicates a binary choice (either you have the lock or not - count is 0 or 1)
+* semaphore used to control access to a critical section
+
+
+* see https://austingwalters.com/multithreading-semaphores/
+
+###  20.1. <a name='sempahoreswithmultipleprocessesinLinux'></a>sempahores with multiple processes in Linux
+
+tbd
+
+* see https://blog.superpat.com/semaphores-on-linux-sem_init-vs-sem_open
+
+###  20.2. <a name='Deadlock'></a>Deadlock
 
 * There are the following necessary and sufficient conditions for a deadlock
 
@@ -673,9 +690,9 @@ tbd
 
 * These are called Coffman conditions
 
-####  19.1.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
+####  20.2.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
 
-###  19.2. <a name='resources-1'></a>resources
+###  20.3. <a name='resources-1'></a>resources
 * see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
 * https://austingwalters.com/multithreading-producer-consumer-problem/
 * https://austingwalters.com/multithreading-dining-philosophers-problem/

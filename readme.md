@@ -189,7 +189,8 @@ see https://eli.thegreenplace.net/tag/debuggers
 Don't use modulo though, see the first link 
 
 ###  11.2. <a name='hashtables'></a>hash tables
-tbd
+
+* see [internals of hash tables](https://youtu.be/6D9mRll58Kg?si=AQMPV_q8mGib2Uyt)
 
 ###  11.3. <a name='markovchains-1'></a>markov chains
 

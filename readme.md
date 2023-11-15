@@ -77,6 +77,7 @@
 * 18. [Concurrency](#Concurrency)
 	* 18.1. [Deadlock](#Deadlock)
 		* 18.1.1. [dining philosopher's problem](#diningphilosophersproblem)
+	* 18.2. [resources](#resources-1)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -670,7 +671,7 @@ tbd
 
 ####  18.1.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
 
-### resources
+###  18.2. <a name='resources-1'></a>resources
 * see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
 * https://austingwalters.com/multithreading-producer-consumer-problem/
 

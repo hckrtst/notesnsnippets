@@ -178,9 +178,15 @@ see https://eli.thegreenplace.net/tag/debuggers
 ##  11. <a name='Datastructures'></a>Data structures
 
 ###  11.1. <a name='ringerbuffers'></a>ringer buffers
-tbd
+
+
+
 * how to make them threadsafe
 * how to make them lock free
+
+* [A ringbuffer in C](https://csresources.github.io/SystemProgrammingWiki/SystemProgramming/Synchronization,-Part-8:-Ring-Buffer-Example/)
+* [Lock free ring buffer and log](https://youtu.be/uqSeuGQhnf0?si=z9AejRLdany6VV6L)
+Don't use modulo though, see the first link 
 
 ###  11.2. <a name='hashtables'></a>hash tables
 tbd

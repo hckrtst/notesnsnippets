@@ -1,88 +1,89 @@
 <!-- vscode-markdown-toc -->
 * 1. [Architectural](#Architectural)
 	* 1.1. [pub sub](#pubsub)
-* 2. [Database](#Database)
-* 3. [CI/CD topics](#CICDtopics)
-* 4. [Infra tools (terraform etc)](#Infratoolsterraformetc)
-	* 4.1. [strace](#strace)
-	* 4.2. [tcpdump](#tcpdump)
-	* 4.3. [gdb](#gdb)
-* 5. [Communications](#Communications)
-	* 5.1. [Cellular topics](#Cellulartopics)
-		* 5.1.1. [Protcols](#Protcols)
-	* 5.2. [TCP/IP review](#TCPIPreview)
-* 6. [C traps and pitfalls](#Ctrapsandpitfalls)
-* 7. [CPP Libraries](#CPPLibraries)
-	* 7.1. [Boost](#Boost)
-	* 7.2. [pybind11](#pybind11)
-* 8. [CPP topic reviews](#CPPtopicreviews)
-	* 8.1. [Arrays](#Arrays)
-	* 8.2. [General best practice](#Generalbestpractice)
-* 9. [Debugging](#Debugging)
-* 10. [Algorithms](#Algorithms)
-	* 10.1. [markov chains](#markovchains)
-	* 10.2. [Edit distance](#Editdistance)
-		* 10.2.1. [resources](#resources)
-	* 10.3. [Compression and encoding](#Compressionandencoding)
-		* 10.3.1. [resources](#resources-1)
-* 11. [Data structures](#Datastructures)
-	* 11.1. [ringer buffers](#ringerbuffers)
-	* 11.2. [hash tables](#hashtables)
-	* 11.3. [markov chains](#markovchains-1)
-	* 11.4. [huffman trees](#huffmantrees)
-	* 11.5. [tries](#tries)
-* 12. [Gayle's tips](#Gaylestips)
-	* 12.1. [Seven steps to problem solving](#Sevenstepstoproblemsolving)
-		* 12.1.1. [1. Listen carefully to the problem - listen to clues.](#Listencarefullytotheproblem-listentoclues.)
-		* 12.1.2. [2. Draw an example](#Drawanexample)
-		* 12.1.3. [3. Brute force](#Bruteforce)
-		* 12.1.4. [4. Optimize](#Optimize)
-		* 12.1.5. [5. Walk through your algorithm](#Walkthroughyouralgorithm)
-		* 12.1.6. [6. Code](#Code)
-		* 12.1.7. [7. Verification](#Verification)
-		* 12.1.8. [Finally](#Finally)
-	* 12.2. [Example](#Example)
-	* 12.3. [Optimizing with BUD](#OptimizingwithBUD)
-	* 12.4. [Optimizing with space and time](#Optimizingwithspaceandtime)
-	* 12.5. [best conceivable runtime](#bestconceivableruntime)
-	* 12.6. [Optimizing wth DIY](#OptimizingwthDIY)
-	* 12.7. [Tips for coding](#Tipsforcoding)
-	* 12.8. [verifications](#verifications)
-	* 12.9. [communications](#communications)
-	* 12.10. [Tips by topics](#Tipsbytopics)
-		* 12.10.1. [string](#string)
-		* 12.10.2. [bitset](#bitset)
-		* 12.10.3. [arrays](#arrays)
-		* 12.10.4. [vector](#vector)
-		* 12.10.5. [deque](#deque)
-		* 12.10.6. [stack](#stack)
-		* 12.10.7. [strings](#strings)
-		* 12.10.8. [maps](#maps)
-		* 12.10.9. [sets](#sets)
-		* 12.10.10. [binary search](#binarysearch)
-		* 12.10.11. [sorting](#sorting)
-		* 12.10.12. [recursion](#recursion)
-		* 12.10.13. [stacks](#stacks)
-		* 12.10.14. [queues](#queues)
-		* 12.10.15. [trees](#trees)
-		* 12.10.16. [heaps](#heaps)
-		* 12.10.17. [graphs](#graphs)
-		* 12.10.18. [greedy algorithms](#greedyalgorithms)
-		* 12.10.19. [math](#math)
-* 13. [real-time systems](#real-timesystems)
-* 14. [Coding interviews resources](#Codinginterviewsresources)
-* 15. [General behavioral questions](#Generalbehavioralquestions)
-* 16. [Systems design topics](#Systemsdesigntopics)
-* 17. [Design patterns](#Designpatterns)
-* 18. [scheduling alorithms](#schedulingalorithms)
-* 19. [Concurrency](#Concurrency)
-* 20. [OpenMP](#OpenMP)
-* 21. [semaphores](#semaphores)
-	* 21.1. [sempahores with multiple processes in Linux](#sempahoreswithmultipleprocessesinLinux)
-* 22. [monitors](#monitors)
-* 23. [Deadlock](#Deadlock)
-	* 23.1. [dining philosopher's problem](#diningphilosophersproblem)
-	* 23.2. [resources](#resources-1)
+* 2. [Endian-ness](#Endian-ness)
+* 3. [Database](#Database)
+* 4. [CI/CD topics](#CICDtopics)
+* 5. [Infra tools (terraform etc)](#Infratoolsterraformetc)
+	* 5.1. [strace](#strace)
+	* 5.2. [tcpdump](#tcpdump)
+	* 5.3. [gdb](#gdb)
+* 6. [Communications](#Communications)
+	* 6.1. [Cellular topics](#Cellulartopics)
+		* 6.1.1. [Protcols](#Protcols)
+	* 6.2. [TCP/IP review](#TCPIPreview)
+* 7. [C traps and pitfalls](#Ctrapsandpitfalls)
+* 8. [CPP Libraries](#CPPLibraries)
+	* 8.1. [Boost](#Boost)
+	* 8.2. [pybind11](#pybind11)
+* 9. [CPP topic reviews](#CPPtopicreviews)
+	* 9.1. [Arrays](#Arrays)
+	* 9.2. [General best practice](#Generalbestpractice)
+* 10. [Debugging](#Debugging)
+* 11. [Algorithms](#Algorithms)
+	* 11.1. [markov chains](#markovchains)
+	* 11.2. [Edit distance](#Editdistance)
+		* 11.2.1. [resources](#resources)
+	* 11.3. [Compression and encoding](#Compressionandencoding)
+		* 11.3.1. [resources](#resources-1)
+* 12. [Data structures](#Datastructures)
+	* 12.1. [ringer buffers](#ringerbuffers)
+	* 12.2. [hash tables](#hashtables)
+	* 12.3. [markov chains](#markovchains-1)
+	* 12.4. [huffman trees](#huffmantrees)
+	* 12.5. [tries](#tries)
+* 13. [Gayle's tips](#Gaylestips)
+	* 13.1. [Seven steps to problem solving](#Sevenstepstoproblemsolving)
+		* 13.1.1. [1. Listen carefully to the problem - listen to clues.](#Listencarefullytotheproblem-listentoclues.)
+		* 13.1.2. [2. Draw an example](#Drawanexample)
+		* 13.1.3. [3. Brute force](#Bruteforce)
+		* 13.1.4. [4. Optimize](#Optimize)
+		* 13.1.5. [5. Walk through your algorithm](#Walkthroughyouralgorithm)
+		* 13.1.6. [6. Code](#Code)
+		* 13.1.7. [7. Verification](#Verification)
+		* 13.1.8. [Finally](#Finally)
+	* 13.2. [Example](#Example)
+	* 13.3. [Optimizing with BUD](#OptimizingwithBUD)
+	* 13.4. [Optimizing with space and time](#Optimizingwithspaceandtime)
+	* 13.5. [best conceivable runtime](#bestconceivableruntime)
+	* 13.6. [Optimizing wth DIY](#OptimizingwthDIY)
+	* 13.7. [Tips for coding](#Tipsforcoding)
+	* 13.8. [verifications](#verifications)
+	* 13.9. [communications](#communications)
+	* 13.10. [Tips by topics](#Tipsbytopics)
+		* 13.10.1. [string](#string)
+		* 13.10.2. [bitset](#bitset)
+		* 13.10.3. [arrays](#arrays)
+		* 13.10.4. [vector](#vector)
+		* 13.10.5. [deque](#deque)
+		* 13.10.6. [stack](#stack)
+		* 13.10.7. [strings](#strings)
+		* 13.10.8. [maps](#maps)
+		* 13.10.9. [sets](#sets)
+		* 13.10.10. [binary search](#binarysearch)
+		* 13.10.11. [sorting](#sorting)
+		* 13.10.12. [recursion](#recursion)
+		* 13.10.13. [stacks](#stacks)
+		* 13.10.14. [queues](#queues)
+		* 13.10.15. [trees](#trees)
+		* 13.10.16. [heaps](#heaps)
+		* 13.10.17. [graphs](#graphs)
+		* 13.10.18. [greedy algorithms](#greedyalgorithms)
+		* 13.10.19. [math](#math)
+* 14. [real-time systems](#real-timesystems)
+* 15. [Coding interviews resources](#Codinginterviewsresources)
+* 16. [General behavioral questions](#Generalbehavioralquestions)
+* 17. [Systems design topics](#Systemsdesigntopics)
+* 18. [Design patterns](#Designpatterns)
+* 19. [scheduling alorithms](#schedulingalorithms)
+* 20. [Concurrency](#Concurrency)
+* 21. [OpenMP](#OpenMP)
+* 22. [semaphores](#semaphores)
+	* 22.1. [sempahores with multiple processes in Linux](#sempahoreswithmultipleprocessesinLinux)
+* 23. [monitors](#monitors)
+* 24. [Deadlock](#Deadlock)
+	* 24.1. [dining philosopher's problem](#diningphilosophersproblem)
+	* 24.2. [resources](#resources-1)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -95,50 +96,53 @@
 ###  1.1. <a name='pubsub'></a>pub sub
 tbd
 
-##  2. <a name='Database'></a>Database
+##  2. <a name='Endian-ness'></a>Endian-ness
 tbd
 
-##  3. <a name='CICDtopics'></a>CI/CD topics
+##  3. <a name='Database'></a>Database
+tbd
+
+##  4. <a name='CICDtopics'></a>CI/CD topics
 tbd
 
 see this course https://www.freecodecamp.org/news/devops-with-gitlab-ci-course/
 
 
-##  4. <a name='Infratoolsterraformetc'></a>Infra tools (terraform etc)
+##  5. <a name='Infratoolsterraformetc'></a>Infra tools (terraform etc)
 tbd
 
-###  4.1. <a name='strace'></a>strace
+###  5.1. <a name='strace'></a>strace
 
-###  4.2. <a name='tcpdump'></a>tcpdump
+###  5.2. <a name='tcpdump'></a>tcpdump
 
-###  4.3. <a name='gdb'></a>gdb
+###  5.3. <a name='gdb'></a>gdb
 
 
-##  5. <a name='Communications'></a>Communications
-###  5.1. <a name='Cellulartopics'></a>Cellular topics
+##  6. <a name='Communications'></a>Communications
+###  6.1. <a name='Cellulartopics'></a>Cellular topics
 tbd
 
-####  5.1.1. <a name='Protcols'></a>Protcols
+####  6.1.1. <a name='Protcols'></a>Protcols
 
-###  5.2. <a name='TCPIPreview'></a>TCP/IP review
+###  6.2. <a name='TCPIPreview'></a>TCP/IP review
 
 see [TCP/IP notes](./tcp-ip/readme.md)
 
-##  6. <a name='Ctrapsandpitfalls'></a>C traps and pitfalls
+##  7. <a name='Ctrapsandpitfalls'></a>C traps and pitfalls
 tbd
 
 
-##  7. <a name='CPPLibraries'></a>CPP Libraries
+##  8. <a name='CPPLibraries'></a>CPP Libraries
 
-###  7.1. <a name='Boost'></a>Boost
+###  8.1. <a name='Boost'></a>Boost
 tbd
 
-###  7.2. <a name='pybind11'></a>pybind11
+###  8.2. <a name='pybind11'></a>pybind11
 tbd
 
-##  8. <a name='CPPtopicreviews'></a>CPP topic reviews
+##  9. <a name='CPPtopicreviews'></a>CPP topic reviews
 
-###  8.1. <a name='Arrays'></a>Arrays
+###  9.1. <a name='Arrays'></a>Arrays
 
 * `std::array` closer to standard C array
   * stored in object
@@ -147,46 +151,46 @@ tbd
 * THis course is excellent https://courses.mshah.io/courses/take/cpp-programming-language/texts/43118039-c-video-series-introduction-modern-cpp-series
 
 
-###  8.2. <a name='Generalbestpractice'></a>General best practice
+###  9.2. <a name='Generalbestpractice'></a>General best practice
 
 * Use signed instead of unsigned in most cases
 see https://www.learncpp.com/cpp-tutorial/unsigned-integers-and-why-to-avoid-them/
 
 
-##  9. <a name='Debugging'></a>Debugging
+##  10. <a name='Debugging'></a>Debugging
 
 * sometimes we need to disable exceptions for performance reasons. g++ turns throws into abort in that case.
 see [this link](https://stackoverflow.com/questions/7249378/disabling-c-exceptions-how-can-i-make-any-std-throw-immediately-terminate)
 
 see https://eli.thegreenplace.net/tag/debuggers
 
-##  10. <a name='Algorithms'></a>Algorithms
+##  11. <a name='Algorithms'></a>Algorithms
 
-###  10.1. <a name='markovchains'></a>markov chains
+###  11.1. <a name='markovchains'></a>markov chains
 
-###  10.2. <a name='Editdistance'></a>Edit distance
+###  11.2. <a name='Editdistance'></a>Edit distance
 
 * TODO prefix edit distance algo important for fuzzy search
 
 * TODO A related topic is q-gram index
 
-####  10.2.1. <a name='resources'></a>resources
+####  11.2.1. <a name='resources'></a>resources
 
 * [YT: Information retrieval course](https://youtu.be/I39Rhegg8Xg?list=PLfgMNKpBVg4V8GtMB7eUrTyvITri8WF7i&t=1856)
 * https://github.com/Martinsos/edlib
 
 
 
-###  10.3. <a name='Compressionandencoding'></a>Compression and encoding
+###  11.3. <a name='Compressionandencoding'></a>Compression and encoding
 
-####  10.3.1. <a name='resources-1'></a>resources
+####  11.3.1. <a name='resources-1'></a>resources
 
 * [Google dev videos: compressor head](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)
 * [Information retrieval course - compression lecture](https://www.youtube.com/playlist?list=PLfgMNKpBVg4V8GtMB7eUrTyvITri8WF7i)
 
-##  11. <a name='Datastructures'></a>Data structures
+##  12. <a name='Datastructures'></a>Data structures
 
-###  11.1. <a name='ringerbuffers'></a>ringer buffers
+###  12.1. <a name='ringerbuffers'></a>ringer buffers
 
 
 
@@ -197,25 +201,25 @@ see https://eli.thegreenplace.net/tag/debuggers
 * [Lock free ring buffer and log](https://youtu.be/uqSeuGQhnf0?si=z9AejRLdany6VV6L)
 Don't use modulo though, see the first link 
 
-###  11.2. <a name='hashtables'></a>hash tables
+###  12.2. <a name='hashtables'></a>hash tables
 
 * see [internals of hash tables](https://youtu.be/6D9mRll58Kg?si=AQMPV_q8mGib2Uyt)
 * [how java implements concurrent hashmap](https://youtu.be/_A0Wty5Aeis?si=K-KSiYD5uTAgoFv-)
 
-###  11.3. <a name='markovchains-1'></a>markov chains
+###  12.3. <a name='markovchains-1'></a>markov chains
 
-###  11.4. <a name='huffmantrees'></a>huffman trees
+###  12.4. <a name='huffmantrees'></a>huffman trees
 
 see https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Huffman.html
 
-###  11.5. <a name='tries'></a>tries
+###  12.5. <a name='tries'></a>tries
 
 
 * lock free?
 * threadsafe?
 
 
-##  12. <a name='Gaylestips'></a>Gayle's tips
+##  13. <a name='Gaylestips'></a>Gayle's tips
 
 1. Make sure you identify the terms when evaluating big O, not just using a generic n term.
 2. only keep the non-constant dominant terms (as long as they are for the same quantity)
@@ -225,9 +229,9 @@ O(d + n^2) -> O(d + n^2)
 O(2^a + a^2) --> O(2^a)
 ```
 
-###  12.1. <a name='Sevenstepstoproblemsolving'></a>Seven steps to problem solving
+###  13.1. <a name='Sevenstepstoproblemsolving'></a>Seven steps to problem solving
 
-####  12.1.1. <a name='Listencarefullytotheproblem-listentoclues.'></a>1. Listen carefully to the problem - listen to clues. 
+####  13.1.1. <a name='Listencarefullytotheproblem-listentoclues.'></a>1. Listen carefully to the problem - listen to clues. 
 
 For example,
 
@@ -237,7 +241,7 @@ So the fact that they are "sorted" and "distinct" are useful clues. If your solu
 it's likely not optimal for this usecase. The brute-force approach will probably not use this information, but keep it visible and
 consider it for the optimal approach which you will code.
 
-####  12.1.2. <a name='Drawanexample'></a>2. Draw an example
+####  13.1.2. <a name='Drawanexample'></a>2. Draw an example
 
 Use inputs and outputs to further understand the behavior. 
 
@@ -251,18 +255,18 @@ Here is one possibility
 But the problem is that this is a special case and you need to think of more general cases. The arrays may be different lengths
 or not have any common elements, have negtive numbers etc.
 
-####  12.1.3. <a name='Bruteforce'></a>3. Brute force
+####  13.1.3. <a name='Bruteforce'></a>3. Brute force
 
 It will be slow and obvious and that is fine. But it will help you think about a starting point. Don't code this one unless asked,
 but use it to explore the next step of making it optimal byt identifying the time and space complexities so you know where
 you need to focus to devise a solution you can code. The brute force method may not be correct, but figure out how to correct it
 after you have something.
 
-####  12.1.4. <a name='Optimize'></a>4. Optimize
+####  13.1.4. <a name='Optimize'></a>4. Optimize
 
 A good chunk of time will be spent on this step. **Optimize before you write code**. But, if the interviewer wants you to code the brute-force first then go ahead and do that before this step. Make sure you state the time and space complexities clearly.
 
-####  12.1.5. <a name='Walkthroughyouralgorithm'></a>5. Walk through your algorithm
+####  13.1.5. <a name='Walkthroughyouralgorithm'></a>5. Walk through your algorithm
 
 Before you start coding, walk through the algorithm with your interviewer. **Don't jump into coding with just a basic idea**!!!😥
 Even if you're interviewer agrees you can start coding, think! Do you have a good idea of the algorithm?
@@ -271,7 +275,7 @@ If not then walk through it more carefully before committing. Because backing ou
 Make sure you know what the data structures are, how they change. If there are indices involved then make sure you know how they
 are updated using examples.
 
-####  12.1.6. <a name='Code'></a>6. Code
+####  13.1.6. <a name='Code'></a>6. Code
 
 Use the language you're most comfortable with.
 
@@ -279,20 +283,20 @@ Use the language you're most comfortable with.
 > data structures and gotchas. While perfect syntax is not a hard requirement, fumbling around
 > with syntax can be a huge distraction and may end being a negative
 
-####  12.1.7. <a name='Verification'></a>7. Verification
+####  13.1.7. <a name='Verification'></a>7. Verification
 
 Check the runtimes and make sure they agree with your earlier assessment. Walk through the code with examples you came up with.
 Even if you have the option of testing the code, walk through them manually first. This step will help to catch any bugs you
 may have in the code.
 
-####  12.1.8. <a name='Finally'></a>Finally
+####  13.1.8. <a name='Finally'></a>Finally
 
 Once this is done, walk through the code again and explain it. Consider it a code review session where you want to make sure the
 reviewer is satisfied and will be ready to approve your code. Answer any questions they have.
 This shows attention to details and that you care about code quality.
 
 
-###  12.2. <a name='Example'></a>Example
+###  13.2. <a name='Example'></a>Example
 
 For the given problem, let's see the bruteforce approach
 
@@ -331,17 +335,17 @@ logarithmic.
 
 
 
-###  12.3. <a name='OptimizingwithBUD'></a>Optimizing with BUD
+###  13.3. <a name='OptimizingwithBUD'></a>Optimizing with BUD
 
 BUD = Bottlenecks, Unnecessary work, Duplicated work
 
 
-###  12.4. <a name='Optimizingwithspaceandtime'></a>Optimizing with space and time
+###  13.4. <a name='Optimizingwithspaceandtime'></a>Optimizing with space and time
 
 * hash tables, pre-computation, tries
 * think about doing some upfront work such as sorting, storing data in table etc.
 
-###  12.5. <a name='bestconceivableruntime'></a>best conceivable runtime
+###  13.5. <a name='bestconceivableruntime'></a>best conceivable runtime
 
 Given the nature of the problem, what is the runtime that you cannot beat
 
@@ -351,10 +355,10 @@ Example
 
 You cannot do better than O(n) where n is size of array since you must access every element at least once
 
-###  12.6. <a name='OptimizingwthDIY'></a>Optimizing wth DIY
+###  13.6. <a name='OptimizingwthDIY'></a>Optimizing wth DIY
 tbd
 
-###  12.7. <a name='Tipsforcoding'></a>Tips for coding
+###  13.7. <a name='Tipsforcoding'></a>Tips for coding
 
 * Don't write loose code, write small functions
 * When filling in the func impls, try a priority-based breadth first approach, work on the most useful functions first and then fill in the rest ( you need to maximize your signals to the interviewer)
@@ -365,7 +369,7 @@ tbd
 > The easier the code is for the interviewer to follow, the better. It alse reduces chances of errors.
 
 
-###  12.8. <a name='verifications'></a>verifications
+###  13.8. <a name='verifications'></a>verifications
 
 * original example is not a good testcase, it can be large and time consuming to run through
 * This is not about doing test cases yet, it's just a conceptual verification
@@ -388,7 +392,7 @@ tbd
 * When all is done, go through the code one more time and see what other improvements can be done.
 * The goal is not just to have a working solution. It's about finding people who value the quality of their work and are willing to solve hard problems. Show that you are that person.
 
-###  12.9. <a name='communications'></a>communications
+###  13.9. <a name='communications'></a>communications
 
 * Drive the conversation
   * Don't make your interviewer ask you to improve algorithm, code etc.
@@ -416,17 +420,17 @@ tbd
   * the goal is see how you handle the problem solving
 * The code doesn't need to be perfect the first time around...BUT GO BACK AND MAKE IT BETTER (style, bug fixes, efficiency, etc)
 
-###  12.10. <a name='Tipsbytopics'></a>Tips by topics
+###  13.10. <a name='Tipsbytopics'></a>Tips by topics
 
-####  12.10.1. <a name='string'></a>string
+####  13.10.1. <a name='string'></a>string
 
 * 
 
-####  12.10.2. <a name='bitset'></a>bitset
+####  13.10.2. <a name='bitset'></a>bitset
 
 see [this link too](https://en.cppreference.com/w/cpp/utility/bitset)
 
-####  12.10.3. <a name='arrays'></a>arrays
+####  13.10.3. <a name='arrays'></a>arrays
 * typically arrays fixed size
 * dynamically resizable arrays allows you to add more data
   * internally this maintains a fixed size array
@@ -462,7 +466,7 @@ see [this link too](https://en.cppreference.com/w/cpp/utility/bitset)
 * front(), back(), data() to directly access backing data
 * std::partition can be applied to array and vector for partitioning in place and getting iterator to the second partition.
 
-####  12.10.4. <a name='vector'></a>vector
+####  13.10.4. <a name='vector'></a>vector
 * compared to deque, list and forward_list a vector is efficient at accessing elements and efficient for adding/remove from tail. amortized O(1) since resizes can occur periodically.
 * vectors use more space than static arrays because more memory allocated to handle future growth
 * extra memory can be returned back with `shrink_to_fit()`
@@ -509,16 +513,16 @@ int main()
 If size of bitset is known at compile time then use `std::bitset`.
 
 
-####  12.10.5. <a name='deque'></a>deque
+####  13.10.5. <a name='deque'></a>deque
 
 * efficient add and remove from both ends of a queue
 
-####  12.10.6. <a name='stack'></a>stack
+####  13.10.6. <a name='stack'></a>stack
 * LIFO (mention this with stack and explain)
 * can be useful when doing a reverse
 * YOu can implement a linked list as a stack
 
-####  12.10.7. <a name='strings'></a>strings
+####  13.10.7. <a name='strings'></a>strings
 
 * string is a template for basic_string<char>
 * since c++17 we also have a string view which gets us a read-only version
@@ -532,7 +536,7 @@ see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
 * more useful links
   * https://lemire.me/blog/2023/10/23/appending-to-an-stdstring-character-by-character-how-does-the-capacity-grow/
 
-####  12.10.8. <a name='maps'></a>maps
+####  13.10.8. <a name='maps'></a>maps
 * maps show up when you have a lot of lookups, frequency counting,etc 
 * unordered_map usually a hash map
   * collisions
@@ -541,13 +545,13 @@ see [cpp_prep_notes/test_string.cpp](./cpp_prep_notes/test_string.cpp)
 
 * sometimes a hashmap is an overkill and a simple array/bitset as a frequency table is sufficient
 
-####  12.10.9. <a name='sets'></a>sets
+####  13.10.9. <a name='sets'></a>sets
 
-####  12.10.10. <a name='binarysearch'></a>binary search
+####  13.10.10. <a name='binarysearch'></a>binary search
 * when you have ordered items and are looking for something
 * sometimes it may be less obvious...say when you are computing square root of an integer
 
-####  12.10.11. <a name='sorting'></a>sorting
+####  13.10.11. <a name='sorting'></a>sorting
 
 
 ##### merge sort
@@ -565,7 +569,7 @@ tbd
 tbd: example of using custom comparater
 
 
-####  12.10.12. <a name='recursion'></a>recursion
+####  13.10.12. <a name='recursion'></a>recursion
 
 * be careful, it takes time and space complexity
 * depth of tree is 
@@ -586,7 +590,7 @@ tbd: example of using custom comparater
 * be careful with empty, 1/2 element cases
 * make sure base case is simple...a more complex base case may be indication of an incorrect solution
 
-####  12.10.13. <a name='stacks'></a>stacks
+####  13.10.13. <a name='stacks'></a>stacks
 
 * FILO
 * C++ has a stack class which can be used
@@ -595,11 +599,11 @@ tbd: example of using custom comparater
   * anything that can benefit from LIFO
   * reversing steps, going backwards
 
-####  12.10.14. <a name='queues'></a>queues
+####  13.10.14. <a name='queues'></a>queues
 * FIFO
 * 
 
-####  12.10.15. <a name='trees'></a>trees
+####  13.10.15. <a name='trees'></a>trees
 * inorder, pre-order, post-oreder traversals
 * if balanced O(log N) for insert/find else it can be O(N) in worst case
 * tree balacing
@@ -610,7 +614,7 @@ tbd: example of using custom comparater
 * useful for such things as word search problem
 
 
-####  12.10.16. <a name='heaps'></a>heaps
+####  13.10.16. <a name='heaps'></a>heaps
 * heaps implemente with priority queues
 * when inserting, put new value in the next open spot and bubble up (depending on min-heap or max-heap)
 * same with deletion (i.e pop operation)
@@ -627,12 +631,12 @@ right = 2*i + 2
 ##### priority_queue
 
 
-####  12.10.17. <a name='graphs'></a>graphs
+####  13.10.17. <a name='graphs'></a>graphs
 
-####  12.10.18. <a name='greedyalgorithms'></a>greedy algorithms
+####  13.10.18. <a name='greedyalgorithms'></a>greedy algorithms
 
 
-####  12.10.19. <a name='math'></a>math
+####  13.10.19. <a name='math'></a>math
 
 * modulo of negative number can be negative
 
@@ -641,36 +645,36 @@ right = 2*i + 2
     cout << "(10 % -3) = " << (10 % -3) << endl; // 1
 ```
 
-##  13. <a name='real-timesystems'></a>real-time systems
+##  14. <a name='real-timesystems'></a>real-time systems
 [real-time-embedded-systems/readme.md](./real-time-embedded-systems/readme.md)
 
-##  14. <a name='Codinginterviewsresources'></a>Coding interviews resources
+##  15. <a name='Codinginterviewsresources'></a>Coding interviews resources
 * https://leetcodethehardway.com/
 * https://neetcode.io
 
 
-##  15. <a name='Generalbehavioralquestions'></a>General behavioral questions
+##  16. <a name='Generalbehavioralquestions'></a>General behavioral questions
 tbd
 
-##  16. <a name='Systemsdesigntopics'></a>Systems design topics
+##  17. <a name='Systemsdesigntopics'></a>Systems design topics
 tbd
 
-##  17. <a name='Designpatterns'></a>Design patterns
+##  18. <a name='Designpatterns'></a>Design patterns
 
 [notes](./design-patterns/readme.md)
 
-##  18. <a name='schedulingalorithms'></a>scheduling alorithms
+##  19. <a name='schedulingalorithms'></a>scheduling alorithms
 tbd
 
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/
 
-##  19. <a name='Concurrency'></a>Concurrency
+##  20. <a name='Concurrency'></a>Concurrency
 
-##  20. <a name='OpenMP'></a>OpenMP
+##  21. <a name='OpenMP'></a>OpenMP
 tbd 
 
-##  21. <a name='semaphores'></a>semaphores
+##  22. <a name='semaphores'></a>semaphores
 
 * a semaphore is a counter
 * a mutex is a special case of a semaphore which indicates a binary choice (either you have the lock or not - count is 0 or 1)
@@ -679,16 +683,16 @@ tbd
 
 * see https://austingwalters.com/multithreading-semaphores/
 
-###  21.1. <a name='sempahoreswithmultipleprocessesinLinux'></a>sempahores with multiple processes in Linux
+###  22.1. <a name='sempahoreswithmultipleprocessesinLinux'></a>sempahores with multiple processes in Linux
 
 tbd
 
 * see https://blog.superpat.com/semaphores-on-linux-sem_init-vs-sem_open
 
-##  22. <a name='monitors'></a>monitors
+##  23. <a name='monitors'></a>monitors
 
 * see [this implementation](https://stackoverflow.com/questions/12647217/making-a-c-class-a-monitor-in-the-concurrent-sense)
-##  23. <a name='Deadlock'></a>Deadlock
+##  24. <a name='Deadlock'></a>Deadlock
 
 * There are the following necessary and sufficient conditions for a deadlock
 
@@ -701,9 +705,9 @@ tbd
 
 * These are called Coffman conditions
 
-###  23.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
+###  24.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
 
-###  23.2. <a name='resources-1'></a>resources
+###  24.2. <a name='resources-1'></a>resources
 * see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
 * https://austingwalters.com/multithreading-producer-consumer-problem/
 * https://austingwalters.com/multithreading-dining-philosophers-problem/

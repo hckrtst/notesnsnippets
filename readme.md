@@ -75,9 +75,10 @@
 * 16. [Systems design topics](#Systemsdesigntopics)
 * 17. [Design patterns](#Designpatterns)
 * 18. [Concurrency](#Concurrency)
-	* 18.1. [Deadlock](#Deadlock)
-		* 18.1.1. [dining philosopher's problem](#diningphilosophersproblem)
-	* 18.2. [resources](#resources-1)
+* 19. [OpenMP](#OpenMP)
+	* 19.1. [Deadlock](#Deadlock)
+		* 19.1.1. [dining philosopher's problem](#diningphilosophersproblem)
+	* 19.2. [resources](#resources-1)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -656,7 +657,10 @@ tbd
 
 ##  18. <a name='Concurrency'></a>Concurrency
 
-###  18.1. <a name='Deadlock'></a>Deadlock
+##  19. <a name='OpenMP'></a>OpenMP
+tbd 
+
+###  19.1. <a name='Deadlock'></a>Deadlock
 
 * There are the following necessary and sufficient conditions for a deadlock
 
@@ -669,9 +673,11 @@ tbd
 
 * These are called Coffman conditions
 
-####  18.1.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
+####  19.1.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
 
-###  18.2. <a name='resources-1'></a>resources
+###  19.2. <a name='resources-1'></a>resources
 * see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
 * https://austingwalters.com/multithreading-producer-consumer-problem/
+* https://austingwalters.com/multithreading-dining-philosophers-problem/
+
 

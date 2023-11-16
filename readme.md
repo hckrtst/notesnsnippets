@@ -216,6 +216,11 @@ see [TCP/IP notes](./tcp-ip/readme.md)
 
 * `extern`
 
+* mem allocations
+  - malloc. no initalization.
+  - calloc. zeroes out allocated memory with 0 for numeric and NUL for char buffer.
+  - realloc. allocates new buffer or extends existing buffer (if you specify the old buffer address as arg and return value). contents of old buffer copied to new. realloc does not initialize storage.
+
 
 ##  9. <a name='CPPLibraries'></a>CPP Libraries
 

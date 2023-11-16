@@ -10,7 +10,8 @@
 	* 5.3. [gdb](#gdb)
 * 6. [Communications](#Communications)
 	* 6.1. [Cellular topics](#Cellulartopics)
-		* 6.1.1. [Protcols](#Protcols)
+		* 6.1.1. [Protocols](#Protocols)
+		* 6.1.2. [scheduling](#scheduling)
 	* 6.2. [TCP/IP review](#TCPIPreview)
 * 7. [C traps and pitfalls](#Ctrapsandpitfalls)
 * 8. [CPP Libraries](#CPPLibraries)
@@ -141,13 +142,13 @@ tbd
 
 * [telecom forum](https://www.telecomhall.net/)
 
-####  6.1.1. <a name='Protcols'></a>Protcols
+####  6.1.1. <a name='Protocols'></a>Protocols
 * https://www.3gpp.org/dynareport?code=38-series.htm
 
 * [spec: overall 5G architecture](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)
 * [spec: NG RAN arch](https://www.etsi.org/deliver/etsi_ts/138400_138499/138401/17.06.00_60/ts_138401v170600p.pdf)
 
-#### scheduling
+####  6.1.2. <a name='scheduling'></a>scheduling
 
 * scheduling is process of allocating resources
 * overall scheduling process in NR similar to LTE but NR has finer granularity in terms of time domain schediling in PHY
@@ -156,7 +157,10 @@ tbd
 
 ![lte frame defns](https://www.sharetechnote.com/image/36_211_TDD_DL_FrameStructure.png)
 
+* IN NR we have a more flexible approach and we can define the pattern using RRC params
 
+* resource allocation and some dtails about K1, K2, N1 etc
+  - k0 = time delay between DCI and PDSCH
 
 
 * see [here](https://www.sharetechnote.com/html/5G/5G_Scheduling_Dynamic.html)

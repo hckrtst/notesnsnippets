@@ -138,7 +138,8 @@ tbd
 
 ##  6. <a name='Communications'></a>Communications
 ###  6.1. <a name='Cellulartopics'></a>Cellular topics
-tbd
+
+* [telecom forum](https://www.telecomhall.net/)
 
 ####  6.1.1. <a name='Protcols'></a>Protcols
 * https://www.3gpp.org/dynareport?code=38-series.htm

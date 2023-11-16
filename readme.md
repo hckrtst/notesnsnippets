@@ -145,6 +145,21 @@ tbd
 * https://www.3gpp.org/dynareport?code=38-series.htm
 
 * [spec: overall 5G architecture](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)
+* [spec: NG RAN arch](https://www.etsi.org/deliver/etsi_ts/138400_138499/138401/17.06.00_60/ts_138401v170600p.pdf)
+
+#### scheduling
+
+* scheduling is process of allocating resources
+* overall scheduling process in NR similar to LTE but NR has finer granularity in terms of time domain schediling in PHY
+
+* in LTE we have pre-defined frame definitions as seen [here](https://www.sharetechnote.com/html/FrameStructure_DL.html#Overview_TDD)
+
+![lte frame defns](https://www.sharetechnote.com/image/36_211_TDD_DL_FrameStructure.png)
+
+
+
+
+* see [here](https://www.sharetechnote.com/html/5G/5G_Scheduling_Dynamic.html)
 
 ###  6.2. <a name='TCPIPreview'></a>TCP/IP review
 

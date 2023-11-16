@@ -10,7 +10,7 @@ int main()
 	p_a = a; // we don't need to do &a since a is already a pointer
 
 	for( x=0; x<5; x++ )
-		printf("%d\n",p_a[x]);
+		printf("%p %p\n",p_a+x, &a[x]);
 
 	return(0);
 }

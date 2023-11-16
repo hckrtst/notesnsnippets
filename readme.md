@@ -169,16 +169,30 @@ tbd
   - N1 -> min time duration for decoding PDCCH to be ready for receiving PDSCH. based on UE capability.
   - NU -> min time for decoding PDCCH for UE to be ready for PUSCH. also depends on UE capability.
 
+
+##### DCI
+* DCI needed for
+  - info to allocate physical resources for DL Data (PDSCH)
+  - info to schedule UL Data (PUSCH)
+  - info to adjust uplink power (PUSCH, PUCCH)
+* once DCI constructed, it goes through channel coding
+
+* TBD - CCE index calculation per [this link](https://www.sharetechnote.com/html/Handbook_LTE_CCE_Index.html)
+* also read more about PDCCH [here](https://www.sharetechnote.com/html/5G/5G_PDCCH.html)
 ##### dynamic scheduling
 
-* every PDSCH scheduled via [DCI](https://www.sharetechnote.com/html/5G/5G_DCI.html) 
+* every PDSCH scheduled via [DCI](https://www.sharetechnote.com/html/5G/5G_DCI.html)
+  * downlink control information (DCI) is used for scheduling UL and DL resources
+  * DCI carried in PDCCH
+  
+
 ##### sps scheduling
 
 * semi persistent sched
-
-
+tbd
 
 * see [here](https://www.sharetechnote.com/html/5G/5G_Scheduling_Dynamic.html)
+* read about [UCI here](https://www.sharetechnote.com/html/5G/5G_UCI.html) 
 
 ###  6.2. <a name='TCPIPreview'></a>TCP/IP review
 

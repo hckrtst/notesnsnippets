@@ -160,10 +160,15 @@ tbd
 * IN NR we have a more flexible approach and we can define the pattern using RRC params
 
 * [resource allocation](https://www.sharetechnote.com/html/5G/5G_ResourceAllocation.html) and some dtails about K1, K2, N1 etc
-  - k0 = time delay between DCI and PDSCH
-  - depending on difference in [subcarrier spacing](https://rfmw.em.keysight.com/wireless/helpfiles/n7615/Content/Main/OFDM_Basics.htm) of PDCCH and PDSCH we use the following formula
+  - k0 = time delay of num slots between DCI and PDSCH
+    - if DCI and PDSCH in same slot then k0 is 0
+  - depending on difference in [subcarrier spacing](https://rfmw.em.keysight.com/wireless/helpfiles/89600B/WebHelp/Subsystems/wlan-ofdm/Content/ofdm_basicprinciplesoverview.htm) of PDCCH and PDSCH we use the following formula
   - ![](https://www.sharetechnote.com/html/5G/image/NR_ResourceAllocation_TimeDomain_PDSCH_01.png)
-  - 
+  - k1 -> num slots between PDSCH and HARQ ACK/NACK (for retx)
+  - k2 -> num of slots between PDCCH/DCI and PUSCH
+  - N1 -> min time duration for decoding PDCCH to be ready for receiving PDSCH. based on UE capability.
+  - NU -> min time for decoding PDCCH for UE to be ready for PUSCH. also depends on UE capability.
+  
 
 
 

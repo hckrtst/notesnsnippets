@@ -168,7 +168,13 @@ tbd
   - k2 -> num of slots between PDCCH/DCI and PUSCH
   - N1 -> min time duration for decoding PDCCH to be ready for receiving PDSCH. based on UE capability.
   - NU -> min time for decoding PDCCH for UE to be ready for PUSCH. also depends on UE capability.
-  
+
+##### dynamic scheduling
+
+* every PDSCH scheduled via [DCI](https://www.sharetechnote.com/html/5G/5G_DCI.html) 
+##### sps scheduling
+
+* semi persistent sched
 
 
 

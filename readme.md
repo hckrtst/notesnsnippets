@@ -159,8 +159,12 @@ tbd
 
 * IN NR we have a more flexible approach and we can define the pattern using RRC params
 
-* resource allocation and some dtails about K1, K2, N1 etc
+* [resource allocation](https://www.sharetechnote.com/html/5G/5G_ResourceAllocation.html) and some dtails about K1, K2, N1 etc
   - k0 = time delay between DCI and PDSCH
+  - depending on difference in [subcarrier spacing](https://rfmw.em.keysight.com/wireless/helpfiles/n7615/Content/Main/OFDM_Basics.htm) of PDCCH and PDSCH we use the following formula
+  - ![](https://www.sharetechnote.com/html/5G/image/NR_ResourceAllocation_TimeDomain_PDSCH_01.png)
+  - 
+
 
 
 * see [here](https://www.sharetechnote.com/html/5G/5G_Scheduling_Dynamic.html)

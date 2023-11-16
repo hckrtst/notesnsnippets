@@ -100,9 +100,9 @@ tbd
 
 ![endian](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/32bit-Endianess.svg/600px-32bit-Endianess.svg.png)
 
-* little end in -> LSB first. x86, ARM, RISC-V uses this.
-* big end in -> MSB first. Network order. data transmitted/received from MSB onwards.
-
+* little end in first -> LSB first. x86, ARM, RISC-V uses this.
+* big end in first -> MSB first. Network order. data transmitted/received from MSB onwards.
+  * this is the more natural way to store it as we read it from left to right
 with C you can test with
 ```C
 union {
@@ -141,6 +141,9 @@ tbd
 tbd
 
 ####  6.1.1. <a name='Protcols'></a>Protcols
+* https://www.3gpp.org/dynareport?code=38-series.htm
+
+* [spec: overall 5G architecture](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)
 
 ###  6.2. <a name='TCPIPreview'></a>TCP/IP review
 
@@ -710,6 +713,7 @@ tbd
 ##  23. <a name='monitors'></a>monitors
 
 * see [this implementation](https://stackoverflow.com/questions/12647217/making-a-c-class-a-monitor-in-the-concurrent-sense)
+* see [also this](https://stackoverflow.com/questions/57857403/c-monitor-class-wrapper-using-condition-variables?rq=3)
 ##  24. <a name='Deadlock'></a>Deadlock
 
 * There are the following necessary and sufficient conditions for a deadlock

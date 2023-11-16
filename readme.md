@@ -204,6 +204,7 @@ see [TCP/IP notes](./tcp-ip/readme.md)
 
 * `volatile`
 
+* `extern`
 
 
 ##  8. <a name='CPPLibraries'></a>CPP Libraries
@@ -218,6 +219,13 @@ tbd
 
 * `std::atomic`
 
+* `extern C`
+
+* class design
+
+* structs vs classes
+
+* OOP patterns
 
 
 ###  9.1. <a name='Arrays'></a>Arrays

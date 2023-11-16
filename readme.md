@@ -199,7 +199,11 @@ tbd
 see [TCP/IP notes](./tcp-ip/readme.md)
 
 ##  7. <a name='Ctrapsandpitfalls'></a>C traps and pitfalls
-tbd
+
+* `static`
+
+* `volatile`
+
 
 
 ##  8. <a name='CPPLibraries'></a>CPP Libraries
@@ -211,6 +215,10 @@ tbd
 tbd
 
 ##  9. <a name='CPPtopicreviews'></a>CPP topic reviews
+
+* `std::atomic`
+
+
 
 ###  9.1. <a name='Arrays'></a>Arrays
 

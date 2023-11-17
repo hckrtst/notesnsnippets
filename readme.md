@@ -222,6 +222,9 @@ see [TCP/IP notes](./tcp-ip/readme.md)
   - realloc. allocates new buffer or extends existing buffer (if you specify the old buffer address as arg and return value). contents of old buffer copied to new. realloc does not initialize storage.
   - after calling free() always set pointer to NULL!
 
+* C standard lib functions to know
+TBD
+
 ##  9. <a name='CPPLibraries'></a>CPP Libraries
 
 ###  9.1. <a name='Boost'></a>Boost

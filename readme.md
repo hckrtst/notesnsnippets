@@ -222,6 +222,11 @@ see [TCP/IP notes](./tcp-ip/readme.md)
   - realloc. allocates new buffer or extends existing buffer (if you specify the old buffer address as arg and return value). contents of old buffer copied to new. realloc does not initialize storage.
   - after calling free() always set pointer to NULL!
 
+### pointer cheat sheet
+
+![Alt text](image.png)
+
+
 * C standard lib functions to know
 TBD
 

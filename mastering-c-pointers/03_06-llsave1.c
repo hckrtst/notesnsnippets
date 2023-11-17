@@ -87,7 +87,7 @@ int main()
 	}
 
 	/* write the five structures */
-	fwrite(first,sizeof(struct item),5,fp);
+	fwrite(first,sizeof(struct item),5,fp); // this is wrong since the linked list in dynamic memory
 
 	/* close the file */
 	fclose(fp);

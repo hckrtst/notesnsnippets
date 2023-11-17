@@ -224,7 +224,7 @@ see [TCP/IP notes](./tcp-ip/readme.md)
 
 ### pointer cheat sheet
 
-![Alt text](image.png)
+[here](./mastering-c-pointers/Pointer%20Reference.pdf)
 
 
 * C standard lib functions to know

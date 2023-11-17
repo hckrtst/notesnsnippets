@@ -225,6 +225,12 @@ see [TCP/IP notes](./tcp-ip/readme.md)
 * C standard lib functions to know
 TBD
 
+* [Why it's better to use strlcpy (via memcpy -- see comment in thread) instead of strcpy](https://stackoverflow.com/questions/1258550/why-should-you-use-strncpy-instead-of-strcpy)
+  * also see [this](https://en.wikipedia.org/wiki/C_string_handling#Replacements)
+
+* on Linux strlcpy is implemented in libbsd-dev which needs to be installed
+  
+
 ##  9. <a name='CPPLibraries'></a>CPP Libraries
 
 ###  9.1. <a name='Boost'></a>Boost

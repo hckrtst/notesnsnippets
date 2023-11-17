@@ -72,7 +72,8 @@ fam_p_t allocate_family()
 void fill(fam_p_t cur)
 {
   printf("Name: ");
-  strncat(cur->name, input(), SIZE);
+  cur->name[0] = '\0';
+  strlcpy(cur->name, input(), SIZE);
   printf("got name = %s\n", cur->name);
   cur->next = NULL;
 }

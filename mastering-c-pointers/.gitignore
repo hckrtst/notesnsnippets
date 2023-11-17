@@ -5,4 +5,5 @@ share/
 lib64
 *_bin
 a.out
+*.dat
 

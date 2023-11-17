@@ -229,7 +229,9 @@ TBD
   * also see [this](https://en.wikipedia.org/wiki/C_string_handling#Replacements)
 
 * on Linux strlcpy is implemented in libbsd-dev which needs to be installed
-  
+
+* see [this file](./mastering-c-pointers/03_07-challenge1_attempt.c). Need to build with `-lbsd` option.
+
 
 ##  9. <a name='CPPLibraries'></a>CPP Libraries
 

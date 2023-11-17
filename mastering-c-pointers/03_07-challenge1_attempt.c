@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include "/usr/include/bsd/string.h"
 
 #define SIZE 16
 enum { FALSE, TRUE };

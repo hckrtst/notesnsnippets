@@ -15,6 +15,7 @@
 		* 7.1.2. [scheduling](#scheduling)
 	* 7.2. [TCP/IP review](#TCPIPreview)
 * 8. [C traps and pitfalls](#Ctrapsandpitfalls)
+	* 8.1. [pointer cheat sheet](#pointercheatsheet)
 * 9. [CPP Libraries](#CPPLibraries)
 	* 9.1. [Boost](#Boost)
 	* 9.2. [pybind11](#pybind11)
@@ -222,7 +223,7 @@ see [TCP/IP notes](./tcp-ip/readme.md)
   - realloc. allocates new buffer or extends existing buffer (if you specify the old buffer address as arg and return value). contents of old buffer copied to new. realloc does not initialize storage.
   - after calling free() always set pointer to NULL!
 
-### pointer cheat sheet
+###  8.1. <a name='pointercheatsheet'></a>pointer cheat sheet
 
 [here](./mastering-c-pointers/Pointer%20Reference.pdf)
 
@@ -263,6 +264,7 @@ tbd
 
 * OOP patterns
 
+* also see [cpp templates and stl notes](./cpp-templates-and-stl/readme.md)
 
 ###  10.1. <a name='Arrays'></a>Arrays
 

@@ -15,4 +15,10 @@ now you can invoke this with `maxof<int>( a, b )`
 ```cpp
 template<typename T>
 T pi = T(3.1415926535897932385L);
+
+// you can now get a specialized version of this value
+cout.precision(20);
+cout << pi<double> << endl;
+
 ```
+

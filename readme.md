@@ -226,6 +226,11 @@ see [TCP/IP notes](./tcp-ip/readme.md)
 
 [here](./mastering-c-pointers/Pointer%20Reference.pdf)
 
+* see [this](./mastering-c-pointers/04_03-weekdays1.c) and [this](./mastering-c-pointers/04_03-weekdays2.c) for some
+commentary on how the local are stored differently in the object file.
+Compiler optimization levels may further have an impact(?)
+
+* [C struct packing](http://www.catb.org/esr/structure-packing/)
 
 * C standard lib functions to know
 TBD

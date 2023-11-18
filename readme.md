@@ -254,6 +254,8 @@ tbd
 
 ##  10. <a name='CPPtopicreviews'></a>CPP topic reviews
 
+* `explicit` keyword
+
 * `std::atomic`
 
 * `extern C`

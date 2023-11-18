@@ -268,6 +268,10 @@ tbd
 
 * also see [cpp templates and stl notes](./cpp-templates-and-stl/readme.md)
 
+* also see [udefined behavior in C/C++](https://blog.regehr.org/archives/213)
+
+
+
 ###  10.1. <a name='Arrays'></a>Arrays
 
 * `std::array` closer to standard C array
@@ -275,6 +279,8 @@ tbd
   * does not decay to pointer like standard C array when passed to function since the descriptor includes size info
 
 * THis course is excellent https://courses.mshah.io/courses/take/cpp-programming-language/texts/43118039-c-video-series-introduction-modern-cpp-series
+
+* BEWARE [std::array size can only be specified at compile time, not dynamically, see this link](https://stackoverflow.com/questions/16711697/is-there-any-use-for-unique-ptr-with-array) 
 
 
 ###  10.2. <a name='Generalbestpractice'></a>General best practice

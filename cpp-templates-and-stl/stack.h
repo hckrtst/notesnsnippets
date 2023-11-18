@@ -2,7 +2,6 @@
 
 #include <exception>
 #include <iostream>
-#include <array>
 #include <memory>
 
 
@@ -21,10 +20,14 @@ class Stack {
   static const int _defaultSize = 10;
   static const int _maxSize = 1000;
   int _size{}, _top{-1};
-  std::unique_ptr<array<T, _defaultSize>> _p_data;
+  std::unique_ptr<T[]> _p_data;
 
   bool _is_full() {
     return (_top == (_maxSize - 1));
+  }
+
+  int _getMaxSize() {
+    return _maxSize;
   }
 
   public:
@@ -32,28 +35,31 @@ class Stack {
     if ((s < 1) || (s > _maxSize)) {
       throw StackException("invalid stack size");
     }
-    _p_data = std::make_unique<array<T, this->_size>>(); 
+    _p_data = std::make_unique<T[]>(_size); 
   }
 
+  
+
   void push(const T &item) {
-    if _is_full() throw StackException("stack is full");
+    if (_is_full()) throw StackException("stack is full");
     if (_size - 1 == _top) {
       // grow capacity
-      _size = std::min((2 * _size), _maxSize);
-      auto data = new std::array<T,this->_size>();
+      _size = std::min((2 * _size), _getMaxSize()); 
+      // Caution: we cannot access _maxSize directly from this templated func
+      auto data = new T[_size];
       // copy existing elems to new array
-      for (int i = 0; i < _p_data->size(); i++) {
-        (*data)[i] = (*_p_data.get())[i];    
+      for (int i = 0; i <= _top; i++) {
+        data[i] = _p_data.get()[i];    
       } 
       cout << "new size: " << _size << endl;
       _p_data.reset(data);
     }
-    (*_p_data.get())[++_top] = item;
+    _p_data.get()[++_top] = item;
   }
 
   T& pop() {
     if (isEmpty()) throw StackException("already empty");
-    return *(_p_data.get())[_top--];  
+    return _p_data.get()[_top--];  
   }
 
   bool isEmpty() {
@@ -64,12 +70,10 @@ class Stack {
     if (isEmpty()) {
       cout << "empty\n";
     }
-
-
     for (int i = 0 ; i <= _top; i++) {
-      cout << *(_p_data.get())[i] << ", ";    
+      cout << _p_data.get()[i] << ", ";    
     } 
-    cout << '\n';
+    cout << "\b\b *\n";
   }
 
 };

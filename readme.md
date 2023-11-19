@@ -270,7 +270,16 @@ tbd
 
 * also see [udefined behavior in C/C++](https://blog.regehr.org/archives/213)
 
+* In C++ the modulo behaves differently than python
 
+```cpp
+cout << (-2 % 5) << endl; // -2
+```
+
+```python
+>>> -2 % 5
+3
+```
 
 ###  10.1. <a name='Arrays'></a>Arrays
 

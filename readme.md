@@ -854,4 +854,7 @@ tbd
 * https://austingwalters.com/multithreading-producer-consumer-problem/
 * https://austingwalters.com/multithreading-dining-philosophers-problem/
 
+## General interview prep resources
+
+* https://huyenchip.com/ml-interviews-book/contents/2.3.1-behavioral-questions.html
 

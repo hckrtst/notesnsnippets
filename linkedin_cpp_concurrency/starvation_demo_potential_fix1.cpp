@@ -6,26 +6,29 @@
 
 int sushi_count = 5000;
 
-// WIP - maybe need cond vars
+
+//this solution is not great because it relies on the OS scheduling
 void philosopher(std::mutex &chopsticks, int i) {
     int consumed = 0;
     // let's try to give each thread a fair chance to eat and limit
     // them all to a fixed amount each cycle.
     static const int max_serving_size = 17;
-    int next_available = 0;
-
-
-      
-      while(sushi_count > 0) {
+    while (true) {
+      int bites = 0;
+      while((sushi_count > 0) && (bites < max_serving_size)) {
         {
-          
           std::scoped_lock lock(chopsticks);
           sushi_count--;
-
+          bites++;
+          if (bites > max_serving_size) {
+            std::this_thread::yield();
+            bites = 0;
+          }
         }
         
       }
- 
+      consumed += bites;  
+      if (sushi_count <= 0) break;
     }
     printf("%d consumed %d sushi\n", i, consumed);
     
@@ -33,7 +36,7 @@ void philosopher(std::mutex &chopsticks, int i) {
 
 int main() {
     std::mutex chopsticks;
-    std::array<std::thread, 150> philosophers;
+    std::array<std::thread, 50> philosophers;
     for (size_t i=0; i<philosophers.size(); i++) {
         philosophers[i] = std::thread(philosopher,std::ref(chopsticks), i);
     }

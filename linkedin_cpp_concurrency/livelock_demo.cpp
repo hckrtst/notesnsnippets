@@ -12,6 +12,7 @@ void philosopher(std::mutex &first_chopstick, std::mutex &second_chopstick, cons
         if (!second_chopstick.try_lock()) {
             first_chopstick.unlock();
             printf("%s: please go on....\n", name);
+            std::this_thread::yield();
             continue;
         }
         if (sushi_count) {

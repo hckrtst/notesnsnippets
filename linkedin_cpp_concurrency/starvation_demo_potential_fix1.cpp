@@ -8,6 +8,7 @@ int sushi_count = 5000;
 
 
 //this solution is not great because it relies on the OS scheduling
+// see condition variables for a better fix
 void philosopher(std::mutex &chopsticks, int i) {
     int consumed = 0;
     // let's try to give each thread a fair chance to eat and limit

@@ -78,7 +78,7 @@
 * 17. [General behavioral questions](#Generalbehavioralquestions)
 * 18. [Systems design topics](#Systemsdesigntopics)
 * 19. [Design patterns](#Designpatterns)
-* 20. [scheduling alorithms](#schedulingalorithms)
+* 20. [scheduling algorithms](#schedulingalgorithms)
 * 21. [Concurrency](#Concurrency)
 * 22. [OpenMP](#OpenMP)
 * 23. [semaphores](#semaphores)
@@ -87,6 +87,7 @@
 * 25. [Deadlock](#Deadlock)
 	* 25.1. [dining philosopher's problem](#diningphilosophersproblem)
 	* 25.2. [resources](#resources-1)
+* 26. [General interview prep resources](#Generalinterviewprepresources)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -804,11 +805,12 @@ tbd
 
 [notes](./design-patterns/readme.md)
 
-##  20. <a name='schedulingalorithms'></a>scheduling alorithms
-tbd
+##  20. <a name='schedulingalgorithms'></a>scheduling algorithms
+
 
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/
+* https://en.wikipedia.org/wiki/Maximum_throughput_scheduling
 
 ##  21. <a name='Concurrency'></a>Concurrency
 
@@ -854,7 +856,7 @@ tbd
 * https://austingwalters.com/multithreading-producer-consumer-problem/
 * https://austingwalters.com/multithreading-dining-philosophers-problem/
 
-## General interview prep resources
+##  26. <a name='Generalinterviewprepresources'></a>General interview prep resources
 
 * https://huyenchip.com/ml-interviews-book/contents/2.3.1-behavioral-questions.html
 

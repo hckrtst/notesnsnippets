@@ -19,6 +19,7 @@
 * 9. [CPP Libraries](#CPPLibraries)
 	* 9.1. [Boost](#Boost)
 	* 9.2. [pybind11](#pybind11)
+	* 9.3. [STL](#STL)
 * 10. [CPP topic reviews](#CPPtopicreviews)
 	* 10.1. [Arrays](#Arrays)
 	* 10.2. [General best practice](#Generalbestpractice)
@@ -135,6 +136,7 @@ tbd
 
 ##  5. <a name='CICDtopics'></a>CI/CD topics
 tbd
+todo jenkins
 
 see this course https://www.freecodecamp.org/news/devops-with-gitlab-ci-course/
 
@@ -162,6 +164,8 @@ tbd
 
 * [YT: 5G registration](https://youtu.be/dTA0ZyHBWtc?si=zJ7BtEwBXMaBoXis)
 * [YT: 5G pdu establishment](https://youtu.be/EqDpcnIX4Og?si=XgiJhw0tlRF6hCS1)
+
+todo SCTP GTP
 
 
 * https://www.3gpp.org/dynareport?code=38-series.htm
@@ -261,6 +265,12 @@ tbd
 
 ###  9.2. <a name='pybind11'></a>pybind11
 tbd
+todo some notes
+
+###  9.3. <a name='STL'></a>STL
+
+[notes here](./linkedin-cpp-stl/readme.md)
+
 
 ##  10. <a name='CPPtopicreviews'></a>CPP topic reviews
 

@@ -154,6 +154,9 @@ tbd
 
 * [telecom forum](https://www.telecomhall.net/)
 
+* [YT: LTE feature-based intro](https://www.youtube.com/playlist?list=PLgQvzsPaZX_bimBc5Wu4m6-cVD4bZDav9)
+* [YT: 5G interview topics](https://www.youtube.com/playlist?list=PL4OXTttOk9WiLsz4fR62lpPcT3Wx3l5OP)
+
 ####  7.1.1. <a name='Protocols'></a>Protocols
 * https://www.3gpp.org/dynareport?code=38-series.htm
 

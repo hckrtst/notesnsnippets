@@ -159,7 +159,9 @@ tbd
 
 ####  7.1.1. <a name='Protocols'></a>Protocols
 
-* [YT: 5G NAS](https://youtu.be/EqDpcnIX4Og?si=XgiJhw0tlRF6hCS1)
+* [YT: 5G registration](https://youtu.be/dTA0ZyHBWtc?si=zJ7BtEwBXMaBoXis)
+* [YT: 5G pdu establishment](https://youtu.be/EqDpcnIX4Og?si=XgiJhw0tlRF6hCS1)
+
 
 * https://www.3gpp.org/dynareport?code=38-series.htm
 

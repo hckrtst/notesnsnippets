@@ -824,7 +824,8 @@ tbd
 ##  21. <a name='Concurrency'></a>Concurrency
 
 ##  22. <a name='OpenMP'></a>OpenMP
-tbd 
+
+* [YT: Intel OpenMP series](https://www.youtube.com/playlist?list=PLLX-Q6B8xqZ8n8bwjGdzBJ25X2utwnoEG)
 
 ##  23. <a name='semaphores'></a>semaphores
 

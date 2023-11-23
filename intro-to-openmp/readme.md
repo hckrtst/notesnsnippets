@@ -61,6 +61,27 @@ for (i=0; i < MAX; i++)
 }
 ```
 
+To summarize
+
+1. Find the compute-intensive loops
+2. modify those loops so there are no loop-carried dependencies
+3. add the pragma
+
+## reduction
+
+these kinds of patterns are common
+
+```c
+double avg = 0.0, A[MAX];
+int i;
+
+for (i = 0; i < MAX; i++)
+{
+  avg += A[i];
+}
+
+avg = avg / MAX;
+```
 
 
 

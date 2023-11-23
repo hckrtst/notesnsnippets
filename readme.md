@@ -158,6 +158,9 @@ tbd
 * [YT: 5G interview topics](https://www.youtube.com/playlist?list=PL4OXTttOk9WiLsz4fR62lpPcT3Wx3l5OP)
 
 ####  7.1.1. <a name='Protocols'></a>Protocols
+
+* [YT: 5G NAS](https://youtu.be/EqDpcnIX4Og?si=XgiJhw0tlRF6hCS1)
+
 * https://www.3gpp.org/dynareport?code=38-series.htm
 
 * [spec: overall 5G architecture](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)

@@ -152,6 +152,7 @@ tbd
 ##  7. <a name='Communications'></a>Communications
 ###  7.1. <a name='Cellulartopics'></a>Cellular topics
 
+* [5G service based architecture overview](https://medium.com/5g-nr/5g-service-based-architecture-sba-47900b0ded0a)
 * [telecom forum](https://www.telecomhall.net/)
 
 * [YT: LTE feature-based intro](https://www.youtube.com/playlist?list=PLgQvzsPaZX_bimBc5Wu4m6-cVD4bZDav9)
@@ -167,7 +168,7 @@ tbd
 
 * [spec: overall 5G architecture](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)
 * [spec: NG RAN arch](https://www.etsi.org/deliver/etsi_ts/138400_138499/138401/17.06.00_60/ts_138401v170600p.pdf)
-
+* [5G spec mindmap](https://wirelessbrew.com/5gnr/3ggp-specs.html)
 ####  7.1.2. <a name='scheduling'></a>scheduling
 
 * scheduling is process of allocating resources

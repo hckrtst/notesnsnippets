@@ -814,6 +814,8 @@ tbd
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/
 * https://en.wikipedia.org/wiki/Maximum_throughput_scheduling
 * https://en.wikipedia.org/wiki/Round-robin_scheduling
+* https://en.wikipedia.org/wiki/Weighted_fair_queueing
+* https://en.wikipedia.org/wiki/Proportional-fair_scheduling
 
 
 ##  21. <a name='Concurrency'></a>Concurrency

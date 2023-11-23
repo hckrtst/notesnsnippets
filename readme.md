@@ -306,6 +306,8 @@ see [this link](https://stackoverflow.com/questions/7249378/disabling-c-exceptio
 
 see https://eli.thegreenplace.net/tag/debuggers
 
+* HOW do core dumps work
+
 ##  12. <a name='Algorithms'></a>Algorithms
 
 ###  12.1. <a name='markovchains'></a>markov chains
@@ -811,6 +813,8 @@ tbd
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/
 * https://en.wikipedia.org/wiki/Maximum_throughput_scheduling
+* https://en.wikipedia.org/wiki/Round-robin_scheduling
+
 
 ##  21. <a name='Concurrency'></a>Concurrency
 

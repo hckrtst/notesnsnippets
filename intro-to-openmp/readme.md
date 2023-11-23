@@ -32,6 +32,35 @@ share cache lines. This causes poor scalablity.
    Using `#pragma omp critical` and `#pragma omp atomic` will help here
 
 
+## Loop carried dependencies
+
+* to be able to parallelize a for loop we need to eliminate any depndencies that cause the runs to be effectively serial
+
+Example
+
+```c
+int i, j , A[max];
+j = 5;
+for (i=0; i < MAX; i++)
+{
+  j += 2;
+  A[i] = big(j); // the j is the dependency 
+}
+```
+
+We can rewrite it this way so we can then make it parallel
+
+```c
+int i,  A[max];
+const int j_start = 5;
+#pragma omp parallel for
+for (i=0; i < MAX; i++)
+{
+  int j = j_start + 2*(i+1);
+  A[i] = big(j); // the j is the dependency 
+}
+```
+
 
 
 

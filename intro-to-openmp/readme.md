@@ -8,7 +8,7 @@
 
 ## example 1
 
-* use SPMD (single proc multiple data)
+* use SPMD (single program multiple data)
 * Notes to self
   - thnk about a specific example and work through it step by step before diving into
   the implementation
@@ -26,8 +26,13 @@ share cache lines. This causes poor scalablity.
 ## synchronization
 
 1. Barrier
+   `#pragma omp barrier` to force all threads to catch up and wait before re-resuming parallel runs
 
 2. mutual exclusion
+   Using `#pragma omp critical` and `#pragma omp atomic` will help here
+
+
+
 
 
 ## resources

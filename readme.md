@@ -138,6 +138,9 @@ tbd
 tbd
 todo jenkins
 
+* [FCC: jenkins devops](https://youtu.be/f4idgaq2VqA?si=lBI-YvmNfnpt_3pf)
+### gitlab CI/CD
+
 see this course https://www.freecodecamp.org/news/devops-with-gitlab-ci-course/
 
 

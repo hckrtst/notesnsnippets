@@ -252,3 +252,5 @@ tbd - why we need it, advantages like smaller header, more address space etc.
   * helps find congestion and where packet dropped
 
 
+## resources
+* https://www.cs.umd.edu/class/spring2021/cmsc614/papers/synflood.pdf

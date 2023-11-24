@@ -173,7 +173,7 @@ todo SCTP GTP
 * https://www.3gpp.org/technologies/5g-system-overview
 * https://www.3gpp.org/dynareport?code=38-series.htm
 
-* [spec: overall 5G architecture](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)
+* [spec: NR and NG-RAN architecture rel 17](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)
 * [spec: NG RAN arch](https://www.etsi.org/deliver/etsi_ts/138400_138499/138401/17.06.00_60/ts_138401v170600p.pdf)
 * [5G spec mindmap](https://wirelessbrew.com/5gnr/3ggp-specs.html)
 ####  7.1.2. <a name='scheduling'></a>scheduling

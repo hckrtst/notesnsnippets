@@ -254,3 +254,4 @@ tbd - why we need it, advantages like smaller header, more address space etc.
 
 ## resources
 * https://www.cs.umd.edu/class/spring2021/cmsc614/papers/synflood.pdf
+alternative is SCTP which has 4-way handshake which mitgates SYN flooding

@@ -891,4 +891,5 @@ tbd
 ##  26. <a name='Generalinterviewprepresources'></a>General interview prep resources
 
 * https://huyenchip.com/ml-interviews-book/contents/2.3.1-behavioral-questions.html
+* https://platformalgorithmsdatastructures.kingofinterviews.com/docs/intro
 

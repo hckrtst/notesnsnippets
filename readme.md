@@ -5,6 +5,7 @@
 * 3. [Endian-ness](#Endian-ness)
 * 4. [Database](#Database)
 * 5. [CI/CD topics](#CICDtopics)
+	* 5.1. [gitlab CI/CD](#gitlabCICD)
 * 6. [Infra tools (terraform etc)](#Infratoolsterraformetc)
 	* 6.1. [strace](#strace)
 	* 6.2. [tcpdump](#tcpdump)
@@ -75,20 +76,19 @@
 		* 14.10.18. [greedy algorithms](#greedyalgorithms)
 		* 14.10.19. [math](#math)
 * 15. [real-time systems](#real-timesystems)
-* 16. [Coding interviews resources](#Codinginterviewsresources)
-* 17. [General behavioral questions](#Generalbehavioralquestions)
-* 18. [Systems design topics](#Systemsdesigntopics)
-* 19. [Design patterns](#Designpatterns)
-* 20. [scheduling algorithms](#schedulingalgorithms)
-* 21. [Concurrency](#Concurrency)
-* 22. [OpenMP](#OpenMP)
-* 23. [semaphores](#semaphores)
-	* 23.1. [sempahores with multiple processes in Linux](#sempahoreswithmultipleprocessesinLinux)
-* 24. [monitors](#monitors)
-* 25. [Deadlock](#Deadlock)
-	* 25.1. [dining philosopher's problem](#diningphilosophersproblem)
-	* 25.2. [resources](#resources-1)
-* 26. [General interview prep resources](#Generalinterviewprepresources)
+* 16. [General behavioral questions](#Generalbehavioralquestions)
+* 17. [Systems design topics](#Systemsdesigntopics)
+* 18. [Design patterns](#Designpatterns)
+* 19. [scheduling algorithms](#schedulingalgorithms)
+* 20. [Concurrency](#Concurrency)
+* 21. [OpenMP](#OpenMP)
+* 22. [semaphores](#semaphores)
+	* 22.1. [sempahores with multiple processes in Linux](#sempahoreswithmultipleprocessesinLinux)
+* 23. [monitors](#monitors)
+* 24. [Deadlock](#Deadlock)
+	* 24.1. [dining philosopher's problem](#diningphilosophersproblem)
+	* 24.2. [resources](#resources-1)
+* 25. [General interview prep resources](#Generalinterviewprepresources)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -139,7 +139,7 @@ tbd
 todo jenkins
 
 * [FCC: jenkins devops](https://youtu.be/f4idgaq2VqA?si=lBI-YvmNfnpt_3pf)
-### gitlab CI/CD
+###  5.1. <a name='gitlabCICD'></a>gitlab CI/CD
 
 see this course https://www.freecodecamp.org/news/devops-with-gitlab-ci-course/
 
@@ -815,22 +815,18 @@ right = 2*i + 2
 ##  15. <a name='real-timesystems'></a>real-time systems
 [real-time-embedded-systems/readme.md](./real-time-embedded-systems/readme.md)
 
-##  16. <a name='Codinginterviewsresources'></a>Coding interviews resources
-* https://leetcodethehardway.com/
-* https://neetcode.io
 
-
-##  17. <a name='Generalbehavioralquestions'></a>General behavioral questions
+##  16. <a name='Generalbehavioralquestions'></a>General behavioral questions
 tbd
 
-##  18. <a name='Systemsdesigntopics'></a>Systems design topics
+##  17. <a name='Systemsdesigntopics'></a>Systems design topics
 tbd
 
-##  19. <a name='Designpatterns'></a>Design patterns
+##  18. <a name='Designpatterns'></a>Design patterns
 
 [notes](./design-patterns/readme.md)
 
-##  20. <a name='schedulingalgorithms'></a>scheduling algorithms
+##  19. <a name='schedulingalgorithms'></a>scheduling algorithms
 
 
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
@@ -841,16 +837,16 @@ tbd
 * https://en.wikipedia.org/wiki/Proportional-fair_scheduling
 
 
-##  21. <a name='Concurrency'></a>Concurrency
+##  20. <a name='Concurrency'></a>Concurrency
 
-##  22. <a name='OpenMP'></a>OpenMP
+##  21. <a name='OpenMP'></a>OpenMP
 
 * see [notes](./intro-to-openmp/readme.md)
 
 * synchronization is expensive and too much of it will kill performance
 * fundamental model used in OMP is fork-join model
 
-##  23. <a name='semaphores'></a>semaphores
+##  22. <a name='semaphores'></a>semaphores
 
 * a semaphore is a counter
 * a mutex is a special case of a semaphore which indicates a binary choice (either you have the lock or not - count is 0 or 1)
@@ -859,17 +855,17 @@ tbd
 
 * see https://austingwalters.com/multithreading-semaphores/
 
-###  23.1. <a name='sempahoreswithmultipleprocessesinLinux'></a>sempahores with multiple processes in Linux
+###  22.1. <a name='sempahoreswithmultipleprocessesinLinux'></a>sempahores with multiple processes in Linux
 
 tbd
 
 * see https://blog.superpat.com/semaphores-on-linux-sem_init-vs-sem_open
 
-##  24. <a name='monitors'></a>monitors
+##  23. <a name='monitors'></a>monitors
 
 * see [this implementation](https://stackoverflow.com/questions/12647217/making-a-c-class-a-monitor-in-the-concurrent-sense)
 * see [also this](https://stackoverflow.com/questions/57857403/c-monitor-class-wrapper-using-condition-variables?rq=3)
-##  25. <a name='Deadlock'></a>Deadlock
+##  24. <a name='Deadlock'></a>Deadlock
 
 * There are the following necessary and sufficient conditions for a deadlock
 
@@ -882,14 +878,14 @@ tbd
 
 * These are called Coffman conditions
 
-###  25.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
+###  24.1. <a name='diningphilosophersproblem'></a>dining philosopher's problem
 
-###  25.2. <a name='resources-1'></a>resources
+###  24.2. <a name='resources-1'></a>resources
 * see [test_mutex.cpp](./cpp_prep_notes/test_mutex.cpp)
 * https://austingwalters.com/multithreading-producer-consumer-problem/
 * https://austingwalters.com/multithreading-dining-philosophers-problem/
 
-##  26. <a name='Generalinterviewprepresources'></a>General interview prep resources
+##  25. <a name='Generalinterviewprepresources'></a>General interview prep resources
 
 * https://huyenchip.com/ml-interviews-book/contents/2.3.1-behavioral-questions.html
 * https://platformalgorithmsdatastructures.kingofinterviews.com/docs/intro
@@ -899,5 +895,6 @@ good pace and excellent explanations
 * https://www.khanacademy.org/computing
 * https://github.com/adnanaziz/EPIJudge
 * https://neetcode.io/
+* https://leetcodethehardway.com/
 
 

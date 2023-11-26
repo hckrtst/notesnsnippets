@@ -988,7 +988,7 @@ tbd
 * https://leetcodethehardway.com/
 * https://interviewing.io/guides/hiring-process
 * https://github.com/donnemartin/system-design-primer
-
+* [Get interviewed by an AI -- yes we're there now...](https://start.interviewing.io/interview-ai)
 
 
 

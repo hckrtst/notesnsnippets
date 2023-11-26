@@ -842,13 +842,22 @@ tbd
 
 ### load balancing
 
-* round robin simplest
-  * if you have 2 servers then load balancer can just distribute requests in a modulo 2 fashion
+1. round robin
+
+![round robin](https://www.jscape.com/hubfs/images/round_robin_algorithm-1.png)
+
+  * simplest
+  * if you have 2 servers(SRV) then load balancer(LB) can just distribute requests in a modulo 2 fashion
     * request 1 goes to server 0 (0 mod 2)
     * request 2 goes to server 1 (1 mod 2)
     * request 3 goes to server 0 (2 mod 2) etc
   * problems
-    * 
+    * LB treats each SRV as the equally capable
+      * what if one is a tiny single core machine (or gasp...a raspberry Pi!) and the other one is a multicore beast
+      * Now the clients getting the first server are going be very unhappy
+  * best for configurations where each server is similar in capability
+
+2. 
 
 
 * read more [here](https://www.jscape.com/blog/load-balancing-algorithms)

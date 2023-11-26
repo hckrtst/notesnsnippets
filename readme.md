@@ -889,9 +889,7 @@ tbd
 
 * https://huyenchip.com/ml-interviews-book/contents/2.3.1-behavioral-questions.html
 * https://platformalgorithmsdatastructures.kingofinterviews.com/docs/intro
-some good ideas, but I feel this one is a bit all over the place
 * https://www.structy.net/problem-index
-good pace and excellent explanations
 * https://www.khanacademy.org/computing
 * https://github.com/adnanaziz/EPIJudge
 * https://neetcode.io/

@@ -41,3 +41,22 @@ std::string uncompress(std::string s) {
 }
 
 ```
+
+shorter version
+
+```cpp
+std::string uncompress(std::string s) {
+  std::string res;
+  int i{}, j{};
+  while(j < s.length())
+  {
+    while (std::isdigit(s[j])) j++; 
+    int count = std::stoi(s.substr(i, j - i));
+    res += std::string(count, s[j]);
+    j++;
+    i = j; // i starts at next digit or end of string
+  }
+  return res;
+}
+
+```

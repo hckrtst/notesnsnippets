@@ -14,7 +14,7 @@
 	* 7.1. [Cellular topics](#Cellulartopics)
 		* 7.1.1. [Protocols](#Protocols)
 		* 7.1.2. [scheduling](#scheduling)
-	* 7.2. [TCP/IP review](#TCPIPreview)
+	* 7.2. [Networking](#Networking)
 * 8. [C traps and pitfalls](#Ctrapsandpitfalls)
 	* 8.1. [pointer cheat sheet](#pointercheatsheet)
 * 9. [CPP Libraries](#CPPLibraries)
@@ -80,6 +80,10 @@
 * 17. [Systems design topics](#Systemsdesigntopics)
 * 18. [Design patterns](#Designpatterns)
 * 19. [scheduling algorithms](#schedulingalgorithms)
+	* 19.1. [Fair queuing (in the context of IP networks)](#FairqueuinginthecontextofIPnetworks)
+	* 19.2. [load balancing](#loadbalancing)
+		* 19.2.1. [references](#references)
+	* 19.3. [more resources](#moreresources)
 * 20. [Concurrency](#Concurrency)
 * 21. [OpenMP](#OpenMP)
 * 22. [semaphores](#semaphores)
@@ -225,7 +229,7 @@ tbd
 * see [here](https://www.sharetechnote.com/html/5G/5G_Scheduling_Dynamic.html)
 * read about [UCI here](https://www.sharetechnote.com/html/5G/5G_UCI.html) 
 
-###  7.2. <a name='TCPIPreview'></a>Networking
+###  7.2. <a name='Networking'></a>Networking
 
 see [TCP/IP notes](./tcp-ip/readme.md)
 
@@ -834,13 +838,13 @@ tbd
 
 ##  19. <a name='schedulingalgorithms'></a>scheduling algorithms
 
-### Fair queuing (in the context of IP networks)
+###  19.1. <a name='FairqueuinginthecontextofIPnetworks'></a>Fair queuing (in the context of IP networks)
 * key for QoS
 
 * Notes from [Fair queuing](https://www.youtube.com/watch?v=ISZVJjXa3G8)
 
 
-### load balancing
+###  19.2. <a name='loadbalancing'></a>load balancing
 
 1. round robin
 
@@ -883,10 +887,30 @@ TBD - interleaved WRR where we limit the no. packets sent to a queue by a max we
 
 3. least connections
 
-[reference](https://www.jscape.com/blog/load-balancing-algorithms)
+* if some connections are longer lasting than others then even with similar spec servers there can be bottlenecks
+  * say one server ends up running waiting on some I/O from a slow database more frequently
+
+* this algorithm takes into account number of active connections each server still has before scheduling
+
+4. weighted least connections
+
+* now considers weight and the number of active connections
+
+5. random
+
+* uses underlying random number generator
+* sufficient for clusers with nodes with similar specs
+
+####  19.2.1. <a name='references'></a>references
+* https://www.jscape.com/blog/load-balancing-algorithms
+* https://aws.amazon.com/what-is/load-balancing/
+* https://www.educative.io/answers/what-is-the-least-connections-load-balancing-technique
+* https://www.educative.io/answers/what-is-the-least-response-time-load-balancing-technique
+* https://www.educative.io/answers/what-is-the-difference-between-load-balancing-and-load-sharing
 
 
-### more resources
+
+###  19.3. <a name='moreresources'></a>more resources
 
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/

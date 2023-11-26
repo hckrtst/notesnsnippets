@@ -827,7 +827,7 @@ right = 2*i + 2
 
 
 ##  16. <a name='Generalbehavioralquestions'></a>General behavioral questions
-tbd
+[here](./behavioral_questions.md)
 
 ##  17. <a name='Systemsdesigntopics'></a>Systems design topics
 tbd

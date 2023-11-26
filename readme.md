@@ -892,4 +892,5 @@ tbd
 
 * https://huyenchip.com/ml-interviews-book/contents/2.3.1-behavioral-questions.html
 * https://platformalgorithmsdatastructures.kingofinterviews.com/docs/intro
+* https://www.structy.net/problem-index
 

@@ -380,6 +380,7 @@ see https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Huffman.html
 
 ###  13.5. <a name='tries'></a>tries
 
+* [YT: making a Trie](https://youtu.be/3CbFFVHQrk4?si=SevmQI7UvPaHdfYB) 
 
 * lock free?
 * threadsafe?

@@ -838,6 +838,12 @@ tbd
 
 ##  19. <a name='schedulingalgorithms'></a>scheduling algorithms
 
+### Proportional fair scheduling
+
+TODO
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/25ea0731064ed2dc6398e31f9cb9bdc0dbee6c61)
+
 ###  19.1. <a name='FairqueuinginthecontextofIPnetworks'></a>Fair queuing (in the context of IP networks)
 * key for QoS
 
@@ -907,6 +913,7 @@ TBD - interleaved WRR where we limit the no. packets sent to a queue by a max we
 * https://www.educative.io/answers/what-is-the-least-connections-load-balancing-technique
 * https://www.educative.io/answers/what-is-the-least-response-time-load-balancing-technique
 * https://www.educative.io/answers/what-is-the-difference-between-load-balancing-and-load-sharing
+
 
 
 

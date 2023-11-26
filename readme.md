@@ -908,6 +908,8 @@ tbd
 * https://neetcode.io/
 * https://leetcodethehardway.com/
 * https://interviewing.io/guides/hiring-process
+* https://github.com/donnemartin/system-design-primer
+
 
 
 

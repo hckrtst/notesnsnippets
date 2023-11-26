@@ -1,7 +1,8 @@
 ## uncompress strings
 
 * Should have first written out the approach before writing trying out solution
-
+* think about the time/space complexities before trying out the solution,
+ this is an interesting one...since it actually is doing a decompression so it's not simply dependent on the size of input
 ### first solution
 ```cpp
 

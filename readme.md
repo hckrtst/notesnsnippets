@@ -162,6 +162,9 @@ tbd
 
 * [YT: LTE feature-based intro](https://www.youtube.com/playlist?list=PLgQvzsPaZX_bimBc5Wu4m6-cVD4bZDav9)
 * [YT: 5G interview topics](https://www.youtube.com/playlist?list=PL4OXTttOk9WiLsz4fR62lpPcT3Wx3l5OP)
+* [Evolution of RAN](https://www.lumenci.com/research-articles/evolution-of-ran-the-road-from-1g-to-5g)
+
+
 
 ####  7.1.1. <a name='Protocols'></a>Protocols
 
@@ -828,6 +831,10 @@ tbd
 
 ##  19. <a name='schedulingalgorithms'></a>scheduling algorithms
 
+### Weighted fair queuing
+
+* key for QoS
+
 
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/
@@ -835,6 +842,8 @@ tbd
 * https://en.wikipedia.org/wiki/Round-robin_scheduling
 * https://en.wikipedia.org/wiki/Weighted_fair_queueing
 * https://en.wikipedia.org/wiki/Proportional-fair_scheduling
+* [Fair queuing](https://www.youtube.com/watch?v=ISZVJjXa3G8)
+
 
 
 ##  20. <a name='Concurrency'></a>Concurrency
@@ -894,5 +903,7 @@ tbd
 * https://github.com/adnanaziz/EPIJudge
 * https://neetcode.io/
 * https://leetcodethehardway.com/
+* https://interviewing.io/guides/hiring-process
+
 
 

@@ -869,9 +869,19 @@ tbd
 > if full then select the next available queue?
 > NOTE: this seems sort of like the classicial WRR https://en.wikipedia.org/wiki/Weighted_round_robin#Classical_WRR
 
-* If we have three queues with weight (i.e. capacity) of 5,2 and 3 then this is how packets are districuted with Classical WRR (CWRR)
+* If we have three queues with weight (i.e. capacity) of 5,2 and 3 then this is how packets are distributed with Classical WRR (CWRR)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WRR-Examples.svg/750px-WRR-Examples.svg.png)
+
+TBD - interleaved WRR where we limit the no. packets sent to a queue by a max weight and splitting the distribution into rounds
+
+* if all packets have almost same size then WRR and RR => generalize processor sharing
+  * a queue will receive long term bandwidth => ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/316baeafeed1145d7332af2227d742126d72c19f)
+
+* if packets have variable length then part of bandwidth received depends not only on weight but also on packet size
+  * with mean packet size of si for queue qi, each queue will receive long-term bandwidth of ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/a369fb60d738e3040f8be24c56410b054f750f99)
+
+3. least connections
 
 [reference](https://www.jscape.com/blog/load-balancing-algorithms)
 

@@ -225,9 +225,12 @@ tbd
 * see [here](https://www.sharetechnote.com/html/5G/5G_Scheduling_Dynamic.html)
 * read about [UCI here](https://www.sharetechnote.com/html/5G/5G_UCI.html) 
 
-###  7.2. <a name='TCPIPreview'></a>TCP/IP review
+###  7.2. <a name='TCPIPreview'></a>Networking
 
 see [TCP/IP notes](./tcp-ip/readme.md)
+
+
+* [YT: Networking course videos - U of W](https://youtu.be/xKNPTYtTnAo?si=iKYFrtkcqH_mtAcA)
 
 ##  8. <a name='Ctrapsandpitfalls'></a>C traps and pitfalls
 
@@ -831,9 +834,10 @@ tbd
 
 ##  19. <a name='schedulingalgorithms'></a>scheduling algorithms
 
-### Weighted fair queuing
-
+### Fair queuing (in the context of IP networks)
 * key for QoS
+
+* Notes from [Fair queuing](https://www.youtube.com/watch?v=ISZVJjXa3G8)
 
 
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
@@ -842,7 +846,7 @@ tbd
 * https://en.wikipedia.org/wiki/Round-robin_scheduling
 * https://en.wikipedia.org/wiki/Weighted_fair_queueing
 * https://en.wikipedia.org/wiki/Proportional-fair_scheduling
-* [Fair queuing](https://www.youtube.com/watch?v=ISZVJjXa3G8)
+
 
 
 

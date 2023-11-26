@@ -840,6 +840,19 @@ tbd
 * Notes from [Fair queuing](https://www.youtube.com/watch?v=ISZVJjXa3G8)
 
 
+### load balancing
+
+* round robin simplest
+  * if you have 2 servers then load balancer can just distribute requests in a modulo 2 fashion
+    * request 1 goes to server 0 (0 mod 2)
+    * request 2 goes to server 1 (1 mod 2)
+    * request 3 goes to server 0 (2 mod 2) etc
+  * problems
+    * 
+
+
+* read more [here](https://www.jscape.com/blog/load-balancing-algorithms)
+
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/
 * https://en.wikipedia.org/wiki/Maximum_throughput_scheduling

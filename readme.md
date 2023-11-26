@@ -857,10 +857,26 @@ tbd
       * Now the clients getting the first server are going be very unhappy
   * best for configurations where each server is similar in capability
 
-2. 
+2. Weighted round robin (WRR)
+
+![](https://www.jscape.com/hubfs/images/weighted_round_robin.png)
+
+* a twist on weighted round robin
+* assign weights to each node
+
+> my note: you could have a queue of a different size at each server
+> and you do a round robin on the queue id as long as it's not full.
+> if full then select the next available queue?
+> NOTE: this seems sort of like the classicial WRR https://en.wikipedia.org/wiki/Weighted_round_robin#Classical_WRR
+
+* If we have three queues with weight (i.e. capacity) of 5,2 and 3 then this is how packets are districuted with Classical WRR (CWRR)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WRR-Examples.svg/750px-WRR-Examples.svg.png)
+
+[reference](https://www.jscape.com/blog/load-balancing-algorithms)
 
 
-* read more [here](https://www.jscape.com/blog/load-balancing-algorithms)
+### more resources
 
 * https://arxiv.org/ftp/arxiv/papers/1307/1307.4165.pdf
 * https://www.aleksandrhovhannisyan.com/blog/operating-system-scheduling-algorithms/

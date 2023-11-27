@@ -60,3 +60,30 @@ std::string uncompress(std::string s) {
 }
 
 ```
+
+## compress string
+
+first solution, this is O(n) where n = num of input chars
+
+```cpp
+std::string compress(std::string s) {
+  std::string res;
+  int i{}, j{};
+  while (j < s.length())
+  {
+    while ((j < s.length()) && (s[j] == s[i])) j++;
+    int len = j - i;
+    if (len > 1) {
+      res += std::to_string(len);
+    }
+    res += s[i];
+    i = j;
+  }
+  return res;
+}
+
+```
+
+* one trick as suggested by Alvin might be to compare with nul at the end...
+
+

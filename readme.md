@@ -229,6 +229,15 @@ tbd
 * see [here](https://www.sharetechnote.com/html/5G/5G_Scheduling_Dynamic.html)
 * read about [UCI here](https://www.sharetechnote.com/html/5G/5G_UCI.html) 
 
+#### channel modeling
+
+* [study on channel model](https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/17.00.00_60/tr_138901v170000p.pdf)
+
+#### interference reporting
+
+* https://devopedia.org/5g-ue-measurements-and-reporting
+
+
 ###  7.2. <a name='Networking'></a>Networking
 
 see [TCP/IP notes](./tcp-ip/readme.md)

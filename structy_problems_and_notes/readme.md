@@ -86,4 +86,59 @@ std::string compress(std::string s) {
 
 * one trick as suggested by Alvin might be to compare with nul at the end...
 
+## anagrams
 
+While my first solution is correct, it's a bit too verbose
+
+```cpp
+#include <string>
+#include <unordered_map>
+
+// anaagram("abca", "dbca") -> true
+//              i
+//                   j
+// brute force O(M*N) M = s1 and N = s2
+// sort -  O(Nlogn + MlogN) time, in-place O(1)
+// 1 map O(n+m) time - space O(n)
+//  
+// 
+// abcaaaa
+// a1 b0 c0 , bcad
+bool anagrams(std::string s1, std::string s2) {
+  if (s1.length() != s2.length()) return false;
+  // build map with s1 as input
+  std::unordered_map<char, int> char_counts;
+  for (auto c: s1) {
+    if (char_counts.find(c) == char_counts.end()) char_counts.emplace(c, 1);
+    else char_counts[c] += 1;
+  }
+  // check s2 chars
+  for (auto c: s2) {
+    if (char_counts.find(c) != char_counts.end()) {
+      if (char_counts[c] > 0) { char_counts[c] -= 1; }
+      else { return false; } 
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+```
+
+The one suggested by Alvin is way cleaner. Here is my variation
+
+```cpp
+using char_count_type = std::unordered_map<char, int>; 
+
+char_count_type get_char_counts(const std::string& s) {
+  char_count_type counts;
+  for (auto c: s) {
+    counts[c] += 1;
+  }
+  return counts;
+}
+
+bool anagrams(std::string s1, std::string s2) {
+  return get_char_counts(s1) == get_char_counts(s2);  
+}
+```

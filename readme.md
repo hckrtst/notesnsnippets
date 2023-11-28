@@ -183,6 +183,17 @@ todo SCTP GTP
 * [spec: NR and NG-RAN architecture rel 17](https://www.etsi.org/deliver/etsi_ts/138300_138399/138300/17.06.00_60/ts_138300v170600p.pdf)
 * [spec: NG RAN arch](https://www.etsi.org/deliver/etsi_ts/138400_138499/138401/17.06.00_60/ts_138401v170600p.pdf)
 * [5G spec mindmap](https://wirelessbrew.com/5gnr/3ggp-specs.html)
+
+#### Call setup
+
+
+* once 5G MM security and registration done, UE sends PDU establishment to SM by piggybacking over 5G MM messages
+  * message type is UL NAS Transport
+  * session management messages are encapsulated in mobility management message sent to AMF (AMF relays to SMF)
+
+* see https://www.sharetechnote.com/html/5G/5G_PDUSessionEstablishment.html#PDU_SessionEstablishmentRequest
+
+
 ####  7.1.2. <a name='scheduling'></a>scheduling
 
 * scheduling is process of allocating resources

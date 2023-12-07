@@ -1011,5 +1011,5 @@ tbd
 * [Get interviewed by an AI -- yes we're there now...](https://start.interviewing.io/interview-ai)
 * https://medium.com/@m.romaniiuk/system-design-chat-application-1d6fbf21b372
 * https://maksimdan.gitbook.io/interview-practice-problems/
-
+* [Common problems in interviews to watch out for](https://interviewing.io/blog/ive-conducted-over-600-technical-interviews-on-interviewing-io-here-are-5-common-problem-areas-ive-seen)
 

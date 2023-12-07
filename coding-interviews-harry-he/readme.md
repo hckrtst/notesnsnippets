@@ -61,6 +61,22 @@
         3. may help to **divide** a problem into subproblems
           - many recursive, DP problems use this approach
           
+### time and efficiency
+
+- consider example of calculating fibonacci numbers
+  - f(n) = f(n-1) + f(n-2) --> this has exponential time complexity: each step we double the number of function calls
+  - but if we calculate this iteratively then the complexity reduces to O(n)
+    - in this case we can do f(1), then f(2), f(3), f(4) .... and so on
+- master the pros and cons of each data structure and use the most effective one
+- be proficient in common algorithms: search and sort. if data sorted then binary search can cut time to O(logn) from O(n).
+  ideas in quicksort can be used in other areas which need partitionng.
+
+## data structures
+
+- Q: given an array with n numbers, ranges from 0 - n-2. One number is duplicated, how can you find it 
+
+>! testing
+>! blah
 
 
 

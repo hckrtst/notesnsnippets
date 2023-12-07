@@ -75,8 +75,17 @@
 
 - Q: given an array with n numbers, ranges from 0 - n-2. One number is duplicated, how can you find it 
 
->! testing
->! blah
+<details>
+<summary> solution </summary>
+
+```cpp
+int test()
+{
+}
+
+```
+
+</details>
 
 
 

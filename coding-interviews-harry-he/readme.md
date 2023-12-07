@@ -73,17 +73,46 @@
 
 ## data structures
 
-- Q: given an array with n numbers, ranges from 0 - n-2. One number is duplicated, how can you find it 
+- Q: given an array with n numbers, ranges from 0 - n-2. One number is duplicated, how can you find it in better than O(nlogn) time without sorting.
+
+<details>
+<summary> hint </summary>
+- only one number is duplicate
+- can you use some math?  
+</details>
 
 <details>
 <summary> solution </summary>
 
-```cpp
-int test()
-{
-}
+so if we have [0,1,2,3,4,4,5] without duplicate we can have [0,1,2,3,4,5,6]
+0 + 1 + 2 + 3 -> 6
+(4*3) / 2 -> 6
 
+so if we do (0+1+2+3+4+4+5) - (0+1+2+3+4+5) = 4
+
+this will work even if last one is duplicated (0+1+2+3+4+5+5) - (0+1+2+3+4+5) = 5 and since adding is commutative order of elements does not matter
+
+```cpp
+// guaranteed to only have one duplicate
+int get_dup(std::vector<int>& nums)
+{
+  int len = nums.size();
+
+  int sum1 = 0;
+  for (int i = 0; i < len; i++)
+  {
+    if (nums[i] < 0 || num[i] > len - 2) abort();
+    sum1 += nums[i];
+  }
+  int sum2 = ((len - 1) * (len - 2)) >> 1; // which an unreadable way to say { N * (N -2) / 2 } where N = len - 1
+  return sum1 - sum2;
+}
 ```
+
+testcases:
+1. normal case
+2. input is [0, 0]
+3. some nums are out of range (0, n-2]
 
 </details>
 

@@ -7,4 +7,42 @@
   - readability is first standard of code quality (reasonable names, good spacing etc)
   - second standard is completeness
     - checking boundary conditions is critical
-    - 
+    - as an exampe consider the problem of writing a function to convert string to integer and a naive solution below
+    ```cpp
+    int str_to_int(char* s) {
+      int num = 0;
+      while (*s != 0) {
+        num = num * 10 + *s - '0';
+        ++s;
+      }
+      return num;
+    }
+    ```
+    - this code misses many conditions and the author will fail the interview
+      - no error handling, no boundary checking, no null checks
+        - what about negative numbers, non-numeric chars, overflow 
+    - another example, how to get the kth node from the tail of a list
+      - say you write the following code
+      ```cpp
+      Node* find_kth_to_tail(Node* head, unsigned int k)
+      {
+        if (head == nullptr) return nullptr; // good but is this enough?
+        Node* ahead = head;
+        Node* behind = nullptr;
+
+        for (int i = 0; i < k - 1; ++i) // what if k exceeds the length of list, what if k  is 0
+        {
+          ahead = ahead->next;
+        }
+
+        behind = head;
+        while (ahead->next) {
+          ahead = ahead->next;
+          behind = behind->next;
+        }
+        return behind;
+      }
+      ```
+
+      > Always test the code with common inputs (in a test area on screen/board not executing it) and edge cases 
+      > before calling it done and asking interviewer to check it 

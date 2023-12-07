@@ -1009,6 +1009,6 @@ tbd
 * https://interviewing.io/guides/hiring-process
 * https://github.com/donnemartin/system-design-primer
 * [Get interviewed by an AI -- yes we're there now...](https://start.interviewing.io/interview-ai)
-
+* https://medium.com/@m.romaniiuk/system-design-chat-application-1d6fbf21b372
 
 

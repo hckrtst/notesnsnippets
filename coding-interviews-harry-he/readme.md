@@ -116,5 +116,20 @@ testcases:
 
 </details>
 
+- Q: array contains nums from 0 to n-1. some nums are dups, not clear which ones or how many times they are repeated. find one of the duplicated nums in the array. example given [2,3,1,0,2,5,3] the answer should be 2 or 3.
 
 
+<details>
+<summary>hints</summary>
+
+</details>
+
+
+<details>
+<summary></summary>
+</details>
+
+
+<details>
+<summary></summary>
+</details>

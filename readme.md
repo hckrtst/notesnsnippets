@@ -1012,4 +1012,10 @@ tbd
 * https://medium.com/@m.romaniiuk/system-design-chat-application-1d6fbf21b372
 * https://maksimdan.gitbook.io/interview-practice-problems/
 * [Common problems in interviews to watch out for](https://interviewing.io/blog/ive-conducted-over-600-technical-interviews-on-interviewing-io-here-are-5-common-problem-areas-ive-seen)
+* https://github.com/johnsutor/leetcode-study-tool
+
+
+## Tips
+
+https://news.ycombinator.com/item?id=35517232
 

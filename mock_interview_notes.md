@@ -198,6 +198,144 @@ class LRU
 
 
 
+- remove year from college
+-remove personal pronouns
+- over use of successfully
+- quantification of impact
+ - too many uses of developed
+ - too many collaborated
+ - stronger words
+ - debugging-> debugged
+
+
+
+
+12/18
+
+/*
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
+
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+
+I can be placed before V (5) and X (10) to make 4 and 9. 
+X can be placed before L (50) and C (100) to make 40 and 90. 
+C can be placed before D (500) and M (1000) to make 400 and 900.
+Given a roman numeral, convert it to an integer.
+
+
+*/
+
+
+roman_to_decimal("") -> 0
+roman_to_decimal("XXVII") -> 27
+"IX" -> 19
+"XIX" -> 29
+I
+II
+XVII
+
+XLI
+
+/*
+
+XXV
+10+10
+
+
+
+
+*/
+
+
+
+int roman_to_decimal(std::string& num)
+{
+  unordered_map<char, int> num_map;
+  // TODO fill map
+  int i{num.length() - 1};
+  int value = 0;
+  while(i >= 0) // feddback: use for, readability
+  {
+    int digit = num_map[num[i]];
+    if (digit >= value) {
+      value += digit;
+    }
+    else
+    {
+      value -= digit;
+    }
+    i--;
+  }
+  return value;
+}
+
+
+
+1) took 30 mins --> get in 20 mins
+  friendly -> 
+  go faster
+  don't write edge cases, but make assumptions and note
+  met/google -> more focus on algorith
+
+  should ask max size -> recursive ok, should ask question
+
+2)  
+
+
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+
+/*
+
+
+
+*/
+vector<int> get_right_view(Node* root)
+{
+  vector<int> nums;
+  queue<pair<Node*, int>> que;
+  int curr_level = -1;
+  if (root) que.push({root, 0});
+  while (que.size() > 0)
+  {
+    auto [front, level] = que.front();
+    if (level > curr_level)
+    {
+      Node* back = (que.back()).first;
+      nums.push_back(back->val);
+      curr_level = level;
+    }
+    // make sure we pop after processing
+    que.pop();
+    if (front->left) que.push_back({front->left, level + 1});
+    if (front->right) que.push_back({front->right, level + 1});
+  }
+  return nums;
+}
+
+
+// good diagram
+// found a good edge condition
+
+// diameter: don't say you don't know how to cal
+// tuple -> pair micro decision
+
+// if you get a hint, use it (don't second guess the interviewer)
+// list better for dynamic lengths???
+
 
 
 

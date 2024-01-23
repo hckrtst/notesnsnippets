@@ -34,3 +34,5 @@
 *.lnk
 *~
 *cpp_bin
+
+venv/
